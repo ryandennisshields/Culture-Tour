@@ -25,3 +25,23 @@ Staff:
 * Design tutor: Alan Jack
 * Art tutor: Phil Orme 
 
+Important Project References: 
+* Unity Editor 2022.3.7 LTS
+    * Input Handling - Both
+    * Input System 1.6.3
+    * URP 14.0.8
+    * Shader Graph 14.0.8
+    * TextMeshPro 3.0.6
+    * 2D Animation 9.0.4
+    * Recorder 4.0.1
+    * AR Foundation 5.1.0
+        * XR Plugin Manager 4.4.0
+        * XR Core Utilities 2.2.2
+        * Goolge ARCore XR Plugin
+        * Apple ARKit XR Plugin 5.1.0
+* Visual Studio 2022
+* Niantic Lightship ARDK 3.0
+* Niantic Lightship Maps 0.4 Beta
+
+Unity Asset Store References
+* Inspector Button Pro - Free
