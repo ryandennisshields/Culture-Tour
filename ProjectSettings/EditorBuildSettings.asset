@@ -14,6 +14,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Logbook.unity
     guid: 9febfcf4f0a14e84ab16c5a88c57e301
+  - enabled: 1
+    path: Assets/_Scenes/VPS/GCU Folded Circles.unity
+    guid: 6471818cf0e88d44bb0de3caafa6230a
+  - enabled: 1
+    path: Assets/_Scenes/VPS/GCU The Quoting Stones.unity
+    guid: eeda30696854127479414422cae72b60
+  - enabled: 1
+    path: Assets/_Scenes/VPS/GCU Curved Bench.unity
+    guid: 83d9527751ed39e4f8e93122723a21fc
+  - enabled: 1
+    path: Assets/_Scenes/Temp/Temp_Map.unity
+    guid: 672ee2905e3a53846b35ae83d95f91ac
   m_configObjects:
     Niantic.Lightship.AR.LightshipSettings: {fileID: 11400000, guid: 28a325f6bc10da44b83fe065957fbf38,
       type: 2}
