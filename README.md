@@ -42,6 +42,7 @@ Important Project References:
 * Visual Studio 2022
 * Niantic Lightship ARDK 3.0
 * Niantic Lightship Maps 0.4 Beta
+* SALSA LipSync Suite 2.5.5
 
 Unity Asset Store References
 * Inspector Button Pro - Free
