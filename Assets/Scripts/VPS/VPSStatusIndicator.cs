@@ -31,6 +31,7 @@ namespace GCU.CultureTour.VPS
         private void OnEnable()
         {
             locationManger.locationTrackingStateChanged += LocationTrackingStateChanged;
+            locationManger.arPersistentAnchorStateChanged += ARPersistentAnchorStateChanged;
 
             // get the current state of tracking. If an AR location is enabled then tracking was happening.
             // this is a bit of a bodge as these objects aren't automatically disabled when tracking stops.
@@ -48,13 +49,19 @@ namespace GCU.CultureTour.VPS
 
         private void OnDisable()
         {
+            locationManger.arPersistentAnchorStateChanged -= ARPersistentAnchorStateChanged;
             locationManger.locationTrackingStateChanged -= LocationTrackingStateChanged;
         }
 
         private void LocationTrackingStateChanged(Niantic.Lightship.AR.PersistentAnchors.ARLocationTrackedEventArgs args)
         {
-            Debug.Log($"AR Location Status Change.\tLocation:{args.ARLocation.name}\t{(args.Tracking ? "is tracking" : "is not tracking")}.");
-            StatusIndicator.color = args.Tracking ? GoodColour : BadColour;
+            Debug.Log($"AR Location Manager Status Change.\tLocation:{args.ARLocation.name}\t{(args.Tracking ? "is tracking" : "is not tracking")}.");
+        }
+        
+        private void ARPersistentAnchorStateChanged(Niantic.Lightship.AR.PersistentAnchors.ARPersistentAnchorStateChangedEventArgs args)
+        {
+            Debug.Log($"AR Persistent Anchor Status Change.\tAnchor:{args.arPersistentAnchor.name}\t{(args.arPersistentAnchor.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Tracking ? "is tracking" : "is not tracking")}.");
+            StatusIndicator.color = args.arPersistentAnchor.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Tracking ? GoodColour : BadColour;
         }
 
     }
