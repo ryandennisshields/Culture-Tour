@@ -1,0 +1,1 @@
+These placeholders are from https://assetstore.unity.com/packages/2d/gui/gui-pro-sci-fi-194741 which is licenced to Fraser Connolly.
