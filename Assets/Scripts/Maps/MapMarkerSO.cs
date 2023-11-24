@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace GCU.CultureTour.Map
 {
-    [CreateAssetMenu(fileName = "MapMarker", menuName = "Map/Create Marker")]
+    [CreateAssetMenu(fileName = "Map Marker", menuName = "GCU/Map/Create Marker")]
     public class MapMarkerSO : ScriptableObject
     {
         public GameObject MarkerPrefab;
@@ -11,7 +11,6 @@ namespace GCU.CultureTour.Map
         public Vector3 Rotation;
         [Range(0f, 15f), Tooltip("Distance in meters.")]
         public float InteractionRadius;
-        public string Name;
         public string SceneToLoadOnInteraction;
     }
 }

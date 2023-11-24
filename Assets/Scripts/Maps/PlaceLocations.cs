@@ -10,7 +10,7 @@ namespace GCU.CultureTour.Map
         /// This code places the objects on the map and gives them their names.
         /// </summary>
 
-        [SerializeField] private MapSettingsSO _mapSettings;
+        [SerializeField] private GameSettingsSO _gameSettings;
         [SerializeField] private LayerGameObjectPlacement mapLayer;
 
         private void Start()
@@ -20,15 +20,36 @@ namespace GCU.CultureTour.Map
 
         private void PlaceMarkers()
         {
-            if ( _mapSettings == null )
+            if ( _gameSettings == null )
             {
                 Debug.LogError("There are no settings associated with this map.", gameObject);
                 return;
             }
 
-            foreach (MapMarkerSO marker in _mapSettings.Markers)
+            // place non collectable map markers
+            foreach (CollectableSO collectable in _gameSettings.Collectables)
             {
-                var obj = mapLayer.PlaceInstance( new LatLng( marker.Lat, marker.Lng ), Quaternion.Euler(marker.Rotation), marker.Name);
+                if ( collectable == null )
+                {
+                    return;
+                }
+
+                var marker = collectable.MapMarker;
+
+                if ( marker == null )
+                {
+                    return;
+                }
+
+                var obj = mapLayer.PlaceInstance(new LatLng(marker.Lat, marker.Lng), Quaternion.Euler(marker.Rotation), marker.name);
+                obj.Value.GetComponent<MapMarkerLogic>()?.Initalise(marker);
+            }
+
+
+            // place non collectable map markers
+            foreach (MapMarkerSO marker in _gameSettings.Markers)
+            {
+                var obj = mapLayer.PlaceInstance( new LatLng( marker.Lat, marker.Lng ), Quaternion.Euler(marker.Rotation), marker.name);
                 obj.Value.GetComponent<MapMarkerLogic>()?.Initalise(marker);
             }
         }
