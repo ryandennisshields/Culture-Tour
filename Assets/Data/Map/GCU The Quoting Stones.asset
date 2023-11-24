@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 433fb3d1fbacd3547ba86e8ccccbe796, type: 3}
-  m_Name: The Quoting Stones
+  m_Name: GCU The Quoting Stones
   m_EditorClassIdentifier: 
-  Model: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  MarkerPrefab: {fileID: 5509581650794298426, guid: 7f344158530bd704ebcfbbce50cd594b,
+    type: 3}
   Lat: 55.867835
   Lng: -4.250574
-  Rotation: 80
+  Rotation: {x: 0, y: 0, z: 0}
   InteractionRadius: 2
-  Name: The Quoting Stones
   SceneToLoadOnInteraction: GCU The Quoting Stones
