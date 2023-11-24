@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -89,5 +89,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StatusIndicator: {fileID: 2833481284210581137}
-  GoodColour: {r: 0.2218561, g: 0.6886792, b: 0.068218224, a: 0.09803922}
-  BadColour: {r: 1, g: 0, b: 0, a: 0.101960786}
+  GoodColourAlert: {r: 0.2218561, g: 0.6886792, b: 0.068218224, a: 0.78431374}
+  GoodColourSubtle: {r: 0.22352943, g: 0.6901961, b: 0.06666667, a: 1}
+  BadColourAlert: {r: 0.873, g: 0.12388753, b: 0.12388753, a: 0.78431374}
+  BadColourSubtle: {r: 0.8745099, g: 0.1254902, b: 0.1254902, a: 0.15686275}
+  FadeToAlertTime: 0
+  DwellTime: 2
+  FadeToSubtleTime: 10

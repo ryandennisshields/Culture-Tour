@@ -1,4 +1,5 @@
 using Niantic.Lightship.AR.LocationAR;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,15 +7,43 @@ namespace GCU.CultureTour.VPS
 {
     public class VPSStatusIndicator : MonoBehaviour
     {
+        enum Status
+        {
+            GOOD,
+            BAD,
+        }
+
         [SerializeField]
         Image StatusIndicator;
 
+        [Header("Colours")]
         [SerializeField]
-        Color GoodColour = Color.green;
-        
-        [SerializeField]
-        Color BadColour = Color.red;
+        Color GoodColourAlert  = Color.green;
 
+        [SerializeField]
+        Color GoodColourSubtle = Color.green;
+
+        [SerializeField]
+        Color BadColourAlert   = Color.red;
+
+        [SerializeField]
+        Color BadColourSubtle  = Color.red;
+
+        [Header("Timings")]
+        [SerializeField]
+        [Range(0f, 30f)]
+        float FadeToAlertTime = 0f;
+
+        [SerializeField]
+        [Range(0f, 30f)]
+        float DwellTime = 2f;
+
+        [SerializeField]
+        [Range(0f, 30f)]
+        float FadeToSubtleTime = 10f;
+
+
+        Status currentStatus;
         ARLocationManager locationManger;
 
         private void Awake()
@@ -39,12 +68,12 @@ namespace GCU.CultureTour.VPS
             {
                 if ( location.gameObject.activeInHierarchy )
                 {
-                    StatusIndicator.color = GoodColour;
+                    SetStatus(Status.GOOD);
                     return;
                 }
             }
-
-            StatusIndicator.color = BadColour;
+            
+            SetStatus(Status.BAD);
         }
 
         private void OnDisable()
@@ -61,8 +90,85 @@ namespace GCU.CultureTour.VPS
         private void ARPersistentAnchorStateChanged(Niantic.Lightship.AR.PersistentAnchors.ARPersistentAnchorStateChangedEventArgs args)
         {
             Debug.Log($"AR Persistent Anchor Status Change.\tAnchor:{args.arPersistentAnchor.name}\t{(args.arPersistentAnchor.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Tracking ? "is tracking" : "is not tracking")}.");
-            StatusIndicator.color = args.arPersistentAnchor.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Tracking ? GoodColour : BadColour;
+
+            var status = args.arPersistentAnchor.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Tracking ? Status.GOOD : Status.BAD;
+
+            if (currentStatus == status)
+            {
+                // status hasen't changed just updated.
+                return;
+            }
+
+            StopAllCoroutines( );
+            StartCoroutine( SetStatus ( status ) );
         }
+
+        private IEnumerator SetStatus (Status status)
+        {
+            currentStatus = status;
+
+            Color startingColour = StatusIndicator.color;
+            Color alertColour  = status == Status.GOOD ? GoodColourAlert : BadColourAlert;
+            Color subtleColour = status == Status.GOOD ? GoodColourSubtle : BadColourSubtle;
+
+            float t;
+            float runningTime;
+
+            // fade to alert
+            if ( FadeToAlertTime >  0 )
+            {
+                runningTime = 0f;
+                t = 0f;
+
+                while ( t < 1 )
+                {
+                    runningTime += Time.deltaTime; 
+                    t = runningTime / FadeToAlertTime;
+
+                    StatusIndicator.color = LerpColor(startingColour, alertColour, t);
+
+                    yield return null;
+                }
+            }
+
+            StatusIndicator.color = alertColour;
+            yield return null;
+
+            // dwell
+            yield return new WaitForSeconds( DwellTime );
+
+            // fade to subtle
+            if ( FadeToSubtleTime > 0 )
+            {
+                runningTime = 0f;
+                t = 0f;
+
+                while (t < 1)
+                {
+                    runningTime += Time.deltaTime;
+                    t = runningTime / FadeToSubtleTime;
+
+                    StatusIndicator.color = LerpColor(alertColour, subtleColour, t);
+
+                    yield return null;
+                }
+            }
+
+            StatusIndicator.color = subtleColour;
+        }
+
+        private static Color LerpColor( Color a, Color b, float t)
+        {
+            Color c;
+
+            c.r = Mathf.Lerp(a.r, b.r, t);
+            c.g = Mathf.Lerp(a.g, b.g, t);
+            c.b = Mathf.Lerp(a.b, b.b, t);
+            c.a = Mathf.Lerp(a.a, b.a, t);
+
+            return c;
+        }
+
 
     }
 }
