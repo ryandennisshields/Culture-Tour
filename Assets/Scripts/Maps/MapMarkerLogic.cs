@@ -14,26 +14,47 @@ namespace GCU.CultureTour.Map
         /// </summary>
 
         private bool _inRange;
+        private CollectibleSO _collectible = null;
         private MapMarkerSO _mapMarker = null;
         private SphereCollider _sphereCollider;
         private GameObject _markerObject;
 
+        public void Initalise( CollectibleSO marker )
+        {
+            _collectible = marker;
+            Initalise( marker.MapMarker );
+
+            var swapper = _markerObject.GetComponent<MapMarkerMaterialSwapper>();
+
+            if (_collectible != null && swapper != null)
+            {
+                swapper.Initalise(_collectible);
+            }
+
+            SetColour();
+        }
+
+        /// <summary>
+        /// Used for map markers which are not collectibles.
+        /// </summary>
+        /// <param name="marker"></param>
         public void Initalise( MapMarkerSO marker )
         {
             _mapMarker = marker;
 
-            if ( marker.InteractionRadius > 0 )
+            if ( _mapMarker.InteractionRadius > 0 )
             {
-                _sphereCollider = gameObject.AddComponent<SphereCollider>();
+                _sphereCollider = gameObject.AddComponent<SphereCollider>( );
                 _sphereCollider.isTrigger = true;
-                _sphereCollider.radius = marker.InteractionRadius;
+                _sphereCollider.radius = _mapMarker.InteractionRadius;
                 _sphereCollider.enabled = true;
             }
 
-            _markerObject = Instantiate(_mapMarker.MarkerPrefab, transform);
+            _markerObject = Instantiate( _mapMarker.MarkerPrefab, transform );
 
             SetColour();
         }
+
 
         #region Collisions and Triggers
 
@@ -84,7 +105,7 @@ namespace GCU.CultureTour.Map
                     return;
                 }
 
-                //SceneManager.LoadScene( _mapMarker.SceneToLoadOnInteraction );
+                SceneManager.LoadScene( _mapMarker.SceneToLoadOnInteraction );
             }
         }
     } 

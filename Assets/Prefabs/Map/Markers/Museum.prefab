@@ -64,13 +64,21 @@ PrefabInstance:
       value: museum
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -8700617353114198275, guid: 7e9a3d88048e46b4f82f0bfc7f8a68a7, type: 3}
+    - {fileID: 65702495048144492, guid: 7e9a3d88048e46b4f82f0bfc7f8a68a7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e9a3d88048e46b4f82f0bfc7f8a68a7, type: 3}
 --- !u!4 &5551415068807533491 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7e9a3d88048e46b4f82f0bfc7f8a68a7,
+    type: 3}
+  m_PrefabInstance: {fileID: 5368343441513870424}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6385052787413784194 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7918335002988649766, guid: 7e9a3d88048e46b4f82f0bfc7f8a68a7,
     type: 3}
   m_PrefabInstance: {fileID: 5368343441513870424}
   m_PrefabAsset: {fileID: 0}
@@ -157,6 +165,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Museum
       objectReference: {fileID: 0}
+    - target: {fileID: 5217726749936648034, guid: 450e34917e58bf64d9c1e4b613feccc6,
+        type: 3}
+      propertyPath: _mRenderer
+      value: 
+      objectReference: {fileID: 6385052787413784194}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

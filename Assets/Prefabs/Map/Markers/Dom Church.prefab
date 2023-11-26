@@ -64,13 +64,22 @@ PrefabInstance:
       value: Dom_Tower
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2654713335656134247, guid: fc001c779cf481e4bae9248ec337fbfd, type: 3}
+    - {fileID: -8700617353114198275, guid: fc001c779cf481e4bae9248ec337fbfd, type: 3}
+    - {fileID: 65702495048144492, guid: fc001c779cf481e4bae9248ec337fbfd, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc001c779cf481e4bae9248ec337fbfd, type: 3}
 --- !u!4 &921068286027619909 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fc001c779cf481e4bae9248ec337fbfd,
+    type: 3}
+  m_PrefabInstance: {fileID: 811478908639689134}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1828073871037782900 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7918335002988649766, guid: fc001c779cf481e4bae9248ec337fbfd,
     type: 3}
   m_PrefabInstance: {fileID: 811478908639689134}
   m_PrefabAsset: {fileID: 0}
@@ -152,6 +161,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dom Church
       objectReference: {fileID: 0}
+    - target: {fileID: 5217726749936648034, guid: 450e34917e58bf64d9c1e4b613feccc6,
+        type: 3}
+      propertyPath: _mRenderer
+      value: 
+      objectReference: {fileID: 1828073871037782900}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

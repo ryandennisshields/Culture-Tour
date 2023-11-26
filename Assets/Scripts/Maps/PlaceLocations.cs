@@ -4,14 +4,20 @@ using UnityEngine;
 
 namespace GCU.CultureTour.Map
 {
+    /// <summary>
+    /// This code places the objects on the map and gives them their names.
+    /// </summary>    
     public class PlaceLocations : MonoBehaviour
     {
-        /// <summary>
-        /// This code places the objects on the map and gives them their names.
-        /// </summary>
 
-        [SerializeField] private GameSettingsSO _gameSettings;
         [SerializeField] private LayerGameObjectPlacement mapLayer;
+        
+        private GameSettingsSO _gameSettings;
+
+        private void Awake()
+        {
+            _gameSettings = GameManager.Instance.GameSettings;
+        }
 
         private void Start()
         {
@@ -26,8 +32,8 @@ namespace GCU.CultureTour.Map
                 return;
             }
 
-            // place non collectable map markers
-            foreach (CollectableSO collectable in _gameSettings.Collectables)
+            // place non collectible map markers
+            foreach (CollectibleSO collectable in _gameSettings.Collectibles)
             {
                 if ( collectable == null )
                 {
@@ -42,11 +48,11 @@ namespace GCU.CultureTour.Map
                 }
 
                 var obj = mapLayer.PlaceInstance(new LatLng(marker.Lat, marker.Lng), Quaternion.Euler(marker.Rotation), marker.name);
-                obj.Value.GetComponent<MapMarkerLogic>()?.Initalise(marker);
+                obj.Value.GetComponent<MapMarkerLogic>()?.Initalise(collectable);
             }
 
 
-            // place non collectable map markers
+            // place non collectible map markers
             foreach (MapMarkerSO marker in _gameSettings.Markers)
             {
                 var obj = mapLayer.PlaceInstance( new LatLng( marker.Lat, marker.Lng ), Quaternion.Euler(marker.Rotation), marker.name);
