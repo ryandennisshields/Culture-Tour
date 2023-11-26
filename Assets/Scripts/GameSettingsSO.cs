@@ -2,6 +2,9 @@ using UnityEngine;
 using GCU.CultureTour.Map;
 using com.cyborgAssets.inspectorButtonPro;
 using UnityEngine.Rendering;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace GCU.CultureTour
 {
@@ -9,75 +12,38 @@ namespace GCU.CultureTour
     public class GameSettingsSO : ScriptableObject
     {
 
-        [Header("Collectables")]
+        [Header("Collectibles")]
         [Tooltip("The order these are in is the order they will appear in the logbook if they are undiscovered.")]
-        public CollectableSO[] Collectables = new CollectableSO[0];
-        public string AreaTextWhenObejectNotDiscovered = string.Empty;
+        public CollectibleSO[] Collectibles = new CollectibleSO[0];
+
+        public IReadOnlyList<CollectibleSO> OrderedCollectiblesList
+        {
+            get
+            {
+                List<CollectibleSO> l = new List<CollectibleSO>();
+
+                // add in the collected objects sorted by the order they were collected in.
+                l.AddRange(
+                    Collectibles
+                    .Where(c => c.CollectedOrder >= 0)
+                    .OrderBy(c => c.CollectedOrder)
+                    );
+
+                // add in the uncollected objects in their original order
+                l.AddRange(Collectibles.Where(c => c.CollectedOrder < 0));
+
+                return l;
+            }
+        }
+
+        public string AreaTextWhenObEjectNotDiscovered = string.Empty;
 
         [Header("Animations")]
-        [Tooltip("The order these are in is the ordert the player will see them played.")]
+        [Tooltip("The order these are in is the order the player will see them played.")]
         public AnimationSO[] Animations = new AnimationSO[0];
         
-        [Header("Map Markers (excluding collectables!)")] 
+        [Header("Map Markers (excluding collectibles!)")] 
         public MapMarkerSO[] Markers = new MapMarkerSO[0];
 
-        private int _nextCollectable = 0;
-
-        private void Awake()
-        {
-            // load the status of all collectables
-            foreach (var collectable in Collectables)
-            {
-                collectable.Load();
-
-                // get the largest collected order
-                if ( collectable.CollectedOrder > _nextCollectable )
-                {
-                    _nextCollectable = collectable.CollectedOrder;
-                }
-            }
-        }
-
-        [ProButton]
-        public void DiscoverObject(int objectIndex)
-        {
-            if (Collectables.Length > objectIndex)
-            {
-                return;
-            }
-
-            Collectables[objectIndex].MarkCollected(++_nextCollectable);
-        }
-
-#if DEBUG
-
-        [ProButton]
-        private void DiscoverAllObjects()
-        {
-            foreach (var collectable in Collectables)
-            {
-                collectable.MarkCollected(++_nextCollectable);
-            }
-        }
-
-        [ProButton]
-        private void UndiscoverAllObjects()
-        {
-            foreach (var collectable in Collectables)
-            {
-                collectable.MarkCollected(-1);
-            }
-        }
-        
-        [ProButton]
-        private void ClearPlayerPrefs()
-        {
-            PlayerPrefs.DeleteAll();
-            foreach (var collectable in Collectables)
-            {
-                collectable.Load();
-            }
-        }
-#endif
     }
 }

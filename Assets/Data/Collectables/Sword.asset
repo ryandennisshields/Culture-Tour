@@ -16,4 +16,5 @@ MonoBehaviour:
   AreaName: A curved bench
   AreaText: Text to be filled in by Alastair.
   ModelDescription: The sword of St Martin
-  LogbookModel: {fileID: 0}
+  LogbookModel: {fileID: 2011665084440722327, guid: 4639a7cdc09226a4f99a8d4f18adae59,
+    type: 3}
