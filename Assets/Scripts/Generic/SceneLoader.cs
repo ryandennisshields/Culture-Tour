@@ -14,6 +14,7 @@ namespace GCU.CultureTour
         {
             if ( string.IsNullOrWhiteSpace( sceneName ) )
             {
+                Debug.LogWarning( "Scene name not specified." );
                 return;
             }
 

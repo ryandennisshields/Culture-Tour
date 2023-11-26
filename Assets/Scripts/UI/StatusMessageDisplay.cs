@@ -2,6 +2,7 @@ using com.cyborgAssets.inspectorButtonPro;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace GCU.CultureTour
@@ -15,15 +16,41 @@ namespace GCU.CultureTour
         CanvasGroup MessageHolder;
 
         [SerializeField, Min(0.5f), Tooltip("In seconds.")]
-        float messageDuration = 10f;
+        float _messageDuration = 10f;
+        public float MessageDuration => _messageDuration;
+        
         [SerializeField, Min(0f), Tooltip("In seconds.")]
-        float fadeDuration = 1.5f;
+        float _fadeDuration = 1.5f;
+        public float FadeDuration => _fadeDuration;
 
         public bool IsVisible { get; private set; } = false;
-        public string CurrentlyDisplayedMessage => StatusMessage.text;
-        private float currentMessageDisplayTime = 0f;
+        public bool HasMessages
+        {
+            get
+            {
+                if ( IsVisible )
+                {
+                    return true;
+                }
 
-        Queue<string> MessageQueue = new ();
+                if ( _messageQueue.Any( ) )
+                {
+                    return true;
+                }
+
+                if ( ! string.IsNullOrEmpty ( CurrentlyDisplayedMessage ) )
+                {
+                    return true;
+                }
+
+                return false;
+            }
+        }
+        
+        public string CurrentlyDisplayedMessage => StatusMessage.text;
+
+        private Queue<string> _messageQueue = new ();
+        private float _currentMessageDisplayTime = 0f;
 
         [ProButton]
         public void DisplayMessage ( string message, bool clearQueue = false )
@@ -38,16 +65,16 @@ namespace GCU.CultureTour
                 return;
             }
 
-            MessageQueue.Enqueue(message);
+            _messageQueue.Enqueue(message);
         }
 
         public void ClearMessageQueue()
         {
-            MessageQueue.Clear ();
+            _messageQueue.Clear ();
             StatusMessage.text = string.Empty;
 
             // this forces the first Update after a new message is added to check for messages in the queue.
-            currentMessageDisplayTime = messageDuration;
+            _currentMessageDisplayTime = _messageDuration;
         }
 
         /// <summary>
@@ -56,30 +83,33 @@ namespace GCU.CultureTour
         /// </summary>
         public void JumpToNextMessage()
         {
-            currentMessageDisplayTime = messageDuration;
+            _currentMessageDisplayTime = _messageDuration;
         }
 
-        private void Start()
+        private void Start () 
         {
-            ClearMessageQueue ();
+            StatusMessage.text = string.Empty;
             MessageHolder.alpha = 0f;
+            
+            // this forces the first Update after a new message is added to check for messages in the queue.
+            _currentMessageDisplayTime = _messageDuration;
         }
 
         public void Update ()
         {
-            if ( !IsVisible && MessageQueue.Count == 0 )
+            if ( !IsVisible && _messageQueue.Count == 0 )
             {
                 return;
             }
 
-            currentMessageDisplayTime += Time.deltaTime;
+            _currentMessageDisplayTime += Time.deltaTime;
 
-            if (currentMessageDisplayTime >= messageDuration)
+            if (_currentMessageDisplayTime >= _messageDuration)
             {
-                if ( MessageQueue.Count > 0 )
+                if ( _messageQueue.Count > 0 )
                 {
                     // display next message
-                    var newMessage = MessageQueue.Dequeue();
+                    var newMessage = _messageQueue.Dequeue();
                     SetMessage(newMessage);
                 }
                 else
@@ -103,7 +133,7 @@ namespace GCU.CultureTour
             }
 
             StatusMessage.text = message;
-            currentMessageDisplayTime = 0;
+            _currentMessageDisplayTime = 0;
 
             if (!IsVisible)
             {
@@ -132,6 +162,8 @@ namespace GCU.CultureTour
             {
                 yield return r;
             }
+
+            StatusMessage.text = string.Empty;
         }
 
         private IEnumerator Fade(float target)
@@ -143,7 +175,7 @@ namespace GCU.CultureTour
             while (progress < 1f)
             {
                 timeSinceStart += Time.deltaTime;
-                progress = timeSinceStart / fadeDuration;
+                progress = timeSinceStart / _fadeDuration;
                 float amount = Mathf.Lerp(start, target, progress);
                 MessageHolder.alpha = amount;
 

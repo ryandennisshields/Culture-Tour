@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/Map.unity
-    guid: 7c98bc95ef1d08d44bdae53950d84c35
-  - enabled: 1
-    path: Assets/_Scenes/Temp/Temp_Map.unity
-    guid: 672ee2905e3a53846b35ae83d95f91ac
-  - enabled: 1
     path: Assets/_Scenes/Start.unity
     guid: 8c146d866f0472447a79966b29c1e5dd
+  - enabled: 1
+    path: Assets/_Scenes/Map.unity
+    guid: 7c98bc95ef1d08d44bdae53950d84c35
   - enabled: 1
     path: Assets/_Scenes/Logbook.unity
     guid: 9febfcf4f0a14e84ab16c5a88c57e301
@@ -26,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/VPS/GCU Curved Bench.unity
     guid: 83d9527751ed39e4f8e93122723a21fc
+  - enabled: 0
+    path: Assets/_Scenes/Temp/Temp_Map.unity
+    guid: 672ee2905e3a53846b35ae83d95f91ac
   m_configObjects:
     Niantic.Lightship.AR.LightshipSettings: {fileID: 11400000, guid: 28a325f6bc10da44b83fe065957fbf38,
       type: 2}
