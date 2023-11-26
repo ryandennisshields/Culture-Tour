@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/Logbook.unity
     guid: 9febfcf4f0a14e84ab16c5a88c57e301
   - enabled: 1
+    path: Assets/_Scenes/Animations/VideoPlayer.unity
+    guid: f0ba9574621fa8847a37afcfab7f6efd
+  - enabled: 0
     path: Assets/_Scenes/VPS/GCU Folded Circles.unity
     guid: 6471818cf0e88d44bb0de3caafa6230a
   - enabled: 1

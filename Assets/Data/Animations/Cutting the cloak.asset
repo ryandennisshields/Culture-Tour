@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Clip: {fileID: 32900000, guid: 452fea5ab40a5b84097814b5aa289d13, type: 3}
   LoopCount: -1
-  PlayLength: -1
+  PlayLength: 8
