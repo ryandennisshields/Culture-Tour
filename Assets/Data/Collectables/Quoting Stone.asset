@@ -18,3 +18,6 @@ MonoBehaviour:
   ModelDescription: Something about a stone
   LogbookModel: {fileID: 5171524329420414245, guid: 0b091a524fb2d994faf8430795ac3dfe,
     type: 3}
+  VpsSceneName: GCU The Quoting Stones
+  Hints:
+  - Look for the extra stone.

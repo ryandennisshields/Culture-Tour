@@ -9,12 +9,15 @@ namespace GCU.CultureTour.VPS
     {
         enum Status
         {
-            GOOD,
-            BAD,
+            IDLE,   // used after stopped to allow for new tracking status notifications to be displayed
+            STOPPED,// system is no longer attempting to track.
+            GOOD,   // system is tracking
+            BAD,    // system is attempting to tracking 
         }
 
+        [Header("UI Border Indicator")]
         [SerializeField]
-        Image StatusIndicator;
+        Image StatusIndicatorImage;
 
         [Header("Colours")]
         [SerializeField]
@@ -42,6 +45,19 @@ namespace GCU.CultureTour.VPS
         [Range(0f, 30f)]
         float FadeToSubtleTime = 10f;
 
+        [SerializeField]
+        [Range(0f, 30f)]
+        float FadeToStoppedTime = 10f;
+
+        [Header("UI Icon Indicator")]
+        [SerializeField]
+        Image StatusIndicatorIcon;
+
+        [SerializeField]
+        Sprite GoodIcon;
+        
+        [SerializeField]
+        Sprite BadIcon;
 
         Status currentStatus;
         ARLocationManager locationManger;
@@ -59,7 +75,6 @@ namespace GCU.CultureTour.VPS
 
         private void OnEnable()
         {
-            locationManger.locationTrackingStateChanged += LocationTrackingStateChanged;
             locationManger.arPersistentAnchorStateChanged += ARPersistentAnchorStateChanged;
 
             // get the current state of tracking. If an AR location is enabled then tracking was happening.
@@ -79,35 +94,81 @@ namespace GCU.CultureTour.VPS
         private void OnDisable()
         {
             locationManger.arPersistentAnchorStateChanged -= ARPersistentAnchorStateChanged;
-            locationManger.locationTrackingStateChanged -= LocationTrackingStateChanged;
         }
 
-        private void LocationTrackingStateChanged(Niantic.Lightship.AR.PersistentAnchors.ARLocationTrackedEventArgs args)
+        public void TrackingStopped()
         {
-            Debug.Log($"AR Location Manager Status Change.\tLocation:{args.ARLocation.name}\t{(args.Tracking ? "is tracking" : "is not tracking")}.");
+            SetStatus(Status.STOPPED);
         }
         
+        /// <summary>
+        /// Triggered when the AR Location manager updates the status for it's tracked entity.
+        /// Currently the AR Location manager can only track one entity at a time,
+        /// Though this may change in later releases of ARDK.
+        /// </summary>
+        /// <param name="args"></param>
         private void ARPersistentAnchorStateChanged(Niantic.Lightship.AR.PersistentAnchors.ARPersistentAnchorStateChangedEventArgs args)
         {
-            Debug.Log($"AR Persistent Anchor Status Change.\tAnchor:{args.arPersistentAnchor.name}\t{(args.arPersistentAnchor.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Tracking ? "is tracking" : "is not tracking")}.");
+            //Debug.Log($"AR Persistent Anchor Status Change.\tAnchor:{args.arPersistentAnchor.name}\t{UnityEngine.XR.ARSubsystems.TrackingState.Tracking}.");
 
             var status = args.arPersistentAnchor.trackingState == UnityEngine.XR.ARSubsystems.TrackingState.Tracking ? Status.GOOD : Status.BAD;
 
             if (currentStatus == status)
             {
-                // status hasen't changed just updated.
+                // status hasn't changed just updated.
                 return;
             }
 
-            StopAllCoroutines( );
-            StartCoroutine( SetStatus ( status ) );
+            SetStatus(status);
         }
 
-        private IEnumerator SetStatus (Status status)
+        private void SetStatus ( Status status )
         {
+            if ( currentStatus == Status.STOPPED && status != Status.IDLE )
+            {
+                // After being stopped status must be set back to IDLE before 
+                // GOOD or BAD can be set.
+                return;
+            }
+
             currentStatus = status;
 
-            Color startingColour = StatusIndicator.color;
+            if ( currentStatus == Status.IDLE )
+            {
+                // nothing to do whilst idling.
+                return;
+            }
+
+            if ( StatusIndicatorImage != null )
+            {
+                StopAllCoroutines();
+                if (status == Status.STOPPED)
+                {
+                    StartCoroutine(StopStatusOnImage());
+                }
+                else
+                {
+                    StartCoroutine(SetStatusOnImage(status));
+                }
+            }
+
+            if ( StatusIndicatorIcon != null )
+            {
+                StatusIndicatorIcon.sprite = currentStatus == Status.GOOD ? GoodIcon : BadIcon;
+            }
+        }
+
+        /// <summary>
+        /// Used when status is GOOD or BAD.
+        /// The specified alert status colour will be faded in using the FadeToAlert time.
+        /// The dwell delay will then be executed.
+        /// Then the indicator will fade to the subtle status colour over the FadeToSubtle time.
+        /// </summary>
+        /// <param name="status">Must be GOOD or BAD.</param>
+        /// <returns>IEnumerator for Unity Coroutines</returns>
+        private IEnumerator SetStatusOnImage (Status status)
+        {
+            Color startingColour = StatusIndicatorImage.color;
             Color alertColour  = status == Status.GOOD ? GoodColourAlert : BadColourAlert;
             Color subtleColour = status == Status.GOOD ? GoodColourSubtle : BadColourSubtle;
 
@@ -125,13 +186,13 @@ namespace GCU.CultureTour.VPS
                     runningTime += Time.deltaTime; 
                     t = runningTime / FadeToAlertTime;
 
-                    StatusIndicator.color = LerpColor(startingColour, alertColour, t);
+                    StatusIndicatorImage.color = ColorHelpers.LerpColor(startingColour, alertColour, t);
 
                     yield return null;
                 }
             }
 
-            StatusIndicator.color = alertColour;
+            StatusIndicatorImage.color = alertColour;
             yield return null;
 
             // dwell
@@ -148,27 +209,48 @@ namespace GCU.CultureTour.VPS
                     runningTime += Time.deltaTime;
                     t = runningTime / FadeToSubtleTime;
 
-                    StatusIndicator.color = LerpColor(alertColour, subtleColour, t);
+                    StatusIndicatorImage.color = ColorHelpers.LerpColor(alertColour, subtleColour, t);
 
                     yield return null;
                 }
             }
 
-            StatusIndicator.color = subtleColour;
+            StatusIndicatorImage.color = subtleColour;
         }
 
-        private static Color LerpColor( Color a, Color b, float t)
+        /// <summary>
+        /// Used when status is set to STOPPED.
+        /// This will hide the status indicator in the time specified by FadeToStoppedTime.
+        /// </summary>
+        /// <returns>IEnumerator for Unity Coroutines</returns>
+        private IEnumerator StopStatusOnImage()
         {
-            Color c;
+            Color startingColour = StatusIndicatorImage.color;
+            Color hideColour = startingColour;
+            hideColour.a = 0;
 
-            c.r = Mathf.Lerp(a.r, b.r, t);
-            c.g = Mathf.Lerp(a.g, b.g, t);
-            c.b = Mathf.Lerp(a.b, b.b, t);
-            c.a = Mathf.Lerp(a.a, b.a, t);
+            float t;
+            float runningTime;
 
-            return c;
+            // fade to stopped
+            if (FadeToStoppedTime > 0)
+            {
+                runningTime = 0f;
+                t = 0f;
+
+                while (t < 1)
+                {
+                    runningTime += Time.deltaTime;
+                    t = runningTime / FadeToStoppedTime;
+
+                    StatusIndicatorImage.color = ColorHelpers.LerpColor(startingColour, hideColour, t);
+
+                    yield return null;
+                }
+            }
+
+            StatusIndicatorImage.color = hideColour;
         }
-
 
     }
 }

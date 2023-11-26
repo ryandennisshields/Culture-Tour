@@ -18,3 +18,7 @@ MonoBehaviour:
   ModelDescription: The sword of St Martin
   LogbookModel: {fileID: 2011665084440722327, guid: 4639a7cdc09226a4f99a8d4f18adae59,
     type: 3}
+  VpsSceneName: GCU Curved Bench
+  Hints:
+  - Look where people may choose to sit.
+  - You are looking for a weapon.
