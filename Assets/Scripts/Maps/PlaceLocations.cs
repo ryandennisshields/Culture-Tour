@@ -4,14 +4,20 @@ using UnityEngine;
 
 namespace GCU.CultureTour.Map
 {
+    /// <summary>
+    /// This code places the objects on the map and gives them their names.
+    /// </summary>    
     public class PlaceLocations : MonoBehaviour
     {
-        /// <summary>
-        /// This code places the objects on the map and gives them their names.
-        /// </summary>
 
-        [SerializeField] private MapSettingsSO _mapSettings;
         [SerializeField] private LayerGameObjectPlacement mapLayer;
+        
+        private GameSettingsSO _gameSettings;
+
+        private void Awake()
+        {
+            _gameSettings = GameManager.Instance.GameSettings;
+        }
 
         private void Start()
         {
@@ -20,15 +26,36 @@ namespace GCU.CultureTour.Map
 
         private void PlaceMarkers()
         {
-            if ( _mapSettings == null )
+            if ( _gameSettings == null )
             {
                 Debug.LogError("There are no settings associated with this map.", gameObject);
                 return;
             }
 
-            foreach (MapMarkerSO marker in _mapSettings.Markers)
+            // place non collectible map markers
+            foreach (CollectibleSO collectable in _gameSettings.Collectibles)
             {
-                var obj = mapLayer.PlaceInstance( new LatLng( marker.Lat, marker.Lng ), Quaternion.Euler(marker.Rotation), marker.Name);
+                if ( collectable == null )
+                {
+                    return;
+                }
+
+                var marker = collectable.MapMarker;
+
+                if ( marker == null )
+                {
+                    return;
+                }
+
+                var obj = mapLayer.PlaceInstance(new LatLng(marker.Lat, marker.Lng), Quaternion.Euler(marker.Rotation), marker.name);
+                obj.Value.GetComponent<MapMarkerLogic>()?.Initalise(collectable);
+            }
+
+
+            // place non collectible map markers
+            foreach (MapMarkerSO marker in _gameSettings.Markers)
+            {
+                var obj = mapLayer.PlaceInstance( new LatLng( marker.Lat, marker.Lng ), Quaternion.Euler(marker.Rotation), marker.name);
                 obj.Value.GetComponent<MapMarkerLogic>()?.Initalise(marker);
             }
         }

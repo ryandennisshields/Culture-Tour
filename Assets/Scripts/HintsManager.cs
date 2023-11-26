@@ -1,57 +1,64 @@
+using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace GCU.CultureTour
 {
     public class HintsManager : MonoBehaviour
     {
-        // This should be in a localization dictionary
-        // FC 2023-11-10
-        const string NO_MORE_HINTS = "No more hints";
+        private string[] Hints => _collectible?.Hints ?? Array.Empty<string>();
+        private CollectibleSO _collectible = null;
 
-        [SerializeField]
-        string [ ] hints = new string [ 0 ];
+        int _hintIndex = 0;
+        bool _allHintsUsed = false;
 
         public int HowManyHintsHaveBeenUsed
         {
             get
             {
-                if (allHintsUsed)
+                if (_allHintsUsed)
                 {
-                    return hints.Length;
+                    return Hints.Length;
                 }
 
-                return hintIndex;
+                return _hintIndex;
             }
         }
 
-        int hintIndex = 0;
-        bool allHintsUsed = false;
-
-        public void DispayHint()
+        public void DisplayHint()
         {
-            if ( hintIndex >= hints.Length )
+            if ( _hintIndex >= Hints.Length )
             {
-                hintIndex = 0;
+                _hintIndex = 0;
 
-                if ( ! allHintsUsed )
+                if ( ! _allHintsUsed )
                 {
-                    showHintInStatusMessage(NO_MORE_HINTS);
-                    allHintsUsed = true;
+                    ShowHintInStatusMessage(CollectibleSO.NO_MORE_HINTS);
+                    _allHintsUsed = true;
                     return;
                 }
             }
 
-            showHintInStatusMessage(hints[hintIndex++]);
+            ShowHintInStatusMessage(Hints[_hintIndex++]);
+        }
+
+        private void Awake()
+        {
+            var scene = SceneManager.GetActiveScene();
+            _collectible = GameManager.Instance.GetCollectibleSO(scene.name);
         }
 
         /// <summary>
         /// This is just a temporary solution.
         /// 2023-11-10
         /// </summary>
-        void showHintInStatusMessage( string hint )
+        private void ShowHintInStatusMessage( string hint )
         {
-            FindObjectOfType<StatusMessageDisplay>()?.
-                DisplayMessage(hint, clearQueue: true);
+            var statusDisplay = FindObjectOfType<StatusMessageDisplay>();
+            if (statusDisplay != null)
+            {
+                statusDisplay.DisplayMessage(hint, clearQueue: true);
+            }
         }
     }
 }

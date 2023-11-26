@@ -995,6 +995,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4741334859842507262, guid: 388433570411dce4892cc9c23635a1b9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741334859842507262, guid: 388433570411dce4892cc9c23635a1b9,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741334859842507262, guid: 388433570411dce4892cc9c23635a1b9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4741334859842507262, guid: 388433570411dce4892cc9c23635a1b9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5633449157817632204, guid: 388433570411dce4892cc9c23635a1b9,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1135,6 +1155,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6616912574883734314, guid: 388433570411dce4892cc9c23635a1b9,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6616912574883734314, guid: 388433570411dce4892cc9c23635a1b9,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6616912574883734314, guid: 388433570411dce4892cc9c23635a1b9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6616912574883734314, guid: 388433570411dce4892cc9c23635a1b9,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7566326386030288693, guid: 388433570411dce4892cc9c23635a1b9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1158,7 +1198,7 @@ PrefabInstance:
     - target: {fileID: 7566326386030288693, guid: 388433570411dce4892cc9c23635a1b9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DispayHint
+      value: DisplayHint
       objectReference: {fileID: 0}
     - target: {fileID: 7566326386030288693, guid: 388433570411dce4892cc9c23635a1b9,
         type: 3}

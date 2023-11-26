@@ -14,37 +14,49 @@ namespace GCU.CultureTour.Map
         /// </summary>
 
         private bool _inRange;
+        private CollectibleSO _collectible = null;
         private MapMarkerSO _mapMarker = null;
         private SphereCollider _sphereCollider;
+        private GameObject _markerObject;
 
-        private void Awake()
+        public void Initalise( CollectibleSO marker )
         {
-            _sphereCollider = gameObject.AddComponent<SphereCollider>();
-            _sphereCollider.enabled = false;
-            _sphereCollider.isTrigger = true;
-        }
+            _collectible = marker;
+            Initalise( marker.MapMarker );
 
-        public void Initalise( MapMarkerSO marker )
-        {
-            _mapMarker = marker;
+            var swapper = _markerObject.GetComponent<MapMarkerMaterialSwapper>();
 
-            _sphereCollider.radius = marker.InteractionRadius;
-            _sphereCollider.enabled = true;
+            if (_collectible != null && swapper != null)
+            {
+                swapper.Initalise(_collectible);
+            }
 
             SetColour();
         }
 
+        /// <summary>
+        /// Used for map markers which are not collectibles.
+        /// </summary>
+        /// <param name="marker"></param>
+        public void Initalise( MapMarkerSO marker )
+        {
+            _mapMarker = marker;
+
+            if ( _mapMarker.InteractionRadius > 0 )
+            {
+                _sphereCollider = gameObject.AddComponent<SphereCollider>( );
+                _sphereCollider.isTrigger = true;
+                _sphereCollider.radius = _mapMarker.InteractionRadius;
+                _sphereCollider.enabled = true;
+            }
+
+            _markerObject = Instantiate( _mapMarker.MarkerPrefab, transform );
+
+            SetColour();
+        }
+
+
         #region Collisions and Triggers
-
-        private void OnCollisionEnter(Collision collision)
-        {
-            Enter (collision.gameObject);
-        }
-
-        private void OnCollisionExit(Collision collision)
-        {
-            Exit(collision.gameObject);
-        }
 
         private void OnTriggerEnter(Collider other)
         {
@@ -81,26 +93,19 @@ namespace GCU.CultureTour.Map
 
         private void SetColour()
         {
-            MeshRenderer renderer = gameObject.GetComponent<MeshRenderer>();
-            
-            if ( renderer == null )
-            {
-                return;
-            }
-
-            renderer.material.color = _inRange ? Color.green : Color.red;
+            BroadcastMessage(_inRange ? "OnInRange" : "OnOutOfRange", SendMessageOptions.DontRequireReceiver);
         }
 
         private void OnMouseUp()
         {
-            if (_inRange)
+            if ( _inRange )
             {
-                if (_mapMarker == null)
+                if ( _mapMarker == null )
                 {
                     return;
                 }
 
-                SceneManager.LoadScene(_mapMarker.SceneToLoadOnInteraction);
+                SceneManager.LoadScene( _mapMarker.SceneToLoadOnInteraction );
             }
         }
     } 

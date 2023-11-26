@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df6263e4bec69894e90ec642588b5f80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mapSettings: {fileID: 11400000, guid: bbf2706c62e750c46ba3d6ad77f2a136, type: 2}
+  _gameSettings: {fileID: 11400000, guid: bbf2706c62e750c46ba3d6ad77f2a136, type: 2}
   mapLayer: {fileID: 0}

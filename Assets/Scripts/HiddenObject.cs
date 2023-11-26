@@ -3,8 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
-namespace GCU.CultureTour
+namespace GCU.CultureTour.VPS
 {
     public class HiddenObject : MonoBehaviour
     {
@@ -22,7 +23,11 @@ namespace GCU.CultureTour
         public void Tapped ( GameObject go )
         {
             IsDiscovered = true;
-            
+
+            var scene = SceneManager.GetActiveScene();
+            var collectible = GameManager.Instance.GetCollectibleSO(scene.name);
+            GameManager.Instance.DiscoverObject(collectible);
+
             // prevent the user from discovering an object more than once.
             go.SetActive( false );
 
