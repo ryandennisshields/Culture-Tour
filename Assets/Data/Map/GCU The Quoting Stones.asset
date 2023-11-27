@@ -17,5 +17,5 @@ MonoBehaviour:
   Lat: 55.867835
   Lng: -4.250574
   Rotation: {x: 0, y: 0, z: 0}
-  InteractionRadius: 3.5
+  InteractionRadius: 7
   SceneToLoadOnInteraction: GCU The Quoting Stones

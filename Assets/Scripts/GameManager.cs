@@ -120,7 +120,7 @@ namespace GCU.CultureTour
 #if DEBUG
 
         [ProButton]
-        private void DiscoverAllObjects()
+        public void DiscoverAllObjects()
         {
             foreach (var collectable in _gameSettings.Collectibles)
             {
@@ -129,16 +129,18 @@ namespace GCU.CultureTour
         }
 
         [ProButton]
-        private void UndiscoverAllObjects()
+        public void UndiscoverAllObjects()
         {
             foreach (var collectable in _gameSettings.Collectibles)
             {
                 collectable.MarkCollected(-1);
             }
+
+            Reload();
         }
 
         [ProButton]
-        private void ClearPlayerPrefs()
+        public void ClearPlayerPrefs()
         {
             PlayerPrefs.DeleteAll();
             Reload();

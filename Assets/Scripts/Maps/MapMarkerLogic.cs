@@ -24,13 +24,27 @@ namespace GCU.CultureTour.Map
             _collectible = marker;
             Initalise( marker.MapMarker );
 
-            var swapper = _markerObject.GetComponent<MapMarkerMaterialSwapper>();
-
-            if (_collectible != null && swapper != null)
+            if (_collectible != null)
             {
-                swapper.Initalise(_collectible);
-            }
 
+                var materialSwappers = _markerObject.GetComponentsInChildren<MapMarkerMaterialSwapper>();
+                foreach (var swapper in materialSwappers)
+                {
+                    if (swapper != null)
+                    {
+                        swapper.Initalise(_collectible);
+                    }
+                }
+
+                var spriteSwapper = _markerObject.GetComponentsInChildren<MapMarkerSpriteSwapper>();
+                foreach (var swapper in spriteSwapper)
+                {
+                    if ( swapper != null)
+                    {
+                        swapper.Initalise(_collectible);
+                    }
+                }
+            }
             SetColour();
         }
 

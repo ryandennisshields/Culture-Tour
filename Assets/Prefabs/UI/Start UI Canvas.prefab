@@ -536,8 +536,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StatusMessage: {fileID: 3251952026733026561}
   MessageHolder: {fileID: 1113364121619394934}
-  _messageDuration: 5
-  _fadeDuration: 0.75
+  _messageDuration: 4
+  _fadeDuration: 0.5
 --- !u!1 &5786664568826845989
 GameObject:
   m_ObjectHideFlags: 0
