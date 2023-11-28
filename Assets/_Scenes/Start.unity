@@ -257,6 +257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _messages:
   - Always remain aware of your surroundings whilst playing this game.
+  - Travel to each location and use your camera to search for the secret objects.
 --- !u!4 &1708020706
 Transform:
   m_ObjectHideFlags: 0
