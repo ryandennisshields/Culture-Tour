@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace GCU.CultureTour
@@ -11,9 +9,17 @@ namespace GCU.CultureTour
         private Vector3 direction;
         private float northDirection;
 
+        private void Awake()
+        {
+            if ( camera == null )
+            {
+                camera = Camera.main.gameObject;
+            }
+        }
+
         void Start()
         {
-            northDirection = 180f;
+            northDirection = 0f;
         }
 
         void Update()
