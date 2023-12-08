@@ -46,7 +46,6 @@ namespace GCU.CultureTour
                 return false;
             }
         }
-        
         public string CurrentlyDisplayedMessage => StatusMessage.text;
 
         private Queue<string> _messageQueue = new ();
@@ -95,7 +94,7 @@ namespace GCU.CultureTour
             _currentMessageDisplayTime = _messageDuration;
         }
 
-        public void Update ()
+        private void Update ()
         {
             if ( !IsVisible && _messageQueue.Count == 0 )
             {

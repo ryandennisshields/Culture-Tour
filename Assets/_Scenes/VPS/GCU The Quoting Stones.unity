@@ -918,12 +918,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 388433570411dce4892cc9c23635a1b9, type: 3}
---- !u!23 &1185552784 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 172940324085106035, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
-    type: 3}
-  m_PrefabInstance: {fileID: 1728130082}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1334203717
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,9 +993,6 @@ GameObject:
   - component: {fileID: 1343991329}
   - component: {fileID: 1343991328}
   - component: {fileID: 1343991327}
-  - component: {fileID: 1343991334}
-  - component: {fileID: 1343991333}
-  - component: {fileID: 1343991335}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1261,60 +1252,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &1343991333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343991325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11aa8f461d05f45f68d7b81ed08f1f9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _targetFrameRate: 20
-  _optimalOcclusionDistanceMode: 1
-  _principalOccludee: {fileID: 1185552784}
-  _isOcclusionSuppressionEnabled: 1
-  _semanticSegmentationManager: {fileID: 1343991335}
-  _suppressionChannels:
-  - ground
-  - sky
-  _isOcclusionStabilizationEnabled: 1
-  _meshManager: {fileID: 2036780730}
-  _useCustomBackgroundMaterial: 0
-  _customBackgroundMaterial: {fileID: 0}
---- !u!114 &1343991334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343991325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b15f82cc229284894964d2d30806969d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HumanSegmentationStencilMode: 0
-  m_HumanSegmentationDepthMode: 0
-  m_EnvironmentDepthMode: 1
-  m_EnvironmentDepthTemporalSmoothing: 1
-  m_OcclusionPreferenceMode: 0
---- !u!114 &1343991335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343991325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 428eb62726fd471a8ae41b9d299b2c1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _targetFrameRate: 20
 --- !u!114 &1431866956 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9033381494577022342, guid: 388433570411dce4892cc9c23635a1b9,
