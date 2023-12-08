@@ -635,6 +635,12 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5870770053535954945, guid: 834b36827f8042c46bfebe506a96c133,
+        type: 3}
+      propertyPath: _mapTheme
+      value: 
+      objectReference: {fileID: 6759436098564577269, guid: f2a617e41ad27af4fbf64e77f746b9d5,
+        type: 3}
     - target: {fileID: 5870770053535954947, guid: 834b36827f8042c46bfebe506a96c133,
         type: 3}
       propertyPath: m_LocalPosition.x
