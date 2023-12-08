@@ -212,67 +212,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1708020703
-GameObject:
+--- !u!1001 &1032853553
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1708020706}
-  - component: {fileID: 1708020705}
-  - component: {fileID: 1708020704}
-  m_Layer: 0
-  m_Name: Start Screen Logic
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1708020704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708020703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 595183c913c6f1045b90ba6c28747bfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Map
---- !u!114 &1708020705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708020703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67bc602bb87e1014db118e9ce3d17920, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _messages:
-  - Always remain aware of your surroundings whilst playing this game.
-  - Travel to each location and use your camera to search for the secret objects.
---- !u!4 &1708020706
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708020703}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5740589366695785886, guid: 8c2c2b5ee6b1be34a9ddefc736a06e51,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740589366695785886, guid: 8c2c2b5ee6b1be34a9ddefc736a06e51,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740589366695785886, guid: 8c2c2b5ee6b1be34a9ddefc736a06e51,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740589366695785886, guid: 8c2c2b5ee6b1be34a9ddefc736a06e51,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740589366695785886, guid: 8c2c2b5ee6b1be34a9ddefc736a06e51,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740589366695785886, guid: 8c2c2b5ee6b1be34a9ddefc736a06e51,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740589366695785886, guid: 8c2c2b5ee6b1be34a9ddefc736a06e51,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740589366695785886, guid: 8c2c2b5ee6b1be34a9ddefc736a06e51,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740589366695785886, guid: 8c2c2b5ee6b1be34a9ddefc736a06e51,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5740589366695785886, guid: 8c2c2b5ee6b1be34a9ddefc736a06e51,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535073363090847257, guid: 8c2c2b5ee6b1be34a9ddefc736a06e51,
+        type: 3}
+      propertyPath: m_Name
+      value: Start Screen Logic
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8c2c2b5ee6b1be34a9ddefc736a06e51, type: 3}
 --- !u!1 &1826857995
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,4 +765,4 @@ SceneRoots:
   - {fileID: 6130069513067111754}
   - {fileID: 3775516774033515845}
   - {fileID: 74948867}
-  - {fileID: 1708020706}
+  - {fileID: 1032853553}
