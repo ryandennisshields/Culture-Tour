@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d927dc4178eeb8439a965299f9b351f, type: 3}
   m_Name: Cutting the cloak
   m_EditorClassIdentifier: 
-  Clip: {fileID: 32900000, guid: 452fea5ab40a5b84097814b5aa289d13, type: 3}
+  Clip: {fileID: 32900000, guid: 3d6d25544ad243749bbe70e1cf24f998, type: 3}
   LoopCount: -1
   PlayLength: 8
