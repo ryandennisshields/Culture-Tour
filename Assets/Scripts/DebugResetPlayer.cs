@@ -6,6 +6,7 @@ namespace GCU.CultureTour
     {
         public void ResetPlayer()
         {
+#if DEBUG
             GameManager.Instance.UndiscoverAllObjects();
 
             var message = GameObject.FindObjectOfType<StatusMessageDisplay>();
@@ -14,6 +15,7 @@ namespace GCU.CultureTour
             {
                 message.DisplayMessage("Player has been reset.");
             }
+#endif
         }
     }
 }
