@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8cb942bec22945d8a7b006971e175d7, type: 3}
   m_Name: MapsAuthConfig
   m_EditorClassIdentifier: 
-  _lightshipApiKey: ~APIKEY~
+  _lightshipApiKey: ibK08Pijnd12Sdi60s8brVksqMPDBx7oevINTL0ZJEupg47IetPW8bYA4eNBYSv0KWeAit
