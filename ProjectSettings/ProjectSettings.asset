@@ -801,7 +801,7 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: NIANTIC_LIGHTSHIP_AR_LOADER_ENABLED;CMS_SALSA
+    Android: NIANTIC_LIGHTSHIP_AR_LOADER_ENABLED
     Standalone: NIANTIC_LIGHTSHIP_AR_LOADER_ENABLED
   additionalCompilerArguments: {}
   platformArchitecture: {}
@@ -837,7 +837,7 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: Culture-Tour
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -845,7 +845,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Culture-Tour
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Secrets of the Saint
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
