@@ -13,6 +13,7 @@ namespace GCU.CultureTour
         public UnityEvent<GameObject, Collider> TriggerExited;
         public UnityEvent<GameObject> Tapped;
         public UnityEvent<GameObject> Swiping;
+        public UnityEvent<GameObject> Holding;
 
         private void OnTriggerEnter(Collider other)
         {
@@ -45,9 +46,9 @@ namespace GCU.CultureTour
         private Vector2 startTouchPos;
         private Vector2 endTouchPos;
 
-        // Swiping Upward
         private void Update()
         {
+            // Swiping Upward
             float swipeDistance = 5f;
             if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
             {
@@ -67,7 +68,26 @@ namespace GCU.CultureTour
                     }
                 }
             }
-        }
 
+            // Hold
+            float holdTimer = 3f;
+            if (Input.touchCount > 0)
+            {
+                Touch first = Input.GetTouch(0);
+                if (first.phase == TouchPhase.Stationary)
+                {
+                    holdTimer -= Time.deltaTime;
+                    if (holdTimer <= 0)
+                    {
+                        Holding?.Invoke(gameObject);
+                        if (EnableDebug)
+                        {
+                            Debug.Log($"Hold event called on {gameObject.name}.", gameObject);
+                        }
+                        holdTimer = 3f;
+                    }
+                }
+            }
+        }
     }
 }
