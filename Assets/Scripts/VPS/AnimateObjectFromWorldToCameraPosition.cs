@@ -18,6 +18,9 @@ namespace GCU.CultureTour.VPS
         private Transform _objectToMove;
 
         [SerializeField]
+        private ParticleSystem _objectParticles;
+
+        [SerializeField]
         private float _dwellTime = 0.2f;
 
         [SerializeField]
@@ -49,7 +52,9 @@ namespace GCU.CultureTour.VPS
 
             _moved = true;
             _moving = true;
-            
+
+            _objectParticles.Play();
+
             // re-parent this object to the camera so that it and its children sticks to camera movements.
             transform.SetParent( _camera.transform, true );
 
@@ -88,6 +93,8 @@ namespace GCU.CultureTour.VPS
                     _endPositionScreenPoint.y * _camera.pixelHeight,
                     _startingDistanceFromCamera));
 
+            transform.LookAt(_camera.transform.position);
+
         }
 
         private IEnumerator StartMovement()
@@ -118,6 +125,8 @@ namespace GCU.CultureTour.VPS
             _objectToMove.localScale = _endScale;
 
             _moving = false;
+
+            _objectParticles.Stop();
         }
     }
 }
