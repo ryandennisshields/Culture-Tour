@@ -92,9 +92,6 @@ namespace GCU.CultureTour.VPS
                     _endPositionScreenPoint.x * _camera.pixelWidth,
                     _endPositionScreenPoint.y * _camera.pixelHeight,
                     _startingDistanceFromCamera));
-
-            transform.LookAt(_camera.transform.position);
-
         }
 
         private IEnumerator StartMovement()

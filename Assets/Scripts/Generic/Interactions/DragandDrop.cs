@@ -14,13 +14,15 @@ namespace GCU.CultureTour
 
         private Vector3 mousePosition;
         private bool isDragging = false;
-
         private Vector3 startPosition;
 
-        public bool clampEnabled = true;
-        public Vector3 clampValues = Vector3.zero;
+        [SerializeField]
+        private bool clampEnabled = true;
+        [SerializeField]
+        private Vector3 clampValues = Vector3.zero;
 
-        public Vector3 collectPosition = Vector3.zero;
+        [SerializeField]
+        private Vector3 collectPosition = Vector3.zero;
 
         public UnityEvent<GameObject> DragDrop;
 
