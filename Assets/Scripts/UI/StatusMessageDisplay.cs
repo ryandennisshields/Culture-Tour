@@ -76,6 +76,15 @@ namespace GCU.CultureTour
             _currentMessageDisplayTime = _messageDuration;
         }
 
+        private void CheckInternetConnection()
+        {
+            if (Application.internetReachability == NetworkReachability.NotReachable)
+            {
+                // No internet connection - display an error message
+                DisplayMessage("Error: No internet connection available.", true);
+            }
+        }
+
         /// <summary>
         /// Will cause the next message in the queue to be displayed.
         /// If there are no new messages then the message system will be cleared.
@@ -92,6 +101,7 @@ namespace GCU.CultureTour
             
             // this forces the first Update after a new message is added to check for messages in the queue.
             _currentMessageDisplayTime = _messageDuration;
+            CheckInternetConnection();
         }
 
         private void Update ()

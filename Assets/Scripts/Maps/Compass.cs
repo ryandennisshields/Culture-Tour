@@ -1,3 +1,5 @@
+using GCU.CultureTour.Map;
+using System.Linq;
 using UnityEngine;
 
 namespace GCU.CultureTour
