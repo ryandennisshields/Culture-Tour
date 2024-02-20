@@ -42,6 +42,11 @@ namespace GCU.CultureTour
             ShowHintInStatusMessage(Hints[_hintIndex++]);
         }
 
+        public void DisplayObjectCollected() 
+        {
+            ShowHintInStatusMessage("Object Found!\nAdded to Logbook");
+        }
+
         private void Awake()
         {
             var scene = SceneManager.GetActiveScene();
