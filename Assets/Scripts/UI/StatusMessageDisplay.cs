@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace GCU.CultureTour
 {
@@ -76,6 +77,29 @@ namespace GCU.CultureTour
             _currentMessageDisplayTime = _messageDuration;
         }
 
+        private void CheckConnection()
+        {
+                if (Application.internetReachability == NetworkReachability.NotReachable && !Input.location.isEnabledByUser)
+                {
+                    // No internet connection and location - display an error message
+                    DisplayMessage("Please enable Internet and Location!", true);
+                }
+                else if (Application.internetReachability == NetworkReachability.NotReachable)
+                {
+                    // No internet connection - display an error message
+                    DisplayMessage("Please enable Internet!", true);
+                }
+                else if (!Input.location.isEnabledByUser)
+                {
+                    // No location access - display an error message
+                    DisplayMessage("Please enable Location!", true);
+                }
+                else 
+                {
+                    ClearMessageQueue();
+                }
+        }
+
         /// <summary>
         /// Will cause the next message in the queue to be displayed.
         /// If there are no new messages then the message system will be cleared.
@@ -94,9 +118,14 @@ namespace GCU.CultureTour
             _currentMessageDisplayTime = _messageDuration;
         }
 
-        private void Update ()
+        private void Update()
         {
-            if ( !IsVisible && _messageQueue.Count == 0 )
+            if (SceneManager.GetActiveScene().name == "Map")
+            {
+                CheckConnection();
+            }
+
+            if (!IsVisible && _messageQueue.Count == 0)
             {
                 return;
             }
@@ -105,7 +134,7 @@ namespace GCU.CultureTour
 
             if (_currentMessageDisplayTime >= _messageDuration)
             {
-                if ( _messageQueue.Count > 0 )
+                if (_messageQueue.Count > 0)
                 {
                     // display next message
                     var newMessage = _messageQueue.Dequeue();
@@ -118,7 +147,6 @@ namespace GCU.CultureTour
                 }
             }
         }
-
         /// <summary>
         /// Display a message start its related timers.
         /// If the holder is not displayed it will be made visible.

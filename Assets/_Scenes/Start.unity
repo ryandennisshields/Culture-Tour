@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -269,6 +269,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6095012036393732306, guid: 8c2c2b5ee6b1be34a9ddefc736a06e51,
+        type: 3}
+      propertyPath: _messages.Array.data[0]
+      value: Always remain aware of your surroundings!
       objectReference: {fileID: 0}
     - target: {fileID: 7535073363090847257, guid: 8c2c2b5ee6b1be34a9ddefc736a06e51,
         type: 3}

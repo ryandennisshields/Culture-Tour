@@ -1,5 +1,6 @@
 ﻿using com.cyborgAssets.inspectorButtonPro;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -144,6 +145,11 @@ namespace GCU.CultureTour
         {
             PlayerPrefs.DeleteAll();
             Reload();
+        }
+
+        internal IEnumerable<object> GetUncollectedCollectibles()
+        {
+            throw new NotImplementedException();
         }
 
 #endif

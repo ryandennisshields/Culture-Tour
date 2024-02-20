@@ -135,8 +135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a8076e81c63e6d45b055d88d15cf491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 0}
-  compass: {fileID: 3653691877478033222}
+  arrowUI: {fileID: 2213866890366032792}
+  cameraTransform: {fileID: 8828138620939599437}
+  gameSettings: {fileID: 0}
 --- !u!1 &856462358113101889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,7 +1038,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 47.05
+  m_fontSize: 80
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
