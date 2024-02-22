@@ -6,13 +6,16 @@ namespace GCU.CultureTour.Logbook
     public class CollectiblePanelController : MonoBehaviour
     {
         [SerializeField]
-        private TMPro.TextMeshProUGUI _areaName;
+        private TMPro.TextMeshProUGUI _objectName;
         
         [SerializeField]
-        private TMPro.TextMeshProUGUI _areaText;
-        
+        private TMPro.TextMeshProUGUI _objectText;
+
+        //[SerializeField]
+        //private TMPro.TextMeshProUGUI _modelDescription;
+
         [SerializeField]
-        private TMPro.TextMeshProUGUI _modelDescription;
+        private TMPro.TextMeshProUGUI _dateCollectedText;
         
         [SerializeField]
         private Transform _logbookModelHolder;
@@ -33,9 +36,9 @@ namespace GCU.CultureTour.Logbook
                 return;
             }
 
-            if ( _areaName != null )
+            if ( _objectName != null )
             {
-                _areaName.text = _collectible.AreaName;
+                _objectName.text = _collectible.ObjectName;
             }
 
             if (_logbookModelHolder != null)
@@ -54,9 +57,23 @@ namespace GCU.CultureTour.Logbook
                 }
             }
 
-            if ( _areaText != null)
+            if ( _objectText != null)
             {
-                _areaText.text = _collectible.AreaText;
+                _objectText.text = _collectible.ObjectText;
+            }
+
+            if (_dateCollectedText != null)
+            {
+                _dateCollectedText.text = "";
+            }
+
+            if (_collectible.Collected)
+            {
+                if (PlayerPrefs.GetString(_collectible.ObjectName + "dateCollected") != null)
+                {
+                    _dateCollectedText.text = PlayerPrefs.GetString(_collectible.ObjectName + "dateCollected", "No Date Found");
+                    //Debug.Log(PlayerPrefs.GetString(_areaName + "dateCollected"));
+                }
             }
         }
 
