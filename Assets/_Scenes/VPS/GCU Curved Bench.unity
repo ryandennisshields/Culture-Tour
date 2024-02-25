@@ -1526,7 +1526,7 @@ PrefabInstance:
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
       propertyPath: _holdDuration
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
@@ -1537,6 +1537,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _desiredSwipe.y
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
+        type: 3}
+      propertyPath: _desiredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
@@ -1561,7 +1566,7 @@ PrefabInstance:
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
       propertyPath: Holding.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
@@ -1581,7 +1586,7 @@ PrefabInstance:
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
       propertyPath: Swiping.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
@@ -1602,7 +1607,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Swiping.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 4165519514868557749}
+      objectReference: {fileID: 0}
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
       propertyPath: Holding.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -1631,7 +1636,7 @@ PrefabInstance:
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
       propertyPath: Swiping.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Tapped
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
@@ -1646,7 +1651,7 @@ PrefabInstance:
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
       propertyPath: Swiping.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: GCU.CultureTour.VPS.HiddenObject, Assembly-CSharp
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
@@ -1676,7 +1681,7 @@ PrefabInstance:
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
       propertyPath: Swiping.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8982202710599645037, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}

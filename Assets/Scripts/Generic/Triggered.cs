@@ -78,9 +78,10 @@ namespace GCU.CultureTour
             if (_isHolding)
             {
                 _newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition - _holdPosition);
-                _newPosition.x = Mathf.Clamp(_newPosition.x, _startPosition.x, _startPosition.x + _desiredPosition.x);
-                _newPosition.y = Mathf.Clamp(_newPosition.y, _startPosition.y, _startPosition.y + _desiredPosition.y);
-                _newPosition.z = Mathf.Clamp(_newPosition.z, _startPosition.z, _startPosition.z + _desiredPosition.z);
+
+                _newPosition.x = (_desiredPosition.x > 0) ? Mathf.Clamp(_newPosition.x, _startPosition.x, _startPosition.x + _desiredPosition.x) : Mathf.Clamp(_newPosition.x, _startPosition.x + _desiredPosition.x, _startPosition.x);
+                _newPosition.y = (_desiredPosition.y > 0) ? Mathf.Clamp(_newPosition.y, _startPosition.y, _startPosition.y + _desiredPosition.y) : Mathf.Clamp(_newPosition.y, _startPosition.y + _desiredPosition.y, _startPosition.y);
+                _newPosition.z = (_desiredPosition.z > 0) ? Mathf.Clamp(_newPosition.z, _startPosition.z, _startPosition.z + _desiredPosition.z) : Mathf.Clamp(_newPosition.z, _startPosition.z + _desiredPosition.z, _startPosition.z);
 
                 if (_dragObject)
                 {
