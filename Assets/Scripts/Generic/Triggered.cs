@@ -1,3 +1,5 @@
+using GCU.CultureTour.VPS;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -8,6 +10,9 @@ namespace GCU.CultureTour
 {
     public class Triggered : MonoBehaviour
     {
+        [SerializeField]
+        [Tooltip("Use this if you want the player to use multiple actions.\nIn each event, use the 'Add Action' function and set the number to the order you want the action to be in.\nFor actions like swiping and holding, remember to add multiple values to the array for each extra action!")]
+        private float maxActions;
         public GameObject _object;
         public bool EnableDebug;
         public UnityEvent<GameObject, Collider> TriggerEntered;
@@ -18,13 +23,15 @@ namespace GCU.CultureTour
         private bool _dragObject;
         [SerializeField]
         [Tooltip("X and Y (and Z) values change what direction the player needs to swipe/move, e.g. a positive Y value means an upward swipe/move.\nThe higher the value, the further the player needs to swipe/move to collect the object.\nZ value is only used if drag object is enabled!")]
-        private Vector3 _desiredPosition;
+        private Vector3[] _desiredPosition;
         public UnityEvent<GameObject> Swiping;
         [SerializeField]
         [Tooltip("Duration the player needs to hold the object.")]
-        private float _holdDuration;
+        private float[] _holdDuration;
         public UnityEvent<GameObject> Holding;
 
+        public int _swipeIndex = 0;
+        public int _holdIndex = 0;
         private bool _isHolding;
         private Vector3 _holdPosition;
         private Vector3 _startPosition;
@@ -34,7 +41,28 @@ namespace GCU.CultureTour
         private void Start()
         {
             _startPosition = _object.transform.position;
-            _holdTimer = _holdDuration;
+            if (_holdDuration.Length != 0)
+                _holdTimer = _holdDuration[_holdIndex];
+        }
+
+        public float currentStep = 0;
+        private bool addActionExecuted = false;
+
+        public void AddAction(float orderNumber)
+        {
+            if (!addActionExecuted && currentStep == orderNumber)
+            {
+                if (_swipeIndex < _desiredPosition.Length - 1 && _newPosition == _desiredPosition[_swipeIndex] + _startPosition)
+                    _swipeIndex++;
+                if (_holdIndex < _holdDuration.Length - 1 && _holdTimer <= 0)
+                    _holdIndex++;
+                addActionExecuted = true;
+                currentStep++;
+                if (currentStep == maxActions + 1)
+                {
+                    GetComponentInParent<HiddenObject>().Tapped(gameObject);
+                }
+            }
         }
 
         private void OnTriggerEnter(Collider other)
@@ -61,11 +89,12 @@ namespace GCU.CultureTour
             _isHolding = true;
         }
 
-        // Tapping
         private void OnMouseUp()
         {
             _isHolding = false;
-            _holdTimer = _holdDuration;
+            if (_holdDuration.Length != 0)
+                _holdTimer = _holdDuration[_holdIndex];
+            addActionExecuted = false;
             Tapped?.Invoke(gameObject);
             if (EnableDebug)
             {
@@ -79,9 +108,12 @@ namespace GCU.CultureTour
             {
                 _newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition - _holdPosition);
 
-                _newPosition.x = (_desiredPosition.x > 0) ? Mathf.Clamp(_newPosition.x, _startPosition.x, _startPosition.x + _desiredPosition.x) : Mathf.Clamp(_newPosition.x, _startPosition.x + _desiredPosition.x, _startPosition.x);
-                _newPosition.y = (_desiredPosition.y > 0) ? Mathf.Clamp(_newPosition.y, _startPosition.y, _startPosition.y + _desiredPosition.y) : Mathf.Clamp(_newPosition.y, _startPosition.y + _desiredPosition.y, _startPosition.y);
-                _newPosition.z = (_desiredPosition.z > 0) ? Mathf.Clamp(_newPosition.z, _startPosition.z, _startPosition.z + _desiredPosition.z) : Mathf.Clamp(_newPosition.z, _startPosition.z + _desiredPosition.z, _startPosition.z);
+                if (_desiredPosition.Length != 0)
+                {
+                    _newPosition.x = (_desiredPosition[_swipeIndex].x > 0) ? Mathf.Clamp(_newPosition.x, _startPosition.x, _startPosition.x + _desiredPosition[_swipeIndex].x) : Mathf.Clamp(_newPosition.x, _startPosition.x + _desiredPosition[_swipeIndex].x, _startPosition.x);
+                    _newPosition.y = (_desiredPosition[_swipeIndex].y > 0) ? Mathf.Clamp(_newPosition.y, _startPosition.y, _startPosition.y + _desiredPosition[_swipeIndex].y) : Mathf.Clamp(_newPosition.y, _startPosition.y + _desiredPosition[_swipeIndex].y, _startPosition.y);
+                    _newPosition.z = (_desiredPosition[_swipeIndex].z > 0) ? Mathf.Clamp(_newPosition.z, _startPosition.z, _startPosition.z + _desiredPosition[_swipeIndex].z) : Mathf.Clamp(_newPosition.z, _startPosition.z + _desiredPosition[_swipeIndex].z, _startPosition.z);
+                }
 
                 if (_dragObject)
                 {
@@ -100,12 +132,15 @@ namespace GCU.CultureTour
                 }
             }
 
-            if (_newPosition == _desiredPosition + _startPosition)
+            if (_desiredPosition.Length != 0)
             {
-                Swiping?.Invoke(gameObject);
-                if (EnableDebug)
+                if (_newPosition == _desiredPosition[_swipeIndex] + _startPosition)
                 {
-                    Debug.Log($"Swipe event called on {gameObject.name}.", gameObject);
+                    Swiping?.Invoke(gameObject);
+                    if (EnableDebug)
+                    {
+                        Debug.Log($"Swipe event called on {gameObject.name}.", gameObject);
+                    }
                 }
             }
         }
