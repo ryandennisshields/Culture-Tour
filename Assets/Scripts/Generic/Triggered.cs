@@ -2,6 +2,8 @@ using GCU.CultureTour.VPS;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Text;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
@@ -10,10 +12,10 @@ namespace GCU.CultureTour
 {
     public class Triggered : MonoBehaviour
     {
+        public GameObject _object;
         [SerializeField]
         [Tooltip("Use this if you want the player to use multiple actions.\nIn each event, use the 'Add Action' function and set the number to the order you want the action to be in.\nFor actions like swiping and holding, remember to add multiple values to the array for each extra action!")]
         private float maxActions;
-        public GameObject _object;
         public bool EnableDebug;
         public UnityEvent<GameObject, Collider> TriggerEntered;
         public UnityEvent<GameObject, Collider> TriggerExited;
@@ -29,23 +31,38 @@ namespace GCU.CultureTour
         [Tooltip("Duration the player needs to hold the object.")]
         private float[] _holdDuration;
         public UnityEvent<GameObject> Holding;
+        [SerializeField]
+        private LineRenderer _outline;
+        public UnityEvent<GameObject> DrawOutline;
+        [SerializeField]
+        private Material _notCompletedMaterial;
+        private Material _completedMaterial;
+        public UnityEvent<GameObject> MultipleObjects;
 
-        public int _swipeIndex = 0;
-        public int _holdIndex = 0;
+        private int _swipeIndex = 0;
+        private int _holdIndex = 0;
         private bool _isHolding;
         private Vector3 _holdPosition;
         private Vector3 _startPosition;
         private Vector3 _newPosition;
         private float _holdTimer;
+        private int currentObjectsCollected;
 
         private void Start()
         {
             _startPosition = _object.transform.position;
             if (_holdDuration.Length != 0)
                 _holdTimer = _holdDuration[_holdIndex];
+            if (_outline != null)
+                Instantiate(_outline, Camera.main.transform, false);
+            if (_notCompletedMaterial != null)
+            {
+                _completedMaterial = _object.GetComponent<MeshRenderer>().material;
+                _object.GetComponent<MeshRenderer>().material = _notCompletedMaterial;
+            }
         }
 
-        public float currentStep = 0;
+        private float currentStep = 0;
         private bool addActionExecuted = false;
 
         public void AddAction(float orderNumber)
@@ -63,6 +80,24 @@ namespace GCU.CultureTour
                     GetComponentInParent<HiddenObject>().Tapped(gameObject);
                 }
             }
+        }
+
+        public void CollectPartofObject(GameObject otherObject)
+        {
+            currentObjectsCollected++;
+            var statusDisplay = FindObjectOfType<StatusMessageDisplay>();
+            if (statusDisplay != null)
+            {
+                // Setting this to "out of 3" as a temporary solution, as this implementation isn't flexible
+                statusDisplay.DisplayMessage($"{currentObjectsCollected} / 3 Collected", true);
+            }
+            otherObject.GetComponent<MeshRenderer>().enabled = false;
+            // Ditto from above
+            if (currentObjectsCollected == 3)
+            {
+                _object.GetComponent<MeshRenderer>().material = _completedMaterial;
+            }
+
         }
 
         private void OnTriggerEnter(Collider other)
@@ -100,6 +135,11 @@ namespace GCU.CultureTour
             {
                 Debug.Log($"Mouse Up event called on {gameObject.name}.", gameObject);
             }
+            // Setting this to "out of 3" as a temporary solution, as this implementation isn't flexible
+            if (currentObjectsCollected == 3)
+            {
+                MultipleObjects?.Invoke(gameObject);
+            }
         }
 
         private void Update()
@@ -130,6 +170,9 @@ namespace GCU.CultureTour
                         Debug.Log($"Hold event called on {gameObject.name}.", gameObject);
                     }
                 }
+
+                _outline.positionCount++;
+                _outline.SetPosition(_outline.positionCount - 1, _newPosition);
             }
 
             if (_desiredPosition.Length != 0)
