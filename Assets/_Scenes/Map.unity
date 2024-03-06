@@ -1062,6 +1062,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2639595674311986596, guid: 5848d12b624170a45b2143e1a4b4bf42,
+        type: 3}
+      propertyPath: m_Name
+      value: Pointer Arrow Model
+      objectReference: {fileID: 0}
     - target: {fileID: 5778126599629208557, guid: 5848d12b624170a45b2143e1a4b4bf42,
         type: 3}
       propertyPath: _camera
@@ -1072,6 +1077,16 @@ PrefabInstance:
       propertyPath: _lightshipMapView
       value: 
       objectReference: {fileID: 1453108699}
+    - target: {fileID: 6119291791325448337, guid: 5848d12b624170a45b2143e1a4b4bf42,
+        type: 3}
+      propertyPath: m_Name
+      value: Saint Martin Cloak
+      objectReference: {fileID: 0}
+    - target: {fileID: 6767568131463165574, guid: 5848d12b624170a45b2143e1a4b4bf42,
+        type: 3}
+      propertyPath: m_Name
+      value: Saint Martin Model
+      objectReference: {fileID: 0}
     - target: {fileID: 7627159067400071579, guid: 5848d12b624170a45b2143e1a4b4bf42,
         type: 3}
       propertyPath: m_LocalPosition.x
