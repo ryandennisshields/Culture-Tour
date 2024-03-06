@@ -14,9 +14,9 @@ namespace GCU.CultureTour
 
         public MapMarkerSO MapMarker;
         [Header("Logbook")]
-        public string AreaName;
-        public string AreaText;
-        public string ModelDescription;
+        public string ObjectName;
+        public string ObjectText;
+        private string DateCollectedText;
         public LogbookCollectibleModel LogbookModel;
 
         [Header ("VPS Scene information")]
@@ -61,6 +61,8 @@ namespace GCU.CultureTour
             string key = KEY_PREFIX + name;
 
             PlayerPrefs.SetInt(key, CollectedOrder);
+            DateTime dt = DateTime.Now;
+            PlayerPrefs.SetString(ObjectName + "dateCollected", "This object was collected on " + dt.ToString("yyyy-MM--dd"));
             PlayerPrefs.Save();
         }
     }

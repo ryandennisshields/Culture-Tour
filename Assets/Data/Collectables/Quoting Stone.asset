@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Quoting Stone
   m_EditorClassIdentifier: 
   MapMarker: {fileID: 11400000, guid: e94bb91b2aa196043885f8f91834adc2, type: 2}
-  AreaName: The quoting stone
-  AreaText: 
-  ModelDescription: Something about a stone
+  ObjectName: stone
+  ObjectText: test object
   LogbookModel: {fileID: 5171524329420414245, guid: df32a51ae4f257948965127729873a29,
     type: 3}
   VpsSceneName: GCU The Quoting Stones
