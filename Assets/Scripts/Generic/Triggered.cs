@@ -91,7 +91,7 @@ namespace GCU.CultureTour
                 // Setting this to "out of 3" as a temporary solution, as this implementation isn't flexible
                 statusDisplay.DisplayMessage($"{currentObjectsCollected} / 3 Collected", true);
             }
-            otherObject.GetComponent<MeshRenderer>().enabled = false;
+            otherObject.SetActive(false);
             // Ditto from above
             if (currentObjectsCollected == 3)
             {
@@ -171,8 +171,11 @@ namespace GCU.CultureTour
                     }
                 }
 
-                _outline.positionCount++;
-                _outline.SetPosition(_outline.positionCount - 1, _newPosition);
+                if (_outline != null)
+                {
+                    _outline.positionCount++;
+                    _outline.SetPosition(_outline.positionCount - 1, _newPosition);
+                }
             }
 
             if (_desiredPosition.Length != 0)
