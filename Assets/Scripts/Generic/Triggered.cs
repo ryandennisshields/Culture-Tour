@@ -36,7 +36,10 @@ namespace GCU.CultureTour
         public UnityEvent<GameObject> DrawOutline;
         [SerializeField]
         private Material _notCompletedMaterial;
+        [SerializeField]
         private Material _completedMaterial;
+        [SerializeField]
+        private GameObject[] _objectsToChangeMaterial;
         public UnityEvent<GameObject> MultipleObjects;
 
         private int _swipeIndex = 0;
@@ -57,8 +60,10 @@ namespace GCU.CultureTour
                 Instantiate(_outline, Camera.main.transform, false);
             if (_notCompletedMaterial != null)
             {
-                _completedMaterial = _object.GetComponent<MeshRenderer>().material;
-                _object.GetComponent<MeshRenderer>().material = _notCompletedMaterial;
+                foreach (var obj in _objectsToChangeMaterial)
+                {
+                    obj.GetComponent<MeshRenderer>().material = _notCompletedMaterial;
+                }
             }
         }
 
@@ -95,7 +100,10 @@ namespace GCU.CultureTour
             // Ditto from above
             if (currentObjectsCollected == 3)
             {
-                _object.GetComponent<MeshRenderer>().material = _completedMaterial;
+                foreach (var obj in _objectsToChangeMaterial)
+                {
+                    obj.GetComponent<MeshRenderer>().material = _completedMaterial;
+                }
             }
 
         }
