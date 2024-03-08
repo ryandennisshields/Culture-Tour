@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1388511661209901359}
-  - component: {fileID: 107617399072872014}
+  - component: {fileID: 5758857257159871182}
   m_Layer: 0
   m_Name: VPS Content Base
   m_TagString: Untagged
@@ -97,7 +97,7 @@ Transform:
   - {fileID: 4389838989217912839}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &107617399072872014
+--- !u!114 &5758857257159871182
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,15 +106,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3739544222441748291}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29c818b70a4cc18489b871e2645864a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f4a922015475e84bbae5989cb6152a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  _endPositionScreenPoint: {x: 0.85, y: 0.07}
   _objectToMove: {fileID: 0}
-  _dwellTime: 0.2
-  _movementTime: 2.5
-  _scaleFactor: 0.2
+  _objectParticles: {fileID: 0}
+  _dwellTime: 2
 --- !u!1 &8537730606840214606
 GameObject:
   m_ObjectHideFlags: 0

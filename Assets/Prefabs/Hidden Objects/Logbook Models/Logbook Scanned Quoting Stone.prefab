@@ -54,6 +54,23 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 3c2abe9ada44c9349825b25006ca8a74, type: 2}
   _collectedMaterials:
   - {fileID: 7448758913205100586, guid: 8beca77d1164b244cb647420ab71ebcd, type: 3}
+  TappedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -8139744033821013720, guid: 40e0e51c4e156464cae7305bc7ba7d5c,
+          type: 3}
+        m_TargetAssemblyTypeName: GCU.CultureTour.Logbook.CollectiblePanelController,
+          Assembly-CSharp
+        m_MethodName: PlayAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7946870831447253760
 GameObject:
   m_ObjectHideFlags: 0

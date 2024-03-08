@@ -14,7 +14,7 @@ namespace GCU.CultureTour.Map
         /// </summary>
 
         private bool _inRange;
-        private CollectibleSO _collectible = null;
+        public CollectibleSO _collectible = null;
         private MapMarkerSO _mapMarker = null;
         private SphereCollider _sphereCollider;
         private GameObject _markerObject;

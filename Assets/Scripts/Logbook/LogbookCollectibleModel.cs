@@ -6,7 +6,7 @@ namespace GCU.CultureTour.Logbook
     public class LogbookCollectibleModel : MonoBehaviour
     {
         [SerializeField]
-        private MeshRenderer _mRenderer;
+        private MeshRenderer[] _mRenderer;
 
         [SerializeField]
         private Material[] _notCollectedMaterials = Array.Empty<Material>( );
@@ -30,7 +30,10 @@ namespace GCU.CultureTour.Logbook
                 return;
             }
 
-            _mRenderer.materials = _hasBeenCollected ? _collectedMaterials : _notCollectedMaterials;
+            foreach (var mesh in _mRenderer)
+            {
+                mesh.materials = _hasBeenCollected ? _collectedMaterials : _notCollectedMaterials;
+            }
         }
     }
 }

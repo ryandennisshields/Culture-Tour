@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Default Game Settings
   m_EditorClassIdentifier: 
   Collectibles:
-  - {fileID: 11400000, guid: d73e21fa756b41a4fbbad23984058fc3, type: 2}
   - {fileID: 11400000, guid: 05c8b8c3ff3588b43908447e75fa3da4, type: 2}
+  - {fileID: 11400000, guid: 29573e7906a21ec49aa3af4c1f7e7dc3, type: 2}
   AreaTextWhenObEjectNotDiscovered: 
   Animations:
   - {fileID: 11400000, guid: 6199069317e85fe48aa4dcb6bfe5c9cb, type: 2}

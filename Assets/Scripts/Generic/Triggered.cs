@@ -36,7 +36,10 @@ namespace GCU.CultureTour
         public UnityEvent<GameObject> DrawOutline;
         [SerializeField]
         private Material _notCompletedMaterial;
+        [SerializeField]
         private Material _completedMaterial;
+        [SerializeField]
+        private GameObject[] _objectsToChangeMaterial;
         public UnityEvent<GameObject> MultipleObjects;
 
         private int _swipeIndex = 0;
@@ -57,8 +60,10 @@ namespace GCU.CultureTour
                 Instantiate(_outline, Camera.main.transform, false);
             if (_notCompletedMaterial != null)
             {
-                _completedMaterial = _object.GetComponent<MeshRenderer>().material;
-                _object.GetComponent<MeshRenderer>().material = _notCompletedMaterial;
+                foreach (var obj in _objectsToChangeMaterial)
+                {
+                    obj.GetComponent<MeshRenderer>().material = _notCompletedMaterial;
+                }
             }
         }
 
@@ -91,11 +96,14 @@ namespace GCU.CultureTour
                 // Setting this to "out of 3" as a temporary solution, as this implementation isn't flexible
                 statusDisplay.DisplayMessage($"{currentObjectsCollected} / 3 Collected", true);
             }
-            otherObject.GetComponent<MeshRenderer>().enabled = false;
+            otherObject.SetActive(false);
             // Ditto from above
             if (currentObjectsCollected == 3)
             {
-                _object.GetComponent<MeshRenderer>().material = _completedMaterial;
+                foreach (var obj in _objectsToChangeMaterial)
+                {
+                    obj.GetComponent<MeshRenderer>().material = _completedMaterial;
+                }
             }
 
         }
@@ -171,8 +179,11 @@ namespace GCU.CultureTour
                     }
                 }
 
-                _outline.positionCount++;
-                _outline.SetPosition(_outline.positionCount - 1, _newPosition);
+                if (_outline != null)
+                {
+                    _outline.positionCount++;
+                    _outline.SetPosition(_outline.positionCount - 1, _newPosition);
+                }
             }
 
             if (_desiredPosition.Length != 0)
