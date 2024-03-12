@@ -134,7 +134,7 @@ PrefabInstance:
     - target: {fileID: 3961422984900945903, guid: cc93520113d9b74458e8acd95437f650,
         type: 3}
       propertyPath: m_Name
-      value: Post Processing Global
+      value: VPS Post Processing Global
       objectReference: {fileID: 0}
     - target: {fileID: 4926236192022692306, guid: cc93520113d9b74458e8acd95437f650,
         type: 3}
@@ -985,7 +985,7 @@ PrefabInstance:
     - target: {fileID: 3106714734131864883, guid: 388433570411dce4892cc9c23635a1b9,
         type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: VPS UI Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 3106714734131864883, guid: 388433570411dce4892cc9c23635a1b9,
         type: 3}
@@ -7719,6 +7719,6 @@ SceneRoots:
   - {fileID: 2082286088}
   - {fileID: 1334203720}
   - {fileID: 382813731}
+  - {fileID: 20518625}
   - {fileID: 1158741823}
   - {fileID: 55020297}
-  - {fileID: 20518625}
