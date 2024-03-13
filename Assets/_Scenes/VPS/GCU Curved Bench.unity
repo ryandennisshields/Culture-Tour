@@ -571,16 +571,6 @@ PrefabInstance:
       objectReference: {fileID: 382813732}
     - target: {fileID: 2043649765373461842, guid: 7cccfee2d54b93e47b7590b0a8536b8c,
         type: 3}
-      propertyPath: OnObjectDiscovered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2043649765373461842, guid: 7cccfee2d54b93e47b7590b0a8536b8c,
-        type: 3}
-      propertyPath: OnObjectDiscovered.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2043649765373461842, guid: 7cccfee2d54b93e47b7590b0a8536b8c,
-        type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 8656808053550432393}
@@ -589,26 +579,6 @@ PrefabInstance:
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 8656808053550432392}
-    - target: {fileID: 2043649765373461842, guid: 7cccfee2d54b93e47b7590b0a8536b8c,
-        type: 3}
-      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2043649765373461842, guid: 7cccfee2d54b93e47b7590b0a8536b8c,
-        type: 3}
-      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2043649765373461842, guid: 7cccfee2d54b93e47b7590b0a8536b8c,
-        type: 3}
-      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2043649765373461842, guid: 7cccfee2d54b93e47b7590b0a8536b8c,
-        type: 3}
-      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3962701427502186791, guid: 7cccfee2d54b93e47b7590b0a8536b8c,
         type: 3}
       propertyPath: _notCompletedMaterial

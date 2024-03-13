@@ -921,6 +921,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6759436098564577269, guid: f2a617e41ad27af4fbf64e77f746b9d5,
         type: 3}
+    - target: {fileID: 5870770053535954945, guid: 834b36827f8042c46bfebe506a96c133,
+        type: 3}
+      propertyPath: _defaultLocation._latitude
+      value: 52.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 5870770053535954945, guid: 834b36827f8042c46bfebe506a96c133,
+        type: 3}
+      propertyPath: _defaultLocation._longitude
+      value: 5.122
+      objectReference: {fileID: 0}
     - target: {fileID: 5870770053535954947, guid: 834b36827f8042c46bfebe506a96c133,
         type: 3}
       propertyPath: m_LocalPosition.x
