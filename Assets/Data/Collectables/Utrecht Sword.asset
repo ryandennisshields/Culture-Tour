@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ae3f4a9e75a3a46a1aff4daa19c225, type: 3}
   m_Name: Utrecht Sword
   m_EditorClassIdentifier: 
-  MapMarker: {fileID: 11400000, guid: fd9544fdb78410646bc4e194d5a2fc60, type: 2}
-  ObjectName: Saint Martin's Sword
-  ObjectText: The sword of Saint Martin. (UTRECHT)
+  MapMarker: {fileID: 0}
+  ObjectName: 
+  ObjectText: 
   LogbookModel: {fileID: 2011665084440722327, guid: 9d47f6fa6042eda4ca7c11158191e630,
     type: 3}
-  VpsSceneName: Utrecht Runestone
-  Hints:
-  - You are looking for a weapon.
+  VpsSceneName: 
+  Hints: []

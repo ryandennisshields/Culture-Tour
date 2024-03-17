@@ -579,11 +579,6 @@ PrefabInstance:
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 8656808053550432392}
-    - target: {fileID: 3962701427502186791, guid: 7cccfee2d54b93e47b7590b0a8536b8c,
-        type: 3}
-      propertyPath: _notCompletedMaterial
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 4791154140279399932, guid: 7cccfee2d54b93e47b7590b0a8536b8c,
         type: 3}
       propertyPath: _objectToMove
@@ -1303,6 +1298,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2889603159382192082, guid: 388433570411dce4892cc9c23635a1b9,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 3106714734131864883, guid: 388433570411dce4892cc9c23635a1b9,
         type: 3}
       propertyPath: m_Name
