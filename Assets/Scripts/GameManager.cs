@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace GCU.CultureTour
 {
@@ -67,8 +68,9 @@ namespace GCU.CultureTour
                 .FirstOrDefault();
         }
 
-        public void PrepareToPlayAnimation(int collectedOrder)
+        public void PrepareToPlayAnimation(int animationToPlay)
         {
+            //ClipToPlay = _gameSettings.Animations[0];
             // to do - this is temporary 
             // do nothing as we only have one clip to play.
         }

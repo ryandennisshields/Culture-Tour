@@ -4,9 +4,11 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Text;
+using System.Runtime.InteropServices;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UIElements;
 
 namespace GCU.CultureTour
 {
@@ -33,6 +35,8 @@ namespace GCU.CultureTour
         public UnityEvent<GameObject> Holding;
         [SerializeField]
         private LineRenderer _outline;
+        [SerializeField]
+        private LayerMask _outlineLayerMask;
         public UnityEvent<GameObject> DrawOutline;
         [SerializeField]
         private Material _notCompletedMaterial;
@@ -50,6 +54,7 @@ namespace GCU.CultureTour
         private Vector3 _newPosition;
         private float _holdTimer;
         private int currentObjectsCollected;
+        private List<Vector2> outlinePoints = new List<Vector2>();
 
         private void Start()
         {
@@ -57,7 +62,14 @@ namespace GCU.CultureTour
             if (_holdDuration.Length != 0)
                 _holdTimer = _holdDuration[_holdIndex];
             if (_outline != null)
-                Instantiate(_outline, Camera.main.transform, false);
+            {
+                //Instantiate(_outline, Camera.main.transform, false);
+                //Vector2[] points = _outline.GetComponent<PolygonCollider2D>().points;
+                //foreach (Vector2 point in points)
+                //{
+                    //outlinePoints.Add(_outline.transform.TransformPoint(point));
+                //}
+            }
             if (_notCompletedMaterial != null)
             {
                 foreach (var obj in _objectsToChangeMaterial)
@@ -178,12 +190,6 @@ namespace GCU.CultureTour
                         Debug.Log($"Hold event called on {gameObject.name}.", gameObject);
                     }
                 }
-
-                if (_outline != null)
-                {
-                    _outline.positionCount++;
-                    _outline.SetPosition(_outline.positionCount - 1, _newPosition);
-                }
             }
 
             if (_desiredPosition.Length != 0)
@@ -195,6 +201,19 @@ namespace GCU.CultureTour
                     {
                         Debug.Log($"Swipe event called on {gameObject.name}.", gameObject);
                     }
+                }
+            }
+
+            if (_outline != null)
+            {
+                if (Input.GetMouseButton(0))
+                {
+                    //Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    //Collider2D hitCollider = Physics2D.OverlapCircle(mousePosition, 0.1f, _outlineLayerMask);
+                    //if (IsOutlineTraced())
+                    //{
+                        //DrawOutline?.Invoke(gameObject);
+                    //}
                 }
             }
         }

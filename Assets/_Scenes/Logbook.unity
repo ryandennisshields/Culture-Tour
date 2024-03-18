@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -498,7 +498,7 @@ PrefabInstance:
     - target: {fileID: 1063325759199380764, guid: 121e0572629a2454998f125c226f38b3,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000867785
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1172327954285747916, guid: 121e0572629a2454998f125c226f38b3,
         type: 3}
@@ -605,6 +605,28 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4139112240832359275, guid: 121e0572629a2454998f125c226f38b3,
+        type: 3}
+      propertyPath: _logbookAnimationPlayer
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4139112240832359275, guid: 121e0572629a2454998f125c226f38b3,
+        type: 3}
+      propertyPath: _postCollectiblePanels.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4139112240832359275, guid: 121e0572629a2454998f125c226f38b3,
+        type: 3}
+      propertyPath: _postCollectiblePanels.Array.data[0]
+      value: 
+      objectReference: {fileID: 6380716569072011749, guid: fff9a6545fc64cd47afaa6d027f8b1c7,
+        type: 3}
+    - target: {fileID: 4139112240832359275, guid: 121e0572629a2454998f125c226f38b3,
+        type: 3}
+      propertyPath: _postCollectiblePanels.Array.data[1]
+      value: 
+      objectReference: {fileID: 6380716569072011749, guid: 84f5cc8b5e41ffb4bbba5a98be4a0e7b,
+        type: 3}
     - target: {fileID: 5213018824060455368, guid: 121e0572629a2454998f125c226f38b3,
         type: 3}
       propertyPath: m_AnchorMax.y

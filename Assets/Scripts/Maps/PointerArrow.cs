@@ -20,7 +20,7 @@ namespace GCU.CultureTour
                     closestDistance = distance;
                     closestMarker = mapMarker;
                 }
-                else
+                else if (!closestMarker)
                 {
                     gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
                 }

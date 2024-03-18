@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/VPS/GCU Curved Bench.unity
     guid: 83d9527751ed39e4f8e93122723a21fc
   - enabled: 0
+    path: Assets/_Scenes/VPS/Utrecht Runestone.unity
+    guid: 359e39c7dfac96a41911c8933f3ae7e0
+  - enabled: 0
     path: Assets/_Scenes/Temp/Temp_Map.unity
     guid: 672ee2905e3a53846b35ae83d95f91ac
   m_configObjects:
