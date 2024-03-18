@@ -20,6 +20,9 @@ namespace GCU.CultureTour.Logbook
         private CollectiblePanelController _collectiblePanelPrefab;
 
         [SerializeField]
+        private LogbookAnimationPlayer _logbookAnimationPlayer;
+
+        [SerializeField]
         private GameObject[] _postCollectiblePanels = Array.Empty<GameObject>();
 
         private Dictionary<CollectibleSO, GameObject> _objectPanels = new Dictionary<CollectibleSO, GameObject>();
@@ -31,7 +34,7 @@ namespace GCU.CultureTour.Logbook
             foreach (var panel in _preCollectiblePanels)
             {
                 var p = Instantiate(panel, transform);
-                
+
                 var rect = p.transform as RectTransform;
                 rect.anchoredPosition = new Vector2(0, -height);
                 height += rect?.rect.height ?? 0f;
@@ -57,6 +60,25 @@ namespace GCU.CultureTour.Logbook
             else
             {
                 Log.Error("Collectible panel prefab has not been defined.", gameObject);
+            }
+
+            if (_logbookAnimationPlayer != null)
+            {
+                var collectables = GameManager.Instance.GameSettings.OrderedCollectiblesList;
+                var panel = Instantiate(_logbookAnimationPlayer.gameObject, transform);
+                foreach (var collectable in collectables)
+                {
+                    var logbookAnimationPlayer = panel.GetComponent<LogbookAnimationPlayer>();
+                    logbookAnimationPlayer.Store(collectable);
+
+                    var rect = panel.transform as RectTransform;
+                    rect.anchoredPosition = new Vector2(0, -height);
+                    height += rect?.rect.height ?? 0f;
+                }
+            }
+            else
+            {
+                Log.Error("Animation panel prefab has not been defined.", gameObject);
             }
 
             foreach (var panel in _postCollectiblePanels)
