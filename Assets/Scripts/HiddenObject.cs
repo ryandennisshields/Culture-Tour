@@ -39,6 +39,11 @@ namespace GCU.CultureTour.VPS
             StartCoroutine(DiscoveredDelay());
         }
 
+        public void SelectAnimationToPlay(int animationToPlay)
+        {
+            GameManager.Instance.PrepareToPlayAnimation(animationToPlay);
+        }
+
         private IEnumerator DiscoveredDelay()
         {
             yield return new WaitForSeconds(discoveryDelay);

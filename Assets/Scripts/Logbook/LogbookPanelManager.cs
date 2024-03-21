@@ -64,17 +64,12 @@ namespace GCU.CultureTour.Logbook
 
             if (_logbookAnimationPlayer != null)
             {
-                var collectables = GameManager.Instance.GameSettings.OrderedCollectiblesList;
                 var panel = Instantiate(_logbookAnimationPlayer.gameObject, transform);
-                foreach (var collectable in collectables)
-                {
-                    var logbookAnimationPlayer = panel.GetComponent<LogbookAnimationPlayer>();
-                    logbookAnimationPlayer.Store(collectable);
 
-                    var rect = panel.transform as RectTransform;
-                    rect.anchoredPosition = new Vector2(0, -height);
-                    height += rect?.rect.height ?? 0f;
-                }
+                var rect = panel.transform as RectTransform;
+                rect.anchoredPosition = new Vector2(0, -height);
+                height += rect?.rect.height ?? 0f;
+
             }
             else
             {

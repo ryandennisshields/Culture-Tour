@@ -49,7 +49,7 @@ namespace GCU.CultureTour.Animations
 
             if (_animation == null)
             {
-                Debug.LogError("Video Player Scene was loaded when no video clip is ready to play.", gameObject);
+                Debug.Log("Video Player Scene was loaded when no video clip is ready to play, or the player does not have the required objects.", gameObject);
                 _sceneLoader.LoadScene();
                 yield break;
             }

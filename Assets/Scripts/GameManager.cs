@@ -54,7 +54,7 @@ namespace GCU.CultureTour
 
         public GameSettingsSO GameSettings => _gameSettings;
 
-        public AnimationSO ClipToPlay => _gameSettings.Animations[0];
+        public AnimationSO ClipToPlay = null;
 
         /// <summary>
         /// Gets the collectible for a specific VPS Scene
@@ -70,7 +70,12 @@ namespace GCU.CultureTour
 
         public void PrepareToPlayAnimation(int animationToPlay)
         {
-            //ClipToPlay = _gameSettings.Animations[0];
+            var collectibles = _gameSettings.Collectibles;
+            if (animationToPlay == 0)
+            {
+                if (collectibles.Any(c => c.name == "Sword" && c.Collected) && collectibles.Any(c => c.name == "Skull" && c.Collected))
+                    ClipToPlay = _gameSettings.Animations[0];
+            }
             // to do - this is temporary 
             // do nothing as we only have one clip to play.
         }
