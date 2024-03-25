@@ -31,6 +31,8 @@ namespace GCU.CultureTour
 
         void Awake()
         {
+            // Temp - Game Manager needs to be called somewhere to exist in a scene
+            GameManager.Instance.enabled = true;
             GetKey(new string[] { });
         }
 
@@ -46,7 +48,7 @@ namespace GCU.CultureTour
             try
             {
                 var client = new HttpClient();
-                var request = new HttpRequestMessage(HttpMethod.Post, "https://adsai.buas.ngrok.app/vis_api/vis_api/auth/login");
+                var request = new HttpRequestMessage(HttpMethod.Post, "https://adsai.buas.ngrok.app/vis_api/auth/login");
                 var content = new MultipartFormDataContent();
                 content.Add(new StringContent("glasgow@buas.nl"), "email");
                 content.Add(new StringContent("#GlasgowVIS2023!"), "password");
@@ -84,7 +86,7 @@ namespace GCU.CultureTour
             try
             {
                 var client = new HttpClient();
-                var request = new HttpRequestMessage(HttpMethod.Post, "https://adsai.buas.ngrok.app/vis_api/vis_api/evaluate/evaluate");
+                var request = new HttpRequestMessage(HttpMethod.Post, "https://adsai.buas.ngrok.app/vis_api/evaluate/evaluate");
                 request.Headers.Add("Authorization", $"Bearer {authToken}");
 
                 var content = new MultipartFormDataContent();
