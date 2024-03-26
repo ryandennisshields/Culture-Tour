@@ -29,7 +29,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/VPS/Utrecht Runestone.unity
     guid: 359e39c7dfac96a41911c8933f3ae7e0
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/ImageDetection.unity
     guid: bc1b67a338bcc624b9c61eafaf0f0ba4
   - enabled: 0

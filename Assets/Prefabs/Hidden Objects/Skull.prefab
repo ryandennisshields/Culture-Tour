@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2307724547075421520}
@@ -111,7 +111,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2307724547075421520}
@@ -194,7 +194,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2307724547075421520}
@@ -532,7 +532,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 1.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -650,7 +650,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.25
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -1033,9 +1033,9 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: 0.43, z: -0.19}
+    m_Position: {x: 0, y: 0.15, z: -0.08}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Scale: {x: 0.25, y: 0.25, z: 0.25}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -1233,7 +1233,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 50
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -5147,7 +5147,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2307724547075421520}
@@ -5230,7 +5230,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2307724547075421520}
@@ -5313,7 +5313,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2307724547075421520}
@@ -5384,12 +5384,12 @@ PrefabInstance:
     - target: {fileID: 5920557953904100907, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.53
+      value: 0.284
       objectReference: {fileID: 0}
     - target: {fileID: 5920557953904100907, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.397
+      value: -0.184
       objectReference: {fileID: 0}
     - target: {fileID: 5920557953904100907, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
@@ -5439,17 +5439,17 @@ PrefabInstance:
     - target: {fileID: 7880485534076023453, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
       propertyPath: m_Size.x
-      value: 1
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7880485534076023453, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
       propertyPath: m_Size.y
-      value: 1
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7880485534076023453, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
       propertyPath: m_Size.z
-      value: 1
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7880485534076023453, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
@@ -5459,12 +5459,12 @@ PrefabInstance:
     - target: {fileID: 7880485534076023453, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
       propertyPath: m_Center.y
-      value: 0
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7880485534076023453, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
       propertyPath: m_Center.z
-      value: 0
+      value: 0.08
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
