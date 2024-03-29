@@ -34,11 +34,6 @@ namespace GCU.CultureTour
         private float[] _holdDuration;
         public UnityEvent<GameObject> Holding;
         [SerializeField]
-        private LineRenderer _outline;
-        [SerializeField]
-        private LayerMask _outlineLayerMask;
-        public UnityEvent<GameObject> DrawOutline;
-        [SerializeField]
         private Material _notCompletedMaterial;
         [SerializeField]
         private Material _completedMaterial;
@@ -54,28 +49,30 @@ namespace GCU.CultureTour
         private Vector3 _newPosition;
         private float _holdTimer;
         private int currentObjectsCollected;
-        private List<Vector2> outlinePoints = new List<Vector2>();
 
         private void Start()
         {
             _startPosition = _object.transform.position;
             if (_holdDuration.Length != 0)
                 _holdTimer = _holdDuration[_holdIndex];
-            if (_outline != null)
-            {
-                //Instantiate(_outline, Camera.main.transform, false);
-                //Vector2[] points = _outline.GetComponent<PolygonCollider2D>().points;
-                //foreach (Vector2 point in points)
-                //{
-                    //outlinePoints.Add(_outline.transform.TransformPoint(point));
-                //}
-            }
             if (_notCompletedMaterial != null)
             {
                 foreach (var obj in _objectsToChangeMaterial)
                 {
                     obj.GetComponent<MeshRenderer>().material = _notCompletedMaterial;
                 }
+            }
+        }
+
+        private int counter = 0;
+
+        public void IncreaseCounter() 
+        { 
+            counter++;
+            // Setting this to 3 as a temporary solution, as this implementation isn't flexible
+            if (counter == 3)
+            {
+                GetComponentInParent<HiddenObject>().Tapped(gameObject);
             }
         }
 
@@ -92,7 +89,7 @@ namespace GCU.CultureTour
                     _holdIndex++;
                 addActionExecuted = true;
                 currentStep++;
-                if (currentStep == maxActions + 1)
+                if (currentStep == maxActions)
                 {
                     GetComponentInParent<HiddenObject>().Tapped(gameObject);
                 }
@@ -122,6 +119,7 @@ namespace GCU.CultureTour
 
         private void OnTriggerEnter(Collider other)
         {
+            Debug.Log("true");
             TriggerEntered?.Invoke(gameObject, other);
             if (EnableDebug)
             {
@@ -201,19 +199,6 @@ namespace GCU.CultureTour
                     {
                         Debug.Log($"Swipe event called on {gameObject.name}.", gameObject);
                     }
-                }
-            }
-
-            if (_outline != null)
-            {
-                if (Input.GetMouseButton(0))
-                {
-                    //Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                    //Collider2D hitCollider = Physics2D.OverlapCircle(mousePosition, 0.1f, _outlineLayerMask);
-                    //if (IsOutlineTraced())
-                    //{
-                        //DrawOutline?.Invoke(gameObject);
-                    //}
                 }
             }
         }

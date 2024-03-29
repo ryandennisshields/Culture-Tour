@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ae3f4a9e75a3a46a1aff4daa19c225, type: 3}
   m_Name: Toy Wooden Horse
   m_EditorClassIdentifier: 
-  MapMarker: {fileID: 0}
+  MapMarker: {fileID: 11400000, guid: 92d5b33404717b34e82dedcb93585527, type: 2}
   ObjectName: Toy Wooden Horse
   ObjectText: A toy wooden horse belonging to a child.
-  LogbookModel: {fileID: 0}
-  VpsSceneName: 
+  LogbookModel: {fileID: 2011665084440722327, guid: 0d08c3d1532c5d7418dd8b1645e16025,
+    type: 3}
+  VpsSceneName: GCU Curved Bench 2
   Hints: []

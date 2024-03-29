@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ae3f4a9e75a3a46a1aff4daa19c225, type: 3}
   m_Name: Hammer
   m_EditorClassIdentifier: 
-  MapMarker: {fileID: 0}
+  MapMarker: {fileID: 11400000, guid: c118d31f044819d4782693d36299677a, type: 2}
   ObjectName: Hammer
   ObjectText: Saint Martin's Hammer.
-  LogbookModel: {fileID: 0}
-  VpsSceneName: 
+  LogbookModel: {fileID: 2011665084440722327, guid: 09bc326d30d74154d9a46f6f8129e977,
+    type: 3}
+  VpsSceneName: GCU Curved Bench 1
   Hints: []

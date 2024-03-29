@@ -1033,7 +1033,7 @@ ParticleSystem:
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
     donutRadius: 0.2
-    m_Position: {x: 0, y: 0.15, z: -0.08}
+    m_Position: {x: 0, y: 0.15, z: -0.1}
     m_Rotation: {x: 0, y: 0, z: 0}
     m_Scale: {x: 0.25, y: 0.25, z: 0.25}
     placementMode: 0
@@ -5439,17 +5439,17 @@ PrefabInstance:
     - target: {fileID: 7880485534076023453, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.25
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 7880485534076023453, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
       propertyPath: m_Size.y
-      value: 0.25
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 7880485534076023453, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
       propertyPath: m_Size.z
-      value: 0.25
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 7880485534076023453, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
@@ -5464,7 +5464,7 @@ PrefabInstance:
     - target: {fileID: 7880485534076023453, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
       propertyPath: m_Center.z
-      value: 0.08
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

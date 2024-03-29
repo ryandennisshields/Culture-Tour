@@ -770,7 +770,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cutting the Cloak
+  m_text: 'Bull Rampage
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -853,7 +855,7 @@ GameObject:
   - component: {fileID: 8665843880373398730}
   - component: {fileID: 6221561141595472604}
   m_Layer: 5
-  m_Name: Cutting the Cloak (1)
+  m_Name: Bull Rampage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -970,7 +972,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1362,9 +1364,11 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Objects Required
 
-    Sword
+    Hammer
 
-    Skull'
+    Horse
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1597,3 +1601,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttons:
   - {fileID: 5820891610568719892}
+  - {fileID: 8665843880373398730}

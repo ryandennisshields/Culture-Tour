@@ -570,18 +570,6 @@ MonoBehaviour:
   _ContinuousLocalizationEnabled: 1
   _InterpolationEnabled: 1
   _autoTrack: 1
---- !u!4 &634243306 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1535763287729538692, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
-    type: 3}
-  m_PrefabInstance: {fileID: 1728130082}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &634243318 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 6390521754930308257, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
-    type: 3}
-  m_PrefabInstance: {fileID: 1728130082}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1158741823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1189,51 +1177,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192592221}
     m_Modifications:
-    - target: {fileID: 1242240048503070409, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
-        type: 3}
-      propertyPath: _objectToMove
-      value: 
-      objectReference: {fileID: 634243306}
-    - target: {fileID: 1242240048503070409, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
-        type: 3}
-      propertyPath: _objectParticles
-      value: 
-      objectReference: {fileID: 634243318}
-    - target: {fileID: 1560850080910725466, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 1560850080910725466, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 1560850080910725466, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.34312442
-      objectReference: {fileID: 0}
-    - target: {fileID: 1560850080910725466, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.03832064
-      objectReference: {fileID: 0}
-    - target: {fileID: 1560850080910725466, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.8647567
-      objectReference: {fileID: 0}
-    - target: {fileID: 1560850080910725466, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.36468205
-      objectReference: {fileID: 0}
-    - target: {fileID: 1560850080910725466, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -131.4
-      objectReference: {fileID: 0}
     - target: {fileID: 2894832335711097249, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
         type: 3}
       propertyPath: Tapped.m_PersistentCalls.m_Calls.Array.size
@@ -1283,11 +1226,6 @@ PrefabInstance:
         type: 3}
       propertyPath: hints.Array.data[0]
       value: Speak with the man.
-      objectReference: {fileID: 0}
-    - target: {fileID: 5015766210098199167, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.735
       objectReference: {fileID: 0}
     - target: {fileID: 5589595406341016872, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
         type: 3}
