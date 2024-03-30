@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 8831954536584432104}
   - component: {fileID: 5175455871121415010}
   - component: {fileID: 6717363600359653468}
-  - component: {fileID: 2223841086436374035}
   m_Layer: 5
-  m_Name: Settings
+  m_Name: Recenter Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,32 +120,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7031950933303672963}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2223841086436374035}
-        m_TargetAssemblyTypeName: GCU.CultureTour.SceneLoader, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2223841086436374035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856462358113101889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 595183c913c6f1045b90ba6c28747bfa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: 
+      m_Calls: []
 --- !u!1 &1636676358561899658
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,7 +320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4035680223942466707
 RectTransform:
   m_ObjectHideFlags: 0
@@ -385,7 +359,7 @@ MonoBehaviour:
     m_Top: 30
     m_Bottom: 30
   m_ChildAlignment: 2
-  m_Spacing: 30
+  m_Spacing: 0
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -825,7 +799,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 80
+  m_fontSize: 65.5
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1070,7 +1044,7 @@ GameObject:
   - component: {fileID: 4900110022052585540}
   - component: {fileID: 7031950933303672963}
   m_Layer: 5
-  m_Name: Settings Icon
+  m_Name: Recenter Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1123,7 +1097,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 933623357facf984ca8da57ac36f201d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 70b797b8db1395e4f9993af4c2eec370, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
