@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5920557953904100907}
   - component: {fileID: 7880485534076023453}
-  - component: {fileID: 6897726181088585440}
+  - component: {fileID: 2966373110030536137}
   m_Layer: 6
   m_Name: User Interaction
   m_TagString: Untagged
@@ -54,7 +54,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6897726181088585440
+--- !u!114 &2966373110030536137
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,35 +63,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6363859393679932533}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4640c8cd54c9ec044846b1207cc63f58, type: 3}
+  m_Script: {fileID: 11500000, guid: 03b8778d3998bbe4bb6e9cbedc7e0e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _object: {fileID: 0}
-  maxActions: 0
-  EnableDebug: 0
-  TriggerEntered:
-    m_PersistentCalls:
-      m_Calls: []
-  TriggerExited:
-    m_PersistentCalls:
-      m_Calls: []
-  Tapped:
-    m_PersistentCalls:
-      m_Calls: []
-  _dragObject: 0
-  _desiredPosition: []
-  Swiping:
-    m_PersistentCalls:
-      m_Calls: []
-  _holdDuration: []
-  Holding:
-    m_PersistentCalls:
-      m_Calls: []
-  _outline: {fileID: 0}
-  DrawOutline:
-    m_PersistentCalls:
-      m_Calls: []
-  _notCompletedMaterial: {fileID: 0}
-  MultipleObjects:
-    m_PersistentCalls:
-      m_Calls: []
+  hiddenObjectScript: {fileID: 0}
+  hiddenObject: {fileID: 0}

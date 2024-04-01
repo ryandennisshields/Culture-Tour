@@ -1337,6 +1337,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: GCU - The Quoting Stones
       objectReference: {fileID: 0}
+    - target: {fileID: 8353188923438616929, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
+        type: 3}
+      propertyPath: clickableObjectScript
+      value: 
+      objectReference: {fileID: 11500000, guid: 7f773be36461d314e8aa310cb337df1f,
+        type: 3}
     - target: {fileID: 8369920206224543627, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1,
         type: 3}
       propertyPath: OnObjectDiscovered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1356,6 +1362,9 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 6167593374558465895, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1, type: 3}
     - {fileID: 1778668611235443535, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1, type: 3}
+    - {fileID: 3540542302151194598, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1, type: 3}
+    - {fileID: 1035306040743732046, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1, type: 3}
+    - {fileID: 4238853332822613478, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b8605eeb1720f54dac0cbe21a5b7ee1, type: 3}

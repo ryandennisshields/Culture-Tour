@@ -600,6 +600,11 @@ PrefabInstance:
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7734000207690303780, guid: a7803f5d4f10b6b4f930dd30054af747,
+        type: 3}
+      propertyPath: desiredPosition.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8641529630725500375, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -759,7 +764,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Swiping.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 3962701427502186791}
+      objectReference: {fileID: 0}
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
       propertyPath: Swiping.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -774,7 +779,7 @@ PrefabInstance:
         type: 3}
       propertyPath: something.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3962701427502186791}
+      objectReference: {fileID: 0}
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
       propertyPath: Swiping.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -839,7 +844,7 @@ PrefabInstance:
         type: 3}
       propertyPath: something.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3962701427502186791}
+      objectReference: {fileID: 0}
     - target: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
         type: 3}
       propertyPath: Swiping.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
@@ -919,18 +924,6 @@ ParticleSystem:
     type: 3}
   m_PrefabInstance: {fileID: 5659509960933037646}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3962701427502186791 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8679784075193571177, guid: a7803f5d4f10b6b4f930dd30054af747,
-    type: 3}
-  m_PrefabInstance: {fileID: 5659509960933037646}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4640c8cd54c9ec044846b1207cc63f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &4131480043199671356 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8637738502692993650, guid: a7803f5d4f10b6b4f930dd30054af747,

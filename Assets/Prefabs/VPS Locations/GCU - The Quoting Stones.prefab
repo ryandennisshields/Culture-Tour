@@ -634,7 +634,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.942
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 986680493892874038, guid: a265f667630c18c4b9368a0fb9182420, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2154874119612302063, guid: a265f667630c18c4b9368a0fb9182420,
@@ -649,26 +650,49 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3506504020872996792}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4017393913733829385, guid: a265f667630c18c4b9368a0fb9182420,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2189156788870122461}
   m_SourcePrefab: {fileID: 100100000, guid: a265f667630c18c4b9368a0fb9182420, type: 3}
+--- !u!1 &186382441689014493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4017393913733829385, guid: a265f667630c18c4b9368a0fb9182420,
+    type: 3}
+  m_PrefabInstance: {fileID: 3843417306874360788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2189156788870122461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186382441689014493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1b8196fb32636478208d192dfda43c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hiddenObjectScript: {fileID: 0}
+  hiddenObject: {fileID: 0}
+  notCompletedMaterial: {fileID: 2100000, guid: 3c2abe9ada44c9349825b25006ca8a74,
+    type: 2}
+  completedMaterial: {fileID: 2100000, guid: 251f4f23ace91df40b22da5de5049708, type: 2}
+  skullPieces:
+  - {fileID: 3862301003396104725}
+  - {fileID: 5519610471132372162}
+  - {fileID: 3269918679396644560}
+  movedSkullPieces:
+  - {fileID: 326148107561507281}
+  - {fileID: 4000907538468729971}
+  - {fileID: 7668089326385865522}
 --- !u!1 &326148107561507281 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3589433038360750597, guid: a265f667630c18c4b9368a0fb9182420,
     type: 3}
   m_PrefabInstance: {fileID: 3843417306874360788}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &396163777795406408 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3470581472149801372, guid: a265f667630c18c4b9368a0fb9182420,
-    type: 3}
-  m_PrefabInstance: {fileID: 3843417306874360788}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4640c8cd54c9ec044846b1207cc63f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &747927372857044140 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4555290240658104184, guid: a265f667630c18c4b9368a0fb9182420,
@@ -835,7 +859,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Tapped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 396163777795406408}
+      objectReference: {fileID: 0}
     - target: {fileID: 6897726181088585440, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
       propertyPath: Tapped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -1110,7 +1134,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Tapped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 396163777795406408}
+      objectReference: {fileID: 0}
     - target: {fileID: 6897726181088585440, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
       propertyPath: Tapped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -1244,7 +1268,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Tapped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 396163777795406408}
+      objectReference: {fileID: 0}
     - target: {fileID: 6897726181088585440, guid: f5a9c967201a985428687ef616f2ee69,
         type: 3}
       propertyPath: Tapped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
