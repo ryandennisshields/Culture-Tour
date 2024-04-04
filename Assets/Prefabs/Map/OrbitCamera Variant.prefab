@@ -15,6 +15,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6614101382141779485, guid: 88c6861d76b4c49e18329bfbc54d44b5,
         type: 3}
+      propertyPath: recenterTurnTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6614101382141779485, guid: 88c6861d76b4c49e18329bfbc54d44b5,
+        type: 3}
       propertyPath: _maximumZoomDistance
       value: 60
       objectReference: {fileID: 0}
