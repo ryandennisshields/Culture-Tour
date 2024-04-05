@@ -18,4 +18,6 @@ MonoBehaviour:
   LogbookModel: {fileID: 2011665084440722327, guid: 09bc326d30d74154d9a46f6f8129e977,
     type: 3}
   VpsSceneName: GCU Curved Bench 1
-  Hints: []
+  Hints:
+  - Looks like it's above something. An egg?
+  - The egg looks weak.

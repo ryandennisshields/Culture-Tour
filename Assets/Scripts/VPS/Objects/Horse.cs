@@ -7,11 +7,16 @@ namespace GCU.CultureTour
     public class Horse : Triggered
     {
         [SerializeField]
-        private Vector3[] desiredPositions;
+        private Vector3 desiredDistance;
+
+        float originalYRotation;
+        float originalZRotation;
 
         // Start is called before the first frame update
         void Start()
         {
+            originalYRotation = 242.05f;
+            originalZRotation = 90f;
             startPosition = hiddenObject.transform.position;
         }
 
@@ -28,10 +33,11 @@ namespace GCU.CultureTour
 
         private void Update()
         {
-            if (newPosition == desiredPositions[counter] + startPosition)
+            if (newPosition == desiredDistance + startPosition || newPosition == desiredDistance - startPosition)
             {
+                desiredDistance = -desiredDistance;
                 counter++;
-                if (counter  == desiredPositions.Length - 1)
+                if (counter == 4)
                 {
                     hiddenObjectScript.Tapped(gameObject);
                 }
@@ -43,9 +49,12 @@ namespace GCU.CultureTour
             if (isHolding)
             {
                 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition - holdPosition);
-                newPosition.x = (desiredPositions[counter].x > 0) ? Mathf.Clamp(newPosition.x, startPosition.x, startPosition.x + desiredPositions[counter].x) : Mathf.Clamp(newPosition.x, startPosition.x + desiredPositions[counter].x, startPosition.x);
-                newPosition.y = (desiredPositions[counter].y > 0) ? Mathf.Clamp(newPosition.y, startPosition.y, startPosition.y + desiredPositions[counter].y) : Mathf.Clamp(newPosition.y, startPosition.y + desiredPositions[counter].y, startPosition.y);
-                newPosition.z = (desiredPositions[counter].z > 0) ? Mathf.Clamp(newPosition.z, startPosition.z, startPosition.z + desiredPositions[counter].z) : Mathf.Clamp(newPosition.z, startPosition.z + desiredPositions[counter].z, startPosition.z);
+                newPosition.x = (desiredDistance.x > 0) ? Mathf.Clamp(newPosition.x, startPosition.x, startPosition.x + desiredDistance.x) : Mathf.Clamp(newPosition.x, startPosition.x + desiredDistance.x, startPosition.x);
+                newPosition.y = (desiredDistance.y > 0) ? Mathf.Clamp(newPosition.y, startPosition.y, startPosition.y + desiredDistance.y) : Mathf.Clamp(newPosition.y, startPosition.y + desiredDistance.y, startPosition.y);
+                newPosition.z = (desiredDistance.z > 0) ? Mathf.Clamp(newPosition.z, startPosition.z, startPosition.z + desiredDistance.z) : Mathf.Clamp(newPosition.z, startPosition.z + desiredDistance.z, startPosition.z);
+                float mouseMovementX = (Input.mousePosition.x - holdPosition.x) * 0.015f;
+                Quaternion newRotation = Quaternion.Euler(-mouseMovementX - 90, originalYRotation, originalZRotation);
+                hiddenObject.transform.localRotation = newRotation;
             }
         }
     }

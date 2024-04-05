@@ -18,4 +18,6 @@ MonoBehaviour:
   LogbookModel: {fileID: 2011665084440722327, guid: 0d08c3d1532c5d7418dd8b1645e16025,
     type: 3}
   VpsSceneName: GCU Curved Bench 2
-  Hints: []
+  Hints:
+  - The base of it looks easy to move.
+  - Looks like it could easily go backward and forward.

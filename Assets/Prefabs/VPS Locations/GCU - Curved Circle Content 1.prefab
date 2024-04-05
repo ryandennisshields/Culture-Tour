@@ -560,7 +560,7 @@ PrefabInstance:
     - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
         type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
         type: 3}
@@ -629,6 +629,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
         type: 3}
+      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
+        type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 930096762996980092}
@@ -637,11 +642,6 @@ PrefabInstance:
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 3526633305257703794}
-    - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
-        type: 3}
-      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[4].m_Target
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
         type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -664,6 +664,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
         type: 3}
+      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
+        type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Animate
       objectReference: {fileID: 0}
@@ -680,12 +685,12 @@ PrefabInstance:
     - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
         type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: StartFadeToStart
+      value: StartFadeToEnd
       objectReference: {fileID: 0}
     - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
         type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
-      value: StopTracking
+      value: StartFadeToEnd
       objectReference: {fileID: 0}
     - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
         type: 3}
@@ -730,7 +735,7 @@ PrefabInstance:
     - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
         type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
-      value: Niantic.Lightship.AR.LocationAR.ARLocationManager, Niantic.Lightship.AR
+      value: GCU.CultureTour.CanvasGroupFade, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
         type: 3}

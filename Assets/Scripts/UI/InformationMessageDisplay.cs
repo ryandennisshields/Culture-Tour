@@ -12,9 +12,6 @@ namespace GCU.CultureTour
     public class InformationMessageDisplay : MonoBehaviour
     {
         [SerializeField]
-        TMPro.TextMeshProUGUI InformationMessage;
-
-        [SerializeField]
         CanvasGroup MessageHolder;
 
         [SerializeField]
@@ -23,28 +20,27 @@ namespace GCU.CultureTour
         [SerializeField, Min(0f), Tooltip("In seconds.")]
         float _fadeDuration = 1.5f;
         public float FadeDuration => _fadeDuration;
-        
-        [SerializeField]
-        bool checkFirstTimeScene;
-
-        private const string SceneKeyPrefix = "FirstTimeInScene_";
 
         private void Start () 
         {
-            if (InformationMessage != null)
-            {
-                InformationMessage.text = string.Empty;
-                MessageHolder.alpha = 0f;
-            }
+            MessageHolder.alpha = 0f;
 
             string sceneName = SceneManager.GetActiveScene().name;
-
-            if (!PlayerPrefs.HasKey(SceneKeyPrefix + sceneName) && checkFirstTimeScene)
+            if (sceneName == "Map" && !PlayerPrefs.HasKey("MapFirst"))
             {
                 informationButton.onClick.Invoke();
-                Debug.Log("true");
-                PlayerPrefs.SetInt(SceneKeyPrefix + sceneName, 1);
+                PlayerPrefs.SetInt("MapFirst", 1);
                 PlayerPrefs.Save();
+            }
+            if (!PlayerPrefs.HasKey("VPSFirst") && sceneName != "Start" && sceneName != "Map")
+            {
+                informationButton.onClick.Invoke();
+                PlayerPrefs.SetInt("VPSFirst", 1);
+                PlayerPrefs.Save();
+            }
+            if (sceneName == "Start")
+            {
+                MessageHolder.alpha = 1f;
             }
         }
 
