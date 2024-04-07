@@ -51,7 +51,7 @@ Canvas:
   m_GameObject: {fileID: 341074142117113827}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -306,6 +306,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: GCU.CultureTour.SceneLoader, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GCU.CultureTour.AudioManager, Assembly-CSharp
+        m_MethodName: PlaySoundEffect
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1148,7 +1160,7 @@ PrefabInstance:
     - target: {fileID: 7355691630439876962, guid: 7e459dfadb81cf54c91e789f2c423754,
         type: 3}
       propertyPath: m_Value
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8202448538477173534, guid: 7e459dfadb81cf54c91e789f2c423754,
         type: 3}

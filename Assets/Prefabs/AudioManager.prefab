@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5727168858311522923}
-  - component: {fileID: -5376250777569320534}
+  - component: {fileID: -4654922158220604263}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: AudioManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5376250777569320534
+--- !u!114 &-4654922158220604263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,9 +41,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 3891681336777466528}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c62ba62093b33c34da871e0def0674c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 1344f0ceb1e90954887ce4e41d81a0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameSettings: {fileID: 11400000, guid: b08041a310076024aa88ca0464542439, type: 2}
-  ClipToPlay: {fileID: 0}
-  ShowLog: 1
+  soundEffectClips:
+  - {fileID: 8300000, guid: faa56c6173a0b4f44b88824964fb9137, type: 3}
+  musicClips: []

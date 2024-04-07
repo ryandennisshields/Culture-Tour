@@ -25,6 +25,7 @@ namespace GCU.CultureTour.Logbook
 
         public void PlayAnimation( int animationToPlay )
         {
+            AudioManager.Instance.PlaySoundEffect(0);
             GameManager.Instance.PrepareToPlayAnimation(animationToPlay);
         }
     }

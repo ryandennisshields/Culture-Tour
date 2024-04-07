@@ -42,7 +42,7 @@ namespace GCU.CultureTour
         [Tooltip("The order these are in is the order the player will see them played.")]
         public AnimationSO[] Animations = new AnimationSO[0];
         
-        [Header("Map Markers (excluding collectibles!)")] 
+        [Header("API stuff points (W.I.P)")] 
         public MapMarkerSO[] Markers = new MapMarkerSO[0];
 
     }

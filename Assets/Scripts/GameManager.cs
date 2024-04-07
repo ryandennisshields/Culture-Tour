@@ -35,11 +35,9 @@ namespace GCU.CultureTour
 
                 if (_gameSettings == null)
                 {
-#if DEBUG
-                    _gameSettings = Resources.Load<GameSettingsSO>("Default Game Settings");
-#else
-                    Debug.LogError("Game settings must be set in the inspector.", gameObject);
-#endif
+
+                    _gameSettings = Resources.Load<GameSettingsSO>("Default Game Settings");   
+                    
                 }
                 
                 Reload();
