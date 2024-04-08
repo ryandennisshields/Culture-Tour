@@ -10,7 +10,6 @@ namespace GCU.CultureTour
     {
         // This should be in a localization dictionary
         // FC 2023-11-10
-        public const string NO_MORE_HINTS = "No more Hints!";
 
         public MapMarkerSO MapMarker;
         [Header("Logbook")]

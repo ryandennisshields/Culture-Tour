@@ -629,6 +629,11 @@ PrefabInstance:
       objectReference: {fileID: 382813732}
     - target: {fileID: 2043649765373461842, guid: 7cccfee2d54b93e47b7590b0a8536b8c,
         type: 3}
+      propertyPath: OnObjectDiscovered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2043649765373461842, guid: 7cccfee2d54b93e47b7590b0a8536b8c,
+        type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 8656808053550432393}
@@ -1378,10 +1383,15 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
       objectReference: {fileID: 555768282}
+    - target: {fileID: 2117980165487645382, guid: 388433570411dce4892cc9c23635a1b9,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2889603159382192082, guid: 388433570411dce4892cc9c23635a1b9,
         type: 3}
       propertyPath: m_fontSize
-      value: 80
+      value: 47.1
       objectReference: {fileID: 0}
     - target: {fileID: 3106714734131864883, guid: 388433570411dce4892cc9c23635a1b9,
         type: 3}

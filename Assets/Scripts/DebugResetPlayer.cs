@@ -7,7 +7,7 @@ namespace GCU.CultureTour
         public void ResetPlayer()
         {
 #if DEBUG
-            GameManager.Instance.UndiscoverAllObjects();
+            GameManager.Instance.ClearPlayerPrefs();
 
             var message = GameObject.FindObjectOfType<StatusMessageDisplay>();
 

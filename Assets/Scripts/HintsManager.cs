@@ -10,33 +10,12 @@ namespace GCU.CultureTour
         private CollectibleSO _collectible = null;
 
         int _hintIndex = 0;
-        bool _allHintsUsed = false;
-
-        public int HowManyHintsHaveBeenUsed
-        {
-            get
-            {
-                if (_allHintsUsed)
-                {
-                    return Hints.Length;
-                }
-
-                return _hintIndex;
-            }
-        }
 
         public void DisplayHint()
         {
             if ( _hintIndex >= Hints.Length )
             {
                 _hintIndex = 0;
-
-                if ( ! _allHintsUsed )
-                {
-                    ShowHintInStatusMessage(CollectibleSO.NO_MORE_HINTS);
-                    _allHintsUsed = true;
-                    return;
-                }
             }
 
             ShowHintInStatusMessage(Hints[_hintIndex++]);
