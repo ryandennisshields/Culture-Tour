@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433fb3d1fbacd3547ba86e8ccccbe796, type: 3}
   m_Name: GCU Curved Bench 2
   m_EditorClassIdentifier: 
-  MarkerPrefab: {fileID: 6489403115171240516, guid: 9407a68c8ccf183449e7a4065951b2b7,
+  MarkerPrefab: {fileID: 2418258510311381701, guid: 7faf7641bdca01c479da8a460bd333ab,
     type: 3}
   Lat: 55.86685
   Lng: -4.251601

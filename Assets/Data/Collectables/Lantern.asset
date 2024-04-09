@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MapMarker: {fileID: 0}
   ObjectName: Lantern
-  ObjectText: A lantern.
+  ObjectText: "As dusk settles on 11th November, children aged 5 to 12 ventures out,
+    often accompanied by their parents. They carry lanterns made from either hollowed
+    out sugar beets or paper. The children go from house to house, singing songs
+    about Sint Maarten. In, return they receive cakes, candy or fruits from their
+    generous neighbors.  These lanterns symbolize the light that guided Saint Martin
+    as he shared his cloak with the beggar on the cold winter\u2019s night."
   LogbookModel: {fileID: 0}
   VpsSceneName: 
   Hints: []

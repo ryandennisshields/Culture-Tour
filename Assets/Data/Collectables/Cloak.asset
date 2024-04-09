@@ -14,7 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MapMarker: {fileID: 0}
   ObjectName: Cloak
-  ObjectText: Saint Martin's Cloak.
+  ObjectText: "Martin was a roman solider who converted to Christianity after an
+    encounter with a half-naked beggar at the gate of the city of Amiens in northern
+    France. Martin cut his cloak in half in order to share it with the beggar who
+    that night appeared to him in a dream and revealed himself to be Christ. Central
+    to St Martins cult was the relic of the remaining half of his cloak. It was deemed
+    to be so important that the kind of France used it as a royal banner in war,
+    and they swore sacred oaths upon in. The structure in which the half-cloak was
+    preserved was referred to as Capella (\u201Clittle cloak\u201D), a term that
+    came to be used widely for buildings that served to keep relics and from which
+    the modern word \u2018chapel\u2019 is derived."
   LogbookModel: {fileID: 0}
   VpsSceneName: 
   Hints: []
