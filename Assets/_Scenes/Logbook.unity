@@ -160,7 +160,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.13333334, g: 0.40000004, b: 0.36078432, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -572,18 +572,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1063325759199380764, guid: 121e0572629a2454998f125c226f38b3,
         type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1063325759199380764, guid: 121e0572629a2454998f125c226f38b3,
-        type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1063325759199380764, guid: 121e0572629a2454998f125c226f38b3,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000032606902
+      value: -0.00058096705
       objectReference: {fileID: 0}
     - target: {fileID: 1172327954285747916, guid: 121e0572629a2454998f125c226f38b3,
         type: 3}
@@ -604,6 +599,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSize
       value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 2015752217335921262, guid: 121e0572629a2454998f125c226f38b3,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2443819206137010395, guid: 121e0572629a2454998f125c226f38b3,
         type: 3}
@@ -633,6 +633,16 @@ PrefabInstance:
     - target: {fileID: 2443819206137010395, guid: 121e0572629a2454998f125c226f38b3,
         type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529442209690595081, guid: 121e0572629a2454998f125c226f38b3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2529442209690595081, guid: 121e0572629a2454998f125c226f38b3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2563974581641370490, guid: 121e0572629a2454998f125c226f38b3,
@@ -675,33 +685,26 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3356724151284599829, guid: 121e0572629a2454998f125c226f38b3,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 560
+      objectReference: {fileID: 0}
+    - target: {fileID: 3356724151284599829, guid: 121e0572629a2454998f125c226f38b3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3356724151284599829, guid: 121e0572629a2454998f125c226f38b3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3808422018266234229, guid: 121e0572629a2454998f125c226f38b3,
         type: 3}
       propertyPath: m_Value
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3962251527616776481, guid: 121e0572629a2454998f125c226f38b3,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4139112240832359275, guid: 121e0572629a2454998f125c226f38b3,
-        type: 3}
-      propertyPath: _logbookAnimationPlayer
-      value: 
-      objectReference: {fileID: 2965727915187446253, guid: 84f5cc8b5e41ffb4bbba5a98be4a0e7b,
-        type: 3}
-    - target: {fileID: 4139112240832359275, guid: 121e0572629a2454998f125c226f38b3,
-        type: 3}
-      propertyPath: _postCollectiblePanels.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4139112240832359275, guid: 121e0572629a2454998f125c226f38b3,
-        type: 3}
-      propertyPath: _postCollectiblePanels.Array.data[0]
-      value: 
-      objectReference: {fileID: 6380716569072011749, guid: fff9a6545fc64cd47afaa6d027f8b1c7,
-        type: 3}
     - target: {fileID: 4139112240832359275, guid: 121e0572629a2454998f125c226f38b3,
         type: 3}
       propertyPath: _postCollectiblePanels.Array.data[1]
@@ -861,7 +864,7 @@ PrefabInstance:
     - target: {fileID: 7967267981213597721, guid: 121e0572629a2454998f125c226f38b3,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 89.99999
+      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

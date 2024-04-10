@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae3f4a9e75a3a46a1aff4daa19c225, type: 3}
+  m_Name: GCU Hammer
+  m_EditorClassIdentifier: 
+  MapMarker: {fileID: 11400000, guid: c118d31f044819d4782693d36299677a, type: 2}
+  ObjectName: Hammer
+  ObjectText: St Martin served as a bishop at the Basilica at Tours from 371- however
+    reluctantly. It is said that he tried to hide from those who wanted to install
+    him as Bishop, but his hiding place was given away by the cackling of geese,
+    which have been associated with the saint ever since. Other stories tell how
+    the saint destroyed pagan temples and cut down sacred trees using his hammer.
+    in one instance, the pagans agreed to fell their sacred fir tree, only if Martin
+    would stand directly in its path. He did so and the tree miraculously missed
+    him.
+  LogbookModel: {fileID: 2011665084440722327, guid: 09bc326d30d74154d9a46f6f8129e977,
+    type: 3}
+  VpsSceneName: GCU Curved Bench 1
+  Hints:
+  - Looks like it's above something. An egg?
+  - The egg looks weak.

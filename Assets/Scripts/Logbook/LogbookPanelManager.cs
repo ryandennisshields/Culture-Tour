@@ -1,7 +1,9 @@
 using Niantic.Platform.Debugging;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +13,9 @@ namespace GCU.CultureTour.Logbook
     {
         [SerializeField]
         private ScrollRect _scrollRect;
+
+        [SerializeField]
+        private float creationDelay = 0f;
 
         [Header("Panels")]
         [SerializeField]
@@ -28,6 +33,17 @@ namespace GCU.CultureTour.Logbook
         private Dictionary<CollectibleSO, GameObject> _objectPanels = new Dictionary<CollectibleSO, GameObject>();
 
         private void Start()
+        {
+            StartCoroutine(DelayCreation());
+        }
+
+        private IEnumerator DelayCreation()
+        {
+            yield return new WaitForSeconds(creationDelay);
+            CreatePanels();
+        }
+
+        private void CreatePanels()
         {
             float height = 0f;
 

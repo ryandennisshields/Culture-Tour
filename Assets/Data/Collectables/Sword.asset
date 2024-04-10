@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ae3f4a9e75a3a46a1aff4daa19c225, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  MapMarker: {fileID: 11400000, guid: cd5e8db3c377c3549a45ccf10803fae2, type: 2}
+  MapMarker: {fileID: 11400000, guid: 9b2bcca7eff09bb4a915f7abd64142b0, type: 2}
   ObjectName: Sword
   ObjectText: Saint Martin was drafted into the Roman Army at age 15, he later became
     a member of the royal cavalry guard. It was while he was campaigning in Gaul,
@@ -25,7 +25,7 @@ MonoBehaviour:
     to the freezing man and wrapped the remainder on his own shoulders.
   LogbookModel: {fileID: 2011665084440722327, guid: 9d47f6fa6042eda4ca7c11158191e630,
     type: 3}
-  VpsSceneName: GCU Curved Bench
+  VpsSceneName: Utrecht Maartensbrug
   Hints:
   - Look where people may choose to sit.
   - You are looking for a weapon.

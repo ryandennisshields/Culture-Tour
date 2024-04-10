@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae3f4a9e75a3a46a1aff4daa19c225, type: 3}
+  m_Name: GCU Lantern
+  m_EditorClassIdentifier: 
+  MapMarker: {fileID: 0}
+  ObjectName: Lantern
+  ObjectText: "As dusk settles on 11th November, children aged 5 to 12 ventures out,
+    often accompanied by their parents. They carry lanterns made from either hollowed
+    out sugar beets or paper. The children go from house to house, singing songs
+    about Sint Maarten. In, return they receive cakes, candy or fruits from their
+    generous neighbors.  These lanterns symbolize the light that guided Saint Martin
+    as he shared his cloak with the beggar on the cold winter\u2019s night."
+  LogbookModel: {fileID: 0}
+  VpsSceneName: 
+  Hints: []
