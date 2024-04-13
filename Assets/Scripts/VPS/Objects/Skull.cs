@@ -1,8 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace GCU.CultureTour
 {
@@ -19,7 +15,6 @@ namespace GCU.CultureTour
 
         private int piecesCollected = 0;
 
-        // Start is called before the first frame update
         void Start()
         {
             foreach (var piece in skullPieces)

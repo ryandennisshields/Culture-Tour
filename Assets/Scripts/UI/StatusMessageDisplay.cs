@@ -1,5 +1,4 @@
 using com.cyborgAssets.inspectorButtonPro;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -136,13 +135,13 @@ namespace GCU.CultureTour
             {
                 if (_messageQueue.Count > 0)
                 {
-                    // display next message
+                    // Display next message
                     var newMessage = _messageQueue.Dequeue();
                     SetMessage(newMessage);
                 }
                 else
                 {
-                    // fade out
+                    // Fade out
                     StartCoroutine(FadeOut());
                 }
             }

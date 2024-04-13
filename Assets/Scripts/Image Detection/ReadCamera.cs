@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using System;
 using System.IO;
 using UnityEngine;
@@ -12,7 +11,6 @@ namespace GCU.CultureTour
     {
         private bool camAvailable;
         private WebCamTexture webCamTexture;
-        private Texture defaultBackground;
 
         public RawImage background;
         public AspectRatioFitter fit;
@@ -23,7 +21,6 @@ namespace GCU.CultureTour
 
         private void Start()
         {
-            defaultBackground = background.texture;
             WebCamDevice[] devices = WebCamTexture.devices;
 
             if (devices.Length == 0)

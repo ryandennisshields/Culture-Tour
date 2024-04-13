@@ -11,9 +11,6 @@ namespace GCU.CultureTour.Logbook
         [SerializeField]
         private TMPro.TextMeshProUGUI _objectText;
 
-        //[SerializeField]
-        //private TMPro.TextMeshProUGUI _modelDescription;
-
         [SerializeField]
         private TMPro.TextMeshProUGUI _dateCollectedText;
         
@@ -43,7 +40,7 @@ namespace GCU.CultureTour.Logbook
 
             if (_logbookModelHolder != null)
             {
-                // remove any existing children
+                // Remove any existing children
                 for (int i = 0; i < _logbookModelHolder.childCount; i++)
                 {
                     Destroy(_logbookModelHolder.GetChild(i));
@@ -72,7 +69,6 @@ namespace GCU.CultureTour.Logbook
                 if (PlayerPrefs.GetString(_collectible.ObjectName + "dateCollected") != null)
                 {
                     _dateCollectedText.text = PlayerPrefs.GetString(_collectible.ObjectName + "dateCollected", "No Date Found");
-                    //Debug.Log(PlayerPrefs.GetString(_areaName + "dateCollected"));
                 }
             }
         }

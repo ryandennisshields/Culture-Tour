@@ -1,7 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 namespace GCU.CultureTour.Animations
@@ -15,7 +13,7 @@ namespace GCU.CultureTour.Animations
         private SceneLoader _sceneLoader;
 
         /// <summary>
-        /// The next scene will load once this is set to true.
+        /// The next scene will load once this is set to true
         /// </summary>
         private bool _loadScene = false;
 
@@ -44,7 +42,7 @@ namespace GCU.CultureTour.Animations
 
         private IEnumerator Start()
         {
-            // get clip from Game manager
+            // Get clip from Game Manager
             _animation = GameManager.Instance.ClipToPlay;
 
             if (_animation == null)
@@ -67,7 +65,7 @@ namespace GCU.CultureTour.Animations
             {
                 if (_animation.PlayLength > 0 && playingTime > _animation.PlayLength)
                 {
-                    // playing length field has been exceed.
+                    // Playing length field has been exceed
                     _loadScene = true;
                 }
                 

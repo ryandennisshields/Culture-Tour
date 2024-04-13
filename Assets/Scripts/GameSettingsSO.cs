@@ -1,8 +1,5 @@
 using UnityEngine;
 using GCU.CultureTour.Map;
-using com.cyborgAssets.inspectorButtonPro;
-using UnityEngine.Rendering;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -22,7 +19,7 @@ namespace GCU.CultureTour
             {
                 List<CollectibleSO> l = new List<CollectibleSO>();
 
-                // add in the collected objects sorted by the order they were collected in.
+                // Add in the collected objects sorted by the order they were collected in.
                 l.AddRange(
                     Collectibles
                     .Where(c => c.CollectedOrder >= 0)
@@ -42,7 +39,7 @@ namespace GCU.CultureTour
         [Tooltip("The order these are in is the order the player will see them played.")]
         public AnimationSO[] Animations = new AnimationSO[0];
         
-        [Header("API stuff points (W.I.P)")] 
+        [Header("API Map Markers")] 
         public MapMarkerSO[] Markers = new MapMarkerSO[0];
 
     }

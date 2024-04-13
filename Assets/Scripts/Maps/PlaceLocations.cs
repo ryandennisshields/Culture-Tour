@@ -32,7 +32,7 @@ namespace GCU.CultureTour.Map
                 return;
             }
 
-            // place non collectible map markers
+            // Place map markers
             foreach (CollectibleSO collectable in _gameSettings.Collectibles)
             {
                 if ( collectable == null )
@@ -52,7 +52,7 @@ namespace GCU.CultureTour.Map
             }
 
 
-            // place non collectible map markers
+            // Place API map markers
             foreach (MapMarkerSO marker in _gameSettings.Markers)
             {
                 var obj = mapLayer.PlaceInstance( new LatLng( marker.Lat, marker.Lng ), Quaternion.Euler(marker.Rotation), marker.name);

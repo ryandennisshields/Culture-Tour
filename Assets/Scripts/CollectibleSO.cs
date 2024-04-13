@@ -8,9 +8,6 @@ namespace GCU.CultureTour
     [CreateAssetMenu(fileName = "Collectible", menuName = "GCU/Create Collectible")]
     public class CollectibleSO : ScriptableObject
     {
-        // This should be in a localization dictionary
-        // FC 2023-11-10
-
         public MapMarkerSO MapMarker;
         [Header("Logbook")]
         public string ObjectName;
@@ -58,10 +55,9 @@ namespace GCU.CultureTour
         private void Save()
         {
             string key = KEY_PREFIX + name;
-
             PlayerPrefs.SetInt(key, CollectedOrder);
             DateTime dt = DateTime.Now;
-            PlayerPrefs.SetString(ObjectName + "dateCollected", "This object was collected on " + dt.ToString("yyyy-MM--dd"));
+            PlayerPrefs.SetString(ObjectName + "dateCollected", "This object was collected on " + dt.ToString("dd/MM/yyyy"));
             PlayerPrefs.Save();
         }
     }

@@ -657,7 +657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _start: 1
   _end: 0
-  _fadeTime: 0.6
+  _fadeTime: 1
   _delay: 0
 --- !u!1 &2631326792996013861
 GameObject:
@@ -1304,7 +1304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _start: 1
   _end: 0
-  _fadeTime: 0.6
+  _fadeTime: 1
   _delay: 0
 --- !u!1 &3526918933597853447
 GameObject:
@@ -1415,7 +1415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MessageHolder: {fileID: 8268286822628245947}
   informationButton: {fileID: 2003251519211633880}
-  _fadeDuration: 1.5
+  _fadeDuration: 1
 --- !u!1 &3648823171039449600
 GameObject:
   m_ObjectHideFlags: 0

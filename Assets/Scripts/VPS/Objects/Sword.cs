@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace GCU.CultureTour
@@ -9,7 +7,6 @@ namespace GCU.CultureTour
         [SerializeField]
         private Vector3 desiredPosition;
 
-        // Start is called before the first frame update
         void Start()
         {
             startPosition = hiddenObject.transform.position;

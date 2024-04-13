@@ -1,7 +1,5 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Timeline;
 
 namespace GCU.CultureTour.Map
 {

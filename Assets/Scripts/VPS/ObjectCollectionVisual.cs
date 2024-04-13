@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace GCU.CultureTour
@@ -7,7 +6,7 @@ namespace GCU.CultureTour
     public class ObjectCollectionVisual : MonoBehaviour
     {
         [SerializeField]
-        private Transform _objectToMove;
+        private Transform _collectedObject;
 
         [SerializeField]
         private ParticleSystem _objectParticles;
@@ -21,7 +20,7 @@ namespace GCU.CultureTour
         {
             if (_interacted)
             {
-                // can't interact twice.
+                // Can't interact twice
                 return;
             }
 

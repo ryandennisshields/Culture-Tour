@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace GCU.CultureTour
@@ -32,7 +31,7 @@ namespace GCU.CultureTour
                 yield return null;
             }
 
-            // let the UI fade out
+            // Let the UI fade out
             yield return new WaitForSeconds ( _messageDisplay.FadeDuration );
 
             GetComponent<SceneLoader>().LoadScene();

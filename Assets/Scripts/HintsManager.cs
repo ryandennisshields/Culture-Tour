@@ -32,10 +32,6 @@ namespace GCU.CultureTour
             _collectible = GameManager.Instance.GetCollectibleSO(scene.name);
         }
 
-        /// <summary>
-        /// This is just a temporary solution.
-        /// 2023-11-10
-        /// </summary>
         private void ShowHintInStatusMessage( string hint )
         {
             var statusDisplay = FindObjectOfType<StatusMessageDisplay>();

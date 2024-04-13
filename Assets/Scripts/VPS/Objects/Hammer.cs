@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace GCU.CultureTour
@@ -18,7 +16,6 @@ namespace GCU.CultureTour
 
         // insert mesh here for fully broken egg
 
-        // Start is called before the first frame update
         void Start()
         {
             startPosition = hiddenObject.transform.position;

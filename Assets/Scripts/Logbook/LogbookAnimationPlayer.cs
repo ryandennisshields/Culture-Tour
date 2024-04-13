@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Unity.Burst.CompilerServices;
+﻿using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,7 +25,6 @@ namespace GCU.CultureTour.Logbook
                 buttons[1].interactable = true;
 #endif
             
-
             // More added for future objects
         }
 

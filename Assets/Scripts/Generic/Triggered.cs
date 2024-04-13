@@ -1,6 +1,4 @@
 using GCU.CultureTour.VPS;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace GCU.CultureTour

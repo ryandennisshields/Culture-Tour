@@ -4,7 +4,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace GCU.CultureTour
 {
@@ -114,12 +113,12 @@ namespace GCU.CultureTour
         {
             _nextCollectable = 0;
 
-            // load the status of all collectibles
+            // Load the status of all collectibles
             foreach (var collectable in _gameSettings.Collectibles)
             {
                 collectable.Load();
 
-                // get the largest collected order
+                // Get the largest collected order
                 if (collectable.CollectedOrder > _nextCollectable)
                 {
                     _nextCollectable = collectable.CollectedOrder;

@@ -1,8 +1,4 @@
-using com.cyborgAssets.inspectorButtonPro;
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -18,7 +14,7 @@ namespace GCU.CultureTour
         Button informationButton;
         
         [SerializeField, Min(0f), Tooltip("In seconds.")]
-        float _fadeDuration = 1.5f;
+        float _fadeDuration = 1f;
         public float FadeDuration => _fadeDuration;
 
         private void Start () 
@@ -89,7 +85,7 @@ namespace GCU.CultureTour
                 float amount = Mathf.Lerp(start, target, progress);
                 MessageHolder.alpha = amount;
 
-                // wait for next frame
+                // Wait for next frame
                 yield return null;
             }
 

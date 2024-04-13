@@ -12,7 +12,6 @@ namespace GCU.CultureTour
         float originalYRotation;
         float originalZRotation;
 
-        // Start is called before the first frame update
         void Start()
         {
             originalYRotation = 242.05f;

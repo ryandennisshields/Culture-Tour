@@ -28,7 +28,7 @@ namespace GCU.CultureTour.VPS
             var collectible = GameManager.Instance.GetCollectibleSO(scene.name);
             GameManager.Instance.DiscoverObject(collectible);
 
-            // prevent the user from discovering an object more than once.
+            // Prevent the user from discovering an object more than once
             go.SetActive( false );
 
             FindObjectOfType<StatusMessageDisplay>()?

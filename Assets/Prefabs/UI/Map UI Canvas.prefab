@@ -2854,7 +2854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MessageHolder: {fileID: 5089833875481210253}
   informationButton: {fileID: 2475237132754456029}
-  _fadeDuration: 1.5
+  _fadeDuration: 1
 --- !u!1001 &2141779156059595585
 PrefabInstance:
   m_ObjectHideFlags: 0

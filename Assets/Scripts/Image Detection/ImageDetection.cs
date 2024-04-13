@@ -5,11 +5,8 @@ using System.IO;
 using System.Net.Http;
 using System.Threading.Tasks;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using Newtonsoft.Json;
-using Google.Protobuf.WellKnownTypes;
-using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 namespace GCU.CultureTour
 {

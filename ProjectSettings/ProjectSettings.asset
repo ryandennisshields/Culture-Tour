@@ -181,7 +181,7 @@ PlayerSettings:
   strictShaderVariantMatching: 0
   VertexChannelCompressionMask: 4054
   iPhoneSdkVersion: 988
-  iOSTargetOSVersionString: 12.0
+  iOSTargetOSVersionString: 14.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 12.0
@@ -548,8 +548,8 @@ PlayerSettings:
   enableInternalProfiler: 0
   logObjCUncaughtExceptions: 1
   enableCrashReportAPI: 0
-  cameraUsageDescription: 
-  locationUsageDescription: 
+  cameraUsageDescription: Augmented Reality requires the camera
+  locationUsageDescription: Lightship VPS needs access to your location.
   microphoneUsageDescription: 
   bluetoothUsageDescription: 
   macOSTargetOSVersion: 10.13.0
@@ -803,6 +803,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     Android: NIANTIC_LIGHTSHIP_AR_LOADER_ENABLED
     Standalone: NIANTIC_LIGHTSHIP_AR_LOADER_ENABLED
+    iPhone: UNITY_XR_ARKIT_LOADER_ENABLED;NIANTIC_LIGHTSHIP_AR_LOADER_ENABLED
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
