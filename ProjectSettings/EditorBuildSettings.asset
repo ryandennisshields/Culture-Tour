@@ -21,9 +21,6 @@ EditorBuildSettings:
     path: Assets/_Scenes/VPS/Temp/GCU Folded Circles.unity
     guid: 6471818cf0e88d44bb0de3caafa6230a
   - enabled: 1
-    path: Assets/_Scenes/VPS/GCU/GCU The Quoting Stones.unity
-    guid: eeda30696854127479414422cae72b60
-  - enabled: 1
     path: Assets/_Scenes/VPS/GCU/GCU Curved Bench.unity
     guid: 83d9527751ed39e4f8e93122723a21fc
   - enabled: 1
@@ -32,6 +29,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/VPS/GCU/GCU Curved Bench 2.unity
     guid: ed8fff4451b4c6e4b8616d01f5bd236c
+  - enabled: 1
+    path: Assets/_Scenes/VPS/GCU/GCU The Quoting Stones.unity
+    guid: eeda30696854127479414422cae72b60
+  - enabled: 1
+    path: Assets/_Scenes/VPS/GCU/GCU The Quoting Stones 1.unity
+    guid: 8984a898a89d3894ead8c6ed9f819c43
   - enabled: 0
     path: Assets/_Scenes/VPS/Temp/Utrecht Runestone.unity
     guid: 359e39c7dfac96a41911c8933f3ae7e0

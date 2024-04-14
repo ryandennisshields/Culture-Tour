@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ae3f4a9e75a3a46a1aff4daa19c225, type: 3}
   m_Name: GCU Cloak
   m_EditorClassIdentifier: 
-  MapMarker: {fileID: 0}
+  MapMarker: {fileID: 11400000, guid: f14cc7bf01550f344a8076c46b874e63, type: 2}
   ObjectName: Cloak
   ObjectText: "Martin was a roman solider who converted to Christianity after an
     encounter with a half-naked beggar at the gate of the city of Amiens in northern
@@ -24,6 +24,9 @@ MonoBehaviour:
     preserved was referred to as Capella (\u201Clittle cloak\u201D), a term that
     came to be used widely for buildings that served to keep relics and from which
     the modern word \u2018chapel\u2019 is derived."
-  LogbookModel: {fileID: 0}
-  VpsSceneName: 
-  Hints: []
+  LogbookModel: {fileID: 2011665084440722327, guid: 245ea3ec7061ab445aa46e1334fc4ac9,
+    type: 3}
+  VpsSceneName: GCU The Quoting Stones 1
+  Hints:
+  - Looks like a Sword is above the cloak.
+  - Maybe try re-creating an act of Saint Martin.
