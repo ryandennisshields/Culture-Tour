@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/VPS/GCU/GCU The Quoting Stones 1.unity
     guid: 8984a898a89d3894ead8c6ed9f819c43
+  - enabled: 1
+    path: Assets/_Scenes/VPS/GCU/GCU The Quoting Stones 2.unity
+    guid: 27f0658f94b350b45903bd16b9076c0c
   - enabled: 0
     path: Assets/_Scenes/VPS/Temp/Utrecht Runestone.unity
     guid: 359e39c7dfac96a41911c8933f3ae7e0
