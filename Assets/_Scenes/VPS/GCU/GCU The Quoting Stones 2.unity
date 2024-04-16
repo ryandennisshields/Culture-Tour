@@ -564,7 +564,7 @@ PrefabInstance:
     - target: {fileID: 2889603159382192082, guid: 388433570411dce4892cc9c23635a1b9,
         type: 3}
       propertyPath: m_fontSize
-      value: 65.5
+      value: 59.4
       objectReference: {fileID: 0}
     - target: {fileID: 3106714734131864883, guid: 388433570411dce4892cc9c23635a1b9,
         type: 3}
@@ -790,7 +790,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1375016283}
     - target: {fileID: 7566326386030288693, guid: 388433570411dce4892cc9c23635a1b9,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target

@@ -131,15 +131,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 192592221}
     m_Modifications:
+    - target: {fileID: 2299785171437891557, guid: 0928e3ea6009f4b49931ee194082b50c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4136133190229506969, guid: 0928e3ea6009f4b49931ee194082b50c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.517
+      value: 1.535
       objectReference: {fileID: 0}
     - target: {fileID: 4136133190229506969, guid: 0928e3ea6009f4b49931ee194082b50c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.409
+      value: 2.074
       objectReference: {fileID: 0}
     - target: {fileID: 4136133190229506969, guid: 0928e3ea6009f4b49931ee194082b50c,
         type: 3}
@@ -170,6 +175,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 87.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5366136119046136605, guid: 0928e3ea6009f4b49931ee194082b50c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.4829999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5366136119046136605, guid: 0928e3ea6009f4b49931ee194082b50c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.6689999
       objectReference: {fileID: 0}
     - target: {fileID: 5784653569201957533, guid: 0928e3ea6009f4b49931ee194082b50c,
         type: 3}
@@ -224,7 +239,7 @@ PrefabInstance:
     - target: {fileID: 6694276199304976203, guid: 0928e3ea6009f4b49931ee194082b50c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.477
+      value: 1.495
       objectReference: {fileID: 0}
     - target: {fileID: 6694276199304976203, guid: 0928e3ea6009f4b49931ee194082b50c,
         type: 3}
@@ -234,7 +249,7 @@ PrefabInstance:
     - target: {fileID: 6694276199304976203, guid: 0928e3ea6009f4b49931ee194082b50c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.234
+      value: 1.431
       objectReference: {fileID: 0}
     - target: {fileID: 8135272868681090289, guid: 0928e3ea6009f4b49931ee194082b50c,
         type: 3}

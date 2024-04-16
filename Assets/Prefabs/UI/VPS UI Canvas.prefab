@@ -2032,7 +2032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StatusMessage: {fileID: 2889603159382192082}
   MessageHolder: {fileID: 7305305753954758595}
-  _messageDuration: 10
+  _messageDuration: 5
   _fadeDuration: 1.5
 --- !u!1 &5593417494592566445
 GameObject:
@@ -2127,7 +2127,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 52
+  m_fontSize: 59.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

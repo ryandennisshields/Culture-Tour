@@ -6,8 +6,6 @@ namespace GCU.CultureTour
     public class Cloak : Triggered
     {
         [SerializeField]
-        private GameObject userInteraction;
-        [SerializeField]
         private Animation cloakAnimation;
 
         [SerializeField]
@@ -15,7 +13,7 @@ namespace GCU.CultureTour
 
         void Start()
         {
-            startPosition = gameObject.transform.position;
+            startPosition = hiddenObject.transform.position;
         }
 
         private void OnMouseDown()
@@ -34,17 +32,16 @@ namespace GCU.CultureTour
             if (isHolding)
             {
                 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition - holdPosition);
-                newPosition.x = (desiredPosition.x > 0) ? Mathf.Clamp(newPosition.x, startPosition.x, startPosition.x + desiredPosition.x) : Mathf.Clamp(newPosition.x, startPosition.x + desiredPosition.x, startPosition.x);
-                newPosition.y = (desiredPosition.y > 0) ? Mathf.Clamp(newPosition.y, startPosition.y, startPosition.y + desiredPosition.y) : Mathf.Clamp(newPosition.y, startPosition.y + desiredPosition.y, startPosition.y);
-                newPosition.z = (desiredPosition.z > 0) ? Mathf.Clamp(newPosition.z, startPosition.z, startPosition.z + desiredPosition.z) : Mathf.Clamp(newPosition.z, startPosition.z + desiredPosition.z, startPosition.z);
-                gameObject.transform.position = newPosition;
+                newPosition.x = Mathf.Clamp(newPosition.x, startPosition.x, startPosition.x + desiredPosition.x);
+                newPosition.y = Mathf.Clamp(newPosition.y, startPosition.y, startPosition.y + desiredPosition.y);
+                newPosition.z = Mathf.Clamp(newPosition.z, startPosition.z, startPosition.z + desiredPosition.z);
             }
-        }
 
-        private void OnTriggerEnter(Collider other)
-        {
-            cloakAnimation.Play();
-            hiddenObjectScript.Tapped(userInteraction);
+            if (newPosition.x == desiredPosition.x + startPosition.x || newPosition.y == desiredPosition.y + startPosition.y || newPosition.z == desiredPosition.z + startPosition.z || newPosition.x == desiredPosition.x - startPosition.x || newPosition.y == desiredPosition.y - startPosition.y || newPosition.z == desiredPosition.z - startPosition.z)
+            {
+                cloakAnimation.Play();
+                hiddenObjectScript.Tapped(gameObject);
+            }
         }
     }
 }

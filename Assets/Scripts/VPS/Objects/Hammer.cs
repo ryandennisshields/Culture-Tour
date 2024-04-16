@@ -13,8 +13,8 @@ namespace GCU.CultureTour
         private Material eggCracked;
         [SerializeField]
         private Material eggMoreCracked;
-
-        // insert mesh here for fully broken egg
+        [SerializeField]
+        private GameObject eggBroken;
 
         void Start()
         {
@@ -59,6 +59,8 @@ namespace GCU.CultureTour
                 }
                 else if (counter == 3)
                 {
+                    egg.SetActive(false);
+                    eggBroken.SetActive(true);
                     hiddenObjectScript.Tapped(gameObject);
                 }
             }

@@ -119,6 +119,10 @@ namespace GCU.CultureTour.Map
 
                 SceneManager.LoadScene( _mapMarker.SceneToLoadOnInteraction );
             }
+            else if ( ! _inRange ) 
+            {
+                FindObjectOfType<StatusMessageDisplay>().DisplayMessage("Get closer!");
+            }
         }
     } 
 }
