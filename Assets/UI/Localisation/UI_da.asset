@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI_da
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: da
+  m_SharedData: {fileID: 11400000, guid: b1b7ce901ad9b5742a527e79015f928c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 15880155136
+    m_Localized: "\rV\xE6r altid opm\xE6rksom p\xE5 dine omgivelser!\r\n\r\nEn stabil
+      forbindelse og placering er p\xE5kr\xE6vet!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6135277416448
+    m_Localized: Den helliges hemmeligheder
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
