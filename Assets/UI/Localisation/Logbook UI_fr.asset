@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Logbook UI_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 568087a7d61880c44827df6a6a0fcdae, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20456682287104
+    m_Localized: Registre
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20486646394880
+    m_Localized: "Ce journal de bord stocke tous les objets cach\xE9s que vous avez
+      collect\xE9s en cours de route.\n\nJetez un \u0153il aux Objets pour en savoir
+      plus sur Saint-Martin !\n\nVous pouvez \xE9galement trouver n'importe quelle
+      animation que vous avez d\xE9bloqu\xE9e sous les objets\_!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20510558121984
+    m_Localized: "Cet objet a \xE9t\xE9 collect\xE9 sur "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20542816514048
+    m_Localized: "\xC9p\xE9e"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20567822954496
+    m_Localized: "Saint Martin fut enr\xF4l\xE9 dans l'arm\xE9e romaine \xE0 l'\xE2ge
+      de 15 ans, puis devint membre de la garde royale de cavalerie. C'est alors
+      qu'il fait campagne en Gaule, en tant que tribun de 18 ans, en poste \xE0 Amiens,
+      que se d\xE9roule la c\xE9l\xE8bre l\xE9gende de Saint Martin et du mendiant.
+      Alors qu'il approchait des portes en garnison \xE0 Amiens, il aper\xE7ut le
+      mendiant, avec des v\xEAtements si d\xE9chir\xE9s qu'il \xE9tait pratiquement
+      nu. Le mendiant devait trembler et devenir bleu \xE0 cause du froid, mais personne
+      ne lui a tendu la main. Martin, submerg\xE9 de compassion, \xF4ta son manteau.
+      D'un seul coup rapide, il coupa le joli manteau en deux avec son \xE9p\xE9e,
+      en tendit la moiti\xE9 \xE0 l'homme gel\xE9 et enroula le reste sur ses propres
+      \xE9paules."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20595710881792
+    m_Localized: Manteau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20644578717696
+    m_Localized: "Martin \xE9tait un soldat romain qui s'est converti au christianisme
+      apr\xE8s une rencontre avec un mendiant \xE0 moiti\xE9 nu \xE0 la porte de
+      la ville d'Amiens, dans le nord de la France. Martin coupa son manteau en deux
+      pour le partager avec le mendiant qui, cette nuit-l\xE0, lui apparut en r\xEAve
+      et se r\xE9v\xE9la \xEAtre le Christ. Au centre du culte de Saint-Martin se
+      trouvait la relique de la moiti\xE9 restante de son manteau. Il \xE9tait consid\xE9r\xE9
+      comme si important que les Fran\xE7ais l'utilisaient comme banni\xE8re royale
+      pendant la guerre et pr\xEAtaient des serments sacr\xE9s. La structure dans
+      laquelle le demi-manteau \xE9tait conserv\xE9 \xE9tait appel\xE9e Capella (\xAB
+      petit manteau \xBB). , un terme qui a fini par \xEAtre largement utilis\xE9
+      pour d\xE9signer les b\xE2timents qui servaient \xE0 conserver des reliques
+      et dont est d\xE9riv\xE9 le mot moderne \xAB chapelle \xBB."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20678217035776
+    m_Localized: "Cr\xE2ne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20698995617792
+    m_Localized: "Saint Martin est d\xE9c\xE9d\xE9 le 8 novembre 397 apr\xE8s JC.
+      Apr\xE8s sa mort, les habitants de la r\xE9gion du Poitou et les habitants
+      de Tours se sont disput\xE9s pour savoir o\xF9 Martin serait enterr\xE9. Un
+      soir, \xE0 la tomb\xE9e de la nuit, plusieurs habitants de Tours ont transport\xE9
+      le corps de Martins vers un bateau en attente sur la Loire, o\xF9 des \xE9quipes
+      de rameurs ont transport\xE9 son corps sur la rivi\xE8re de Tours o\xF9 des
+      masses de gens attendaient sur les berges pour se rencontrer et lui rendre
+      hommage. Des sanctuaires ont \xE9t\xE9 cr\xE9\xE9s en son honneur ; la chapelle
+      du sanctuaire de Tours est devenue l'un des \xE9tablissements les plus importants
+      et les plus influents de la France m\xE9di\xE9vale. Plus tard, l'abbaye fut
+      d\xE9truite par un incendie \xE0 plusieurs reprises et saccag\xE9e par les
+      Vikings normands en 853 et 903. Elle br\xFBla de nouveau en 994 et fut reconstruite
+      au cours d'un effort de 20 ans. En 1453, les restes de saint Martin furent
+      transf\xE9r\xE9s dans un nouveau reliquaire."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20721737134080
+    m_Localized: Lanterne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20748492599296
+    m_Localized: "\xC0 la tomb\xE9e du jour du 11 novembre, les enfants de 5 \xE0
+      12 ans s'aventurent dehors, souvent accompagn\xE9s de leurs parents. Ils portent
+      des lanternes fabriqu\xE9es soit \xE0 partir de betteraves sucri\xE8res \xE9vid\xE9es,
+      soit en papier. Les enfants vont de maison en maison en chantant des chansons
+      sur Sint Maarten. Au retour, ils re\xE7oivent des g\xE2teaux, des bonbons ou
+      des fruits de leurs g\xE9n\xE9reux voisins. Ces lanternes symbolisent la lumi\xE8re
+      qui guidait Saint Martin alors qu\u2019il partageait son manteau avec le mendiant
+      lors des froides nuits d\u2019hiver."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20774929297408
+    m_Localized: Cheval en bois jouet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20810866094080
+    m_Localized: "Saint Martin est le saint patron des chevaux et des cavaliers.
+      Apr\xE8s avoir \xE9t\xE9 soldat de cavalerie, il a pass\xE9 la plupart de son
+      temps dans l'arm\xE9e romaine \xE0 cheval. Le cheval \xE9tant un jouet \xE0
+      bascule en bois est aussi un clin d'\u0153il au travail qu'il effectuait avec
+      les enfants et \xE0 la compassion qu'il faisait envers les autres. La l\xE9gende
+      du cheval blanc sur lequel Martin arrive et porte sa premi\xE8re neige est
+      n\xE9e de mani\xE8re assez prosa\xEFque. Au fil des ann\xE9es, les gens ont
+      simplement remarqu\xE9 que la premi\xE8re neige arrive toujours \xE0 temps
+      autour de la Saint-Martin : ils ont associ\xE9 son nom \xE0 un cheval blanc,
+      symbolisant les premiers flocons de neige."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20842533089280
+    m_Localized: Marteau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21043083735040
+    m_Localized: "Saint Martin fut \xE9v\xEAque \xE0 la basilique de Tours \xE0 partir
+      de 371, mais \xE0 contrec\u0153ur. On raconte qu'il essaya de se cacher de
+      ceux qui voulaient l'installer comme \xE9v\xEAque, mais sa cachette fut trahie
+      par le caquetement des oies, qui sont depuis lors associ\xE9s au saint. D'autres
+      histoires racontent comment le saint d\xE9truisit des temples pa\xEFens et
+      coupa des arbres sacr\xE9s \xE0 l'aide de son marteau. dans un cas, les pa\xEFens
+      ont accept\xE9 d'abattre leur sapin sacr\xE9, seulement si Martin se tenait
+      directement sur son chemin. Il l\u2019a fait et l\u2019arbre l\u2019a miraculeusement
+      manqu\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21060569788416
+    m_Localized: Animations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21082711519232
+    m_Localized: Couper le manteau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21115716497408
+    m_Localized: "D\xE9cha\xEEnement de taureaux"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21166291415040
+    m_Localized: "Objets requis\n\xC9p\xE9e\nManteau"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21210235138048
+    m_Localized: "Objets requis\nCr\xE2ne\nLanterne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21291847905280
+    m_Localized: "Cr\xE9dits"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21331505049600
+    m_Localized: Avec le soutien de
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21358696722432
+    m_Localized: "Lewis MacDonald\nAlistair Sawers\nAndrew Holt\nJuan Lorenzo Burgos\nDavid
+      Milligan\nFraser Connolly\nRyan Boucliers\nPaulina Wykurz\nMorgan McKay\nAndrew
+      Proudfoot\nRobyn Hoskin\nMathilde Pratt\n\n\nHamid Homatash\nAlan Jack\nUniversit\xE9
+      cal\xE9donienne de Glasgow\nUniversit\xE9 des Sciences Appliqu\xE9es de Breda"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -932,14 +932,19 @@ PrefabInstance:
       objectReference: {fileID: 382813732}
     - target: {fileID: 7696077388105541368, guid: f94319334975f8946ba3b75a731bb89c,
         type: 3}
-      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1158741826}
     - target: {fileID: 7696077388105541368, guid: f94319334975f8946ba3b75a731bb89c,
         type: 3}
-      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1158741825}
+    - target: {fileID: 7696077388105541368, guid: f94319334975f8946ba3b75a731bb89c,
+        type: 3}
+      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1158741824}
     - target: {fileID: 7696077388105541368, guid: f94319334975f8946ba3b75a731bb89c,
         type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[4].m_Target

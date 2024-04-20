@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: VPS UI Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: VPS UI
+  m_TableCollectionNameGuidString: c050224afcbe61d42b99ecaa30a90cfd
+  m_Entries:
+  - m_Id: 25032126464
+    m_Key: vps_message_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59366699008
+    m_Key: vps_message_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 256981331968
+    m_Key: vps_message_2
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4860323448185159729
+  references:
+    version: 2
+    RefIds:
+    - rid: 4860323448185159729
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1713646117892

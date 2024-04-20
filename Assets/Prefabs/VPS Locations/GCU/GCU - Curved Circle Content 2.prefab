@@ -133,8 +133,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5968992375460565788, guid: 08bf676da7da7b34b87eea22add4845d,
         type: 3}
+      propertyPath: localizedStringTable.m_TableReference.m_TableCollectionName
+      value: GUID:1fea39e4caa53524080be641f0520478
+      objectReference: {fileID: 0}
+    - target: {fileID: 5968992375460565788, guid: 08bf676da7da7b34b87eea22add4845d,
+        type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5968992375460565788, guid: 08bf676da7da7b34b87eea22add4845d,
         type: 3}
@@ -223,11 +228,6 @@ PrefabInstance:
       objectReference: {fileID: 930096762996980092}
     - target: {fileID: 5968992375460565788, guid: 08bf676da7da7b34b87eea22add4845d,
         type: 3}
-      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 3526633305257703794}
-    - target: {fileID: 5968992375460565788, guid: 08bf676da7da7b34b87eea22add4845d,
-        type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -259,12 +259,12 @@ PrefabInstance:
     - target: {fileID: 5968992375460565788, guid: 08bf676da7da7b34b87eea22add4845d,
         type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: DisplayObjectCollected
+      value: StartFadeToEndColour
       objectReference: {fileID: 0}
     - target: {fileID: 5968992375460565788, guid: 08bf676da7da7b34b87eea22add4845d,
         type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: StartFadeToEndColour
+      value: StartFadeToEnd
       objectReference: {fileID: 0}
     - target: {fileID: 5968992375460565788, guid: 08bf676da7da7b34b87eea22add4845d,
         type: 3}
@@ -304,12 +304,12 @@ PrefabInstance:
     - target: {fileID: 5968992375460565788, guid: 08bf676da7da7b34b87eea22add4845d,
         type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: GCU.CultureTour.HintsManager, Assembly-CSharp
+      value: GCU.CultureTour.ImageColourFade, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5968992375460565788, guid: 08bf676da7da7b34b87eea22add4845d,
         type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: GCU.CultureTour.ImageColourFade, Assembly-CSharp
+      value: GCU.CultureTour.CanvasGroupFade, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5968992375460565788, guid: 08bf676da7da7b34b87eea22add4845d,
         type: 3}
@@ -756,15 +756,3 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4828927775356040114}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3526633305257703794 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8354971656479787712, guid: ea525b05792d6ee45b22784999dac28f,
-    type: 3}
-  m_PrefabInstance: {fileID: 4828927775356040114}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63efb6d364220c343a134700ce345db1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

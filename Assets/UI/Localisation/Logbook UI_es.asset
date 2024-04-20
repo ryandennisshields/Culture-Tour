@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Logbook UI_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 568087a7d61880c44827df6a6a0fcdae, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20456682287104
+    m_Localized: Cuaderno
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20486646394880
+    m_Localized: "Este Libro de registro almacena todos los objetos ocultos que has
+      recogido a lo largo del camino.\n\n\xA1Echa un vistazo a los Objetos para saber
+      m\xE1s sobre San Mart\xEDn!\n\n\xA1Tambi\xE9n puedes encontrar cualquier animaci\xF3n
+      que hayas desbloqueado debajo de Objetos!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20510558121984
+    m_Localized: 'Este objeto fue recogido en '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20542816514048
+    m_Localized: Espada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20567822954496
+    m_Localized: "San Mart\xEDn fue reclutado en el ej\xE9rcito romano a los 15 a\xF1os
+      y m\xE1s tarde se convirti\xF3 en miembro de la guardia de caballer\xEDa real.
+      Fue mientras hac\xEDa campa\xF1a en la Galia, como tribuno de 18 a\xF1os, destinado
+      en Amiens, cuando tuvo lugar la famosa leyenda de San Mart\xEDn y el mendigo.
+      Cuando se acercaba a las puertas de la guarnici\xF3n de Amiens, vio al mendigo,
+      con la ropa tan andrajosa que estaba pr\xE1cticamente desnudo. El mendigo deb\xEDa
+      estar temblando y azul por el fr\xEDo, pero nadie se acerc\xF3 para ayudarlo.
+      Mart\xEDn, abrumado por la compasi\xF3n, se quit\xF3 el manto. De un r\xE1pido
+      golpe cort\xF3 el hermoso manto en dos con su espada, le entreg\xF3 la mitad
+      al hombre helado y envolvi\xF3 el resto sobre sus propios hombros."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20595710881792
+    m_Localized: Capa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20644578717696
+    m_Localized: "Mart\xEDn era un soldado romano que se convirti\xF3 al cristianismo
+      despu\xE9s de un encuentro con un mendigo semidesnudo en las puertas de la
+      ciudad de Amiens, en el norte de Francia. Mart\xEDn cort\xF3 su manto por la
+      mitad para compartirlo con el mendigo que esa noche se le apareci\xF3 en sue\xF1os
+      y se revel\xF3 como Cristo. Un elemento central del culto a San Mart\xEDn era
+      la reliquia de la mitad restante de su capa. Se consideraba tan importante
+      que la clase de Francia lo usaba como estandarte real en la guerra, y hac\xEDan
+      juramentos sagrados sobre \xE9l. La estructura en la que se conservaba la media
+      capa se conoc\xEDa como Capella (\u201Cpeque\xF1a capa\u201D). , t\xE9rmino
+      que lleg\xF3 a utilizarse ampliamente para los edificios que serv\xEDan para
+      guardar reliquias y del que se deriva la palabra moderna 'capilla'."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20678217035776
+    m_Localized: "Cr\xE1neo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20698995617792
+    m_Localized: "San Mart\xEDn falleci\xF3 el 8 de noviembre del 397 d.C. Despu\xE9s
+      de su muerte, los ciudadanos locales de la regi\xF3n de Poitou y los residentes
+      de Tours se pelearon sobre d\xF3nde ser\xEDa enterrado Martin. Una noche, despu\xE9s
+      del anochecer, varios residentes de Tours llevaron el cuerpo de Martins a un
+      barco que esperaba en el r\xEDo Loira, donde equipos de remeros transportaron
+      su cuerpo por el r\xEDo de Tours, donde masas de personas esperaban en las
+      orillas del r\xEDo para reunirse y presentar sus respetos. Se crearon santuarios
+      en su honor; La capilla del santuario de Tours se convirti\xF3 en uno de los
+      establecimientos m\xE1s destacados e influyentes de la Francia medieval. En
+      \xE9pocas posteriores, la abad\xEDa fue destruida por el fuego en varias ocasiones
+      y saqueada por los vikingos normandos en 853 y 903. Se quem\xF3 nuevamente
+      en 994 y fue reconstruida en un esfuerzo de 20 a\xF1os. En 1453 los restos
+      de San Mart\xEDn fueron trasladados a un nuevo relicario."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20721737134080
+    m_Localized: Linterna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20748492599296
+    m_Localized: "Cuando cae el sol el 11 de noviembre, los ni\xF1os de entre 5 y
+      12 a\xF1os se aventuran a salir, a menudo acompa\xF1ados por sus padres. Llevan
+      faroles hechos de remolacha azucarera ahuecada o de papel. Los ni\xF1os van
+      de casa en casa cantando canciones sobre Sint Maarten. A cambio reciben pasteles,
+      dulces o frutas de sus generosos vecinos. Estos faroles simbolizan la luz que
+      gui\xF3 a San Mart\xEDn mientras compart\xEDa su manto con el mendigo en la
+      fr\xEDa noche de invierno."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20774929297408
+    m_Localized: Caballo de madera de juguete
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20810866094080
+    m_Localized: "San Mart\xEDn es el santo patr\xF3n de los caballos y los jinetes
+      despu\xE9s de su etapa como soldado de caballer\xEDa, pas\xF3 la mayor parte
+      de su tiempo en el ej\xE9rcito romano a caballo. El hecho de que el caballo
+      sea un mecedor de madera tambi\xE9n es un gui\xF1o al trabajo que hizo con
+      los ni\xF1os y la compasi\xF3n que mostr\xF3 hacia los dem\xE1s. La leyenda
+      del caballo blanco en el que llega Mart\xEDn y lleva su primera nieve surgi\xF3
+      de manera bastante prosaica. A lo largo de los a\xF1os, la gente simplemente
+      se ha dado cuenta de que las primeras nevadas siempre llegan alrededor del
+      d\xEDa de San Mart\xEDn: vincularon su nombre con un caballo blanco, que simboliza
+      los primeros copos de nieve."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20842533089280
+    m_Localized: Martillo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21043083735040
+    m_Localized: "San Mart\xEDn sirvi\xF3 como obispo en la Bas\xEDlica de Tours
+      desde el a\xF1o 371, aunque de mala gana. Se dice que intent\xF3 esconderse
+      de quienes quer\xEDan instalarlo como obispo, pero su escondite lo delat\xF3
+      el graznido de los gansos, que desde entonces se asocian al santo. Otras historias
+      cuentan c\xF3mo el santo destruy\xF3 templos paganos y cort\xF3 \xE1rboles
+      sagrados con su martillo. en un caso, los paganos acordaron talar su abeto
+      sagrado, s\xF3lo si Mart\xEDn se interpon\xEDa directamente en su camino. Lo
+      hizo y el \xE1rbol milagrosamente no lo alcanz\xF3."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21060569788416
+    m_Localized: Animaciones
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21082711519232
+    m_Localized: Cortar la capa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21115716497408
+    m_Localized: Alboroto de toros
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21166291415040
+    m_Localized: 'Objetos requeridos
+
+      Espada
+
+      Capa'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21210235138048
+    m_Localized: "Objetos requeridos\nCr\xE1neo\nLinterna"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21291847905280
+    m_Localized: "Cr\xE9ditos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21331505049600
+    m_Localized: Con el apoyo de
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21358696722432
+    m_Localized: "Luis MacDonald\nAlistair Sawers\nAndres Holt\nJuan Lorenzo Burgos\nDavid
+      Milligan\nFraser Connolly\nryan escudos\nPaulina Wykurz\nMorgan McKay\nAndrew
+      Pie \u200B\u200BProud\nRobyn Hoskin\nMatilda Pratt\n\n\nHamid Homatash\nAlan
+      Jack\nUniversidad Caledonia de Glasgow\nUniversidad de Ciencias Aplicadas de
+      Breda"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

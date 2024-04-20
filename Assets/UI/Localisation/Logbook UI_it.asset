@@ -1,0 +1,179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Logbook UI_it
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: it
+  m_SharedData: {fileID: 11400000, guid: 568087a7d61880c44827df6a6a0fcdae, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20456682287104
+    m_Localized: Diario di bordo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20486646394880
+    m_Localized: "Questo diario di bordo memorizza tutti gli oggetti nascosti che
+      hai raccolto lungo il percorso.\n\nDai un'occhiata agli Oggetti per saperne
+      di pi\xF9 su Saint Martin!\n\nPuoi anche trovare le animazioni che hai sbloccato
+      sotto gli Oggetti!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20510558121984
+    m_Localized: "Questo oggetto \xE8 stato raccolto su "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20542816514048
+    m_Localized: Spada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20567822954496
+    m_Localized: "San Martino fu arruolato nell'esercito romano all'et\xE0 di 15
+      anni, in seguito divenne membro della guardia di cavalleria reale. Fu durante
+      una campagna in Gallia, come tribuno diciottenne, di stanza ad Amiens, che
+      ebbe luogo la famosa leggenda di San Martino e il mendicante. Mentre si avvicinava
+      alle porte della guarnigione di Amiens, vide il mendicante, con abiti cos\xEC
+      stracciati che era praticamente nudo. Il mendicante doveva essere tremante
+      ed essere livido per il freddo, ma nessuno si allung\xF2 per aiutarlo. Martino,
+      sopraffatto dalla compassione, si tolse il mantello. Con un colpo rapido tagli\xF2
+      in due il bel mantello con la spada, ne porse met\xE0 all'uomo gelido e avvolse
+      il resto sulle sue spalle."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20595710881792
+    m_Localized: Mantello
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20644578717696
+    m_Localized: "Martin era un soldato romano che si convert\xEC al cristianesimo
+      dopo l'incontro con un mendicante seminudo alle porte della citt\xE0 di Amiens,
+      nel nord della Francia. Martino tagli\xF2 a met\xE0 il suo mantello per condividerlo
+      con il mendicante che quella notte gli apparve in sogno e si rivel\xF2 essere
+      Cristo. Al centro del culto di San Martino c'era la reliquia della restante
+      met\xE0 del suo mantello. Era considerato cos\xEC importante che la famiglia
+      di Francia lo us\xF2 come stendardo reale in guerra, e vi prestarono giuramenti
+      sacri. La struttura in cui era conservato il mezzo mantello era chiamata Capella
+      (\"piccolo mantello\"). , termine che venne ampiamente utilizzato per indicare
+      gli edifici che servivano a conservare le reliquie e da cui deriva la parola
+      moderna \"cappella\"."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20678217035776
+    m_Localized: Cranio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20698995617792
+    m_Localized: "San Martino mor\xEC l'8 novembre del 397 d.C. Dopo la sua morte,
+      i cittadini locali della regione del Poitou e gli abitanti di Tours litigarono
+      su dove sarebbe stato sepolto Martin. Una sera, dopo il tramonto, diversi residenti
+      di Tours trasportarono il corpo di Martins su una barca in attesa sul fiume
+      Loira, dove squadre di rematori traghettarono il suo corpo sul fiume di Tours
+      dove masse di persone aspettavano sulle rive del fiume per incontrarsi e rendere
+      omaggio. Furono creati santuari in suo onore; la cappella del santuario di
+      Tours si trasform\xF2 in una delle istituzioni pi\xF9 importanti e influenti
+      della Francia medievale. In tempi successivi l'abbazia fu distrutta da incendi
+      in diverse occasioni e saccheggiata dai vichinghi normanni nell'853 e nel 903.
+      Bruci\xF2 di nuovo nel 994 e fu ricostruita in uno sforzo di 20 anni. Nel 1453
+      le spoglie di San Martino furono traslate in un nuovo reliquiario."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20721737134080
+    m_Localized: Lanterna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20748492599296
+    m_Localized: "Al tramonto dell'11 novembre, i bambini dai 5 ai 12 anni si avventurano,
+      spesso accompagnati dai genitori. Portano lanterne realizzate con barbabietole
+      da zucchero scavate o carta. I bambini vanno di casa in casa cantando canzoni
+      su Sint Maarten. In cambio ricevono torte, caramelle o frutta dai loro generosi
+      vicini. Queste lanterne simboleggiano la luce che guid\xF2 San Martino mentre
+      condivideva il mantello con il mendicante nella fredda notte invernale."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20774929297408
+    m_Localized: Cavallo di legno giocattolo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20810866094080
+    m_Localized: "San Martino \xE8 il santo patrono dei cavalli e dei cavalieri dopo
+      il suo periodo come soldato di cavalleria, trascorse la maggior parte del suo
+      tempo nell'esercito romano a cavallo. Il cavallo, essendo un giocattolo a dondolo
+      in legno, \xE8 anche un omaggio al lavoro che svolgeva con i bambini e alla
+      compassione che mostrava verso gli altri. La leggenda del cavallo bianco su
+      cui Martino arriva e trasporta la sua prima neve \xE8 nata in modo abbastanza
+      prosaico. Nel corso degli anni, le persone hanno semplicemente notato che la
+      prima neve arriva sempre intorno al giorno di San Martino: hanno collegato
+      il suo nome con un cavallo bianco, a simboleggiare i primi fiocchi di neve."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20842533089280
+    m_Localized: Martello
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21043083735040
+    m_Localized: "San Martino prest\xF2 servizio come vescovo presso la Basilica
+      di Tours dal 371, anche se con riluttanza. Si dice che abbia cercato di nascondersi
+      da coloro che volevano insediarlo come vescovo, ma il suo nascondiglio fu rivelato
+      dallo schiamazzo delle oche, che da allora sono associate al santo. Altre storie
+      raccontano come il santo distrusse i templi pagani e abbatt\xE9 gli alberi
+      sacri usando il suo martello. in un caso, i pagani accettarono di abbattere
+      il loro abete sacro, solo se Martin si fosse messo direttamente sul suo cammino.
+      Lo fece e l'albero miracolosamente lo manc\xF2."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21060569788416
+    m_Localized: Animazioni
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21082711519232
+    m_Localized: Taglio del mantello
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21115716497408
+    m_Localized: Furia del toro
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21166291415040
+    m_Localized: 'Oggetti richiesti
+
+      Spada
+
+      Mantello'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21210235138048
+    m_Localized: 'Oggetti richiesti
+
+      Cranio
+
+      Lanterna'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21291847905280
+    m_Localized: Crediti
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21331505049600
+    m_Localized: Con il supporto di
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21358696722432
+    m_Localized: "Lewis MacDonald\nAlistair Sawers\nAndrea Holt\nJuan Lorenzo Burgos\nDavid
+      Milligan\nFraser Connolly\nRyan Shields\nPaulina Wykurz\nMorgan McKay\nAndrew
+      Proudfoot\nRobyn Hoskin\nMatilde Pratt\n\n\nHamid Homatash\nAlanJack\nUniversit\xE0
+      Caledoniana di Glasgow\nUniversit\xE0 di Scienze Applicate di Breda"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

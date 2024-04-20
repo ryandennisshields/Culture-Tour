@@ -31,3 +31,6 @@ MonoBehaviour:
   Hints:
   - The skull looks like it's missing.
   - Try to find the parts of it.
+  localizedStringTable:
+    m_TableReference:
+      m_TableCollectionName: GUID:568087a7d61880c44827df6a6a0fcdae

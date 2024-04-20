@@ -446,6 +446,9 @@ MonoBehaviour:
   MessageHolder: {fileID: 6060450258831439969}
   _messageDuration: 5
   _fadeDuration: 1.5
+  localizedStringTable:
+    m_TableReference:
+      m_TableCollectionName: GUID:1fea39e4caa53524080be641f0520478
 --- !u!1 &6635484157404963872
 GameObject:
   m_ObjectHideFlags: 0

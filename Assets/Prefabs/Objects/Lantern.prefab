@@ -4983,7 +4983,9 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   discoveryDelay: 5
-  message: 
+  localizedStringTable:
+    m_TableReference:
+      m_TableCollectionName: GUID:1fea39e4caa53524080be641f0520478
 --- !u!114 &8637738502692993650
 MonoBehaviour:
   m_ObjectHideFlags: 0

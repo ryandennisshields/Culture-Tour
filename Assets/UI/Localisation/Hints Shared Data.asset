@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Hints Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Hints
+  m_TableCollectionNameGuidString: 079be5bf1f9e35f489e7cc62a03a4ab3
+  m_Entries:
+  - m_Id: 37665370112
+    m_Key: Sword_hint_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43919077376
+    m_Key: Sword_hint_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47056416768
+    m_Key: Cloak_hint_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48448925696
+    m_Key: Cloak_hint_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49203900416
+    m_Key: Skull_hint_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50059538432
+    m_Key: Skull_hint_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50764181504
+    m_Key: Lantern_hint_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51498184704
+    m_Key: Lantern_hint_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52173467648
+    m_Key: Toy Wooden Horse_hint_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52869722112
+    m_Key: Toy Wooden Horse_hint_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53683417088
+    m_Key: Hammer_hint_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54706827264
+    m_Key: Hammer_hint_1
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4860323448185159745
+  references:
+    version: 2
+    RefIds:
+    - rid: 4860323448185159745
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1713651304564

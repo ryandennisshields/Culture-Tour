@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: VPS UI_da
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: da
+  m_SharedData: {fileID: 11400000, guid: c050224afcbe61d42b99ecaa30a90cfd, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 25032126464
+    m_Localized: Klar til at finde et skjult objekt?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 59366699008
+    m_Localized: "Hvert skjult objekt har deres egen interaktion.\n\nEksperimenter
+      med objektet; tryk, stryg, hold, se, hvad der sker!\n\nEfter at have samlet
+      et par objekter, vil du modtage en animation af en af \u200B\u200BSaint Martins
+      historier!\n\nTjek logbogen for at gennemg\xE5 dine fundne objekter og gense
+      animationer!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 256981331968
+    m_Localized: "Sidde fast? Brug tipknappen for at f\xE5 tips!"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

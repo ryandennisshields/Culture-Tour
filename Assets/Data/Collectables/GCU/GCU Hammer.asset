@@ -28,3 +28,6 @@ MonoBehaviour:
   Hints:
   - Looks like it's above something. An egg?
   - The egg looks weak.
+  localizedStringTable:
+    m_TableReference:
+      m_TableCollectionName: GUID:568087a7d61880c44827df6a6a0fcdae

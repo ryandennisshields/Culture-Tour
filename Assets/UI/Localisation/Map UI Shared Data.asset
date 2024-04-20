@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Map UI Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Map UI
+  m_TableCollectionNameGuidString: 3bb03edd4be7a054aa7379229f908fce
+  m_Entries:
+  - m_Id: 111774527488
+    m_Key: 'map_message_0
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1611833798656
+    m_Key: map_message_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3385676263424
+    m_Key: map_message_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4949371514880
+    m_Key: 'map_message_3
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5583734829056
+    m_Key: map_message_4
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4860323448185159709
+  references:
+    version: 2
+    RefIds:
+    - rid: 4860323448185159709
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1713628916749

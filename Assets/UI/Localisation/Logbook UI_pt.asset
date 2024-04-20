@@ -1,0 +1,172 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Logbook UI_pt
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt
+  m_SharedData: {fileID: 11400000, guid: 568087a7d61880c44827df6a6a0fcdae, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20456682287104
+    m_Localized: "Di\xE1rio de bordo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20486646394880
+    m_Localized: "Este di\xE1rio de bordo armazena todos os objetos ocultos que voc\xEA
+      coletou ao longo do caminho.\n\nD\xEA uma olhada nos Objetos para saber mais
+      sobre S\xE3o Martinho!\n\nVoc\xEA tamb\xE9m pode encontrar qualquer anima\xE7\xE3o
+      desbloqueada abaixo dos objetos!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20510558121984
+    m_Localized: 'Este objeto foi coletado em '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20542816514048
+    m_Localized: Espada
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20567822954496
+    m_Localized: "S\xE3o Martinho foi convocado para o ex\xE9rcito romano aos 15
+      anos e mais tarde tornou-se membro da guarda de cavalaria real. Foi enquanto
+      fazia campanha na G\xE1lia, como tribuno de 18 anos, estacionado em Amiens,
+      que aconteceu a famosa lenda de S\xE3o Martinho e do mendigo. Ao se aproximar
+      dos port\xF5es da guarni\xE7\xE3o de Amiens, avistou o mendigo, com as roupas
+      t\xE3o esfarrapadas que estava praticamente nu. O mendigo devia estar tremendo
+      e roxo de frio, mas ningu\xE9m estendeu a m\xE3o para ajud\xE1-lo. Martin,
+      dominado pela compaix\xE3o, tirou seu manto. Com um golpe r\xE1pido, ele cortou
+      o ador\xE1vel manto em dois com sua espada, entregou metade ao homem congelado
+      e colocou o restante em seus pr\xF3prios ombros."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20595710881792
+    m_Localized: Capa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20644578717696
+    m_Localized: "Martin era um soldado romano que se converteu ao cristianismo ap\xF3s
+      um encontro com um mendigo seminu no port\xE3o da cidade de Amiens, no norte
+      da Fran\xE7a. Martinho cortou o seu manto ao meio para partilh\xE1-lo com o
+      mendigo que naquela noite lhe apareceu em sonho e se revelou Cristo. No centro
+      do culto de S\xE3o Martinho estava a rel\xEDquia da metade restante de seu
+      manto. Foi considerado t\xE3o importante que o tipo de Fran\xE7a o usou como
+      bandeira real na guerra, e eles fizeram juramentos sagrados. A estrutura na
+      qual o meio manto foi preservado era chamada de Capella (\u201Cpequeno manto\u201D).
+      , termo que passou a ser amplamente utilizado para edif\xEDcios que serviam
+      para guardar rel\xEDquias e de onde deriva a palavra moderna 'capela'."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20678217035776
+    m_Localized: "Cr\xE2nio"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20698995617792
+    m_Localized: "S\xE3o Martinho faleceu em 8 de novembro de 397 DC. Depois que
+      ele morreu, os cidad\xE3os locais da regi\xE3o de Poitou e os residentes de
+      Tours discutiram sobre o local onde Martin seria enterrado. Uma noite, depois
+      de escurecer, v\xE1rios residentes de Tours carregaram o corpo de Martins para
+      um barco que o aguardava no rio Loire, onde equipas de remadores transportaram
+      o seu corpo no rio de Tours, onde muitas pessoas esperavam nas margens do rio
+      para se encontrarem e prestarem homenagem. Santu\xE1rios foram criados em sua
+      homenagem; a capela do santu\xE1rio em Tours tornou-se um dos estabelecimentos
+      mais proeminentes e influentes da Fran\xE7a medieval. Mais tarde, a abadia
+      foi destru\xEDda pelo fogo em v\xE1rias ocasi\xF5es e saqueada pelos vikings
+      normandos em 853 e 903. Ela queimou novamente em 994 e foi reconstru\xEDda
+      em um esfor\xE7o de 20 anos. Em 1453 os restos mortais de S\xE3o Martinho foram
+      transferidos para um novo relic\xE1rio."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20721737134080
+    m_Localized: Lanterna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20748492599296
+    m_Localized: "Ao anoitecer de 11 de novembro, crian\xE7as de 5 a 12 anos se aventuram,
+      muitas vezes acompanhadas pelos pais. Eles carregam lanternas feitas de beterraba
+      sacarina escavada ou de papel. As crian\xE7as v\xE3o de casa em casa cantando
+      can\xE7\xF5es sobre S\xE3o Martinho. Em troca recebem bolos, doces ou frutas
+      de seus generosos vizinhos. Estas lanternas simbolizam a luz que guiou S\xE3o
+      Martinho enquanto partilhava o seu manto com o mendigo na noite fria de inverno."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20774929297408
+    m_Localized: Cavalo de madeira de brinquedo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20810866094080
+    m_Localized: "S\xE3o Martinho \xE9 o padroeiro dos cavalos e cavaleiros, depois
+      de seu tempo como soldado da cavalaria, ele passou a maior parte do tempo no
+      ex\xE9rcito romano a cavalo. O fato de o cavalo ser um brinquedo de balan\xE7o
+      de madeira tamb\xE9m \xE9 uma homenagem ao trabalho que ele fazia com as crian\xE7as
+      e \xE0 compaix\xE3o que demonstrava pelos outros. A lenda do cavalo branco
+      no qual Martin chega e carrega sua primeira neve surgiu de forma bastante prosaica.
+      Ao longo dos anos, as pessoas simplesmente notaram que a primeira neve sempre
+      chega na \xE9poca do Dia de S\xE3o Martinho - associaram seu nome a um cavalo
+      branco, simbolizando os primeiros flocos de neve."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20842533089280
+    m_Localized: Martelo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21043083735040
+    m_Localized: "S\xE3o Martinho serviu como bispo na Bas\xEDlica de Tours desde
+      371 - embora com relut\xE2ncia. Diz-se que tentou esconder-se daqueles que
+      queriam instal\xE1-lo bispo, mas o seu esconderijo foi revelado pelo cacarejar
+      dos gansos, desde ent\xE3o associados ao santo. Outras hist\xF3rias contam
+      como o santo destruiu templos pag\xE3os e derrubou \xE1rvores sagradas com
+      seu martelo. num caso, os pag\xE3os concordaram em derrubar o seu abeto sagrado,
+      apenas se Martinho se colocasse diretamente no seu caminho. Ele fez isso e
+      a \xE1rvore milagrosamente n\xE3o o acertou."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21060569788416
+    m_Localized: "Anima\xE7\xF5es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21082711519232
+    m_Localized: Cortando a capa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21115716497408
+    m_Localized: "F\xFAria do Touro"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21166291415040
+    m_Localized: "Objetos necess\xE1rios\nEspada\nCapa"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21210235138048
+    m_Localized: "Objetos necess\xE1rios\nCr\xE2nio\nLanterna"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21291847905280
+    m_Localized: "Cr\xE9ditos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21331505049600
+    m_Localized: Com suporte de
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21358696722432
+    m_Localized: "Lewis MacDonald\nAlistair Sawers\nAndr\xE9 Holt\nJuan Louren\xE7o
+      Burgos\nDavid Milligan\nFraser Connolly\nRyan Escudos\nPaulina Wykurz\nMorgan
+      McKay\nAndr\xE9 Orgulhoso\nRobyn Hoskin\nMatilda Pratt\n\n\nHamid Homatash\nAlan
+      Jack\nUniversidade Caled\xF4nia de Glasgow\nUniversidade de Ci\xEAncias Aplicadas
+      de Breda"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

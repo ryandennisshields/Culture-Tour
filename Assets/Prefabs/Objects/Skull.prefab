@@ -332,7 +332,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   discoveryDelay: 5
-  message: 
+  localizedStringTable:
+    m_TableReference:
+      m_TableCollectionName: GUID:1fea39e4caa53524080be641f0520478
 --- !u!114 &1480763981722968278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5572,6 +5574,9 @@ MonoBehaviour:
   - {fileID: 3589433038360750597}
   - {fileID: 202833060407396263}
   - {fileID: 6862370034352918758}
+  localizedStringTable:
+    m_TableReference:
+      m_TableCollectionName: GUID:1fea39e4caa53524080be641f0520478
 --- !u!4 &4447957790466091351 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5920557953904100907, guid: f5a9c967201a985428687ef616f2ee69,

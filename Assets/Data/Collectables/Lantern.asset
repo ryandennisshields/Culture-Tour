@@ -26,3 +26,6 @@ MonoBehaviour:
   Hints:
   - The flame looks small, maybe you could light it.
   - Once the flame is big enough, try sending it off.
+  localizedStringTable:
+    m_TableReference:
+      m_TableCollectionName: GUID:568087a7d61880c44827df6a6a0fcdae

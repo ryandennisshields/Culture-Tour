@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Hints_es
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: es
+  m_SharedData: {fileID: 11400000, guid: 079be5bf1f9e35f489e7cc62a03a4ab3, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 37665370112
+    m_Localized: "Est\xE1s buscando un arma."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43919077376
+    m_Localized: "Puede que est\xE9 atrapado en algo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47056416768
+    m_Localized: "Esto parece ser el Manto de San Mart\xEDn."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48448925696
+    m_Localized: "Quiz\xE1s intente recrear un acto de San Mart\xEDn."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49203900416
+    m_Localized: "El cr\xE1neo parece desaparecido."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50059538432
+    m_Localized: Intenta encontrar sus partes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50764181504
+    m_Localized: "La llama parece peque\xF1a, tal vez puedas encenderla."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51498184704
+    m_Localized: Una vez que la llama sea lo suficientemente grande, intenta apagarla.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52173467648
+    m_Localized: "La base parece f\xE1cil de mover."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52869722112
+    m_Localized: "Parece que podr\xEDa avanzar y retroceder f\xE1cilmente."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53683417088
+    m_Localized: "Parece que est\xE1 encima de algo. \xBFUn huevo?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54706827264
+    m_Localized: "El huevo parece d\xE9bil."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

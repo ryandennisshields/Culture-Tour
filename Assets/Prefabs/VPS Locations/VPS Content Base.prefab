@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4a922015475e84bbae5989cb6152a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _objectToMove: {fileID: 0}
+  _collectedObject: {fileID: 0}
   _objectParticles: {fileID: 0}
   _dwellTime: 2
 --- !u!1 &8537730606840214606
@@ -124,3 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63efb6d364220c343a134700ce345db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  localizedStringTable:
+    m_TableReference:
+      m_TableCollectionName: GUID:079be5bf1f9e35f489e7cc62a03a4ab3

@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
 
 namespace GCU.CultureTour.Map
 {
@@ -16,6 +18,10 @@ namespace GCU.CultureTour.Map
         private MapMarkerSO _mapMarker = null;
         private SphereCollider _sphereCollider;
         private GameObject _markerObject;
+
+        [SerializeField]
+        LocalizedStringTable localizedStringTable;
+        private StringTable stringTable;
 
         public void Initalise( CollectibleSO marker )
         {
@@ -121,7 +127,9 @@ namespace GCU.CultureTour.Map
             }
             else if ( ! _inRange ) 
             {
-                FindObjectOfType<StatusMessageDisplay>().DisplayMessage("Get closer!");
+                var tableLoading = localizedStringTable.GetTable();
+                stringTable = tableLoading;
+                FindObjectOfType<StatusMessageDisplay>().DisplayMessage(stringTable.GetEntry("map_get_closer").Value, true);
             }
         }
     } 

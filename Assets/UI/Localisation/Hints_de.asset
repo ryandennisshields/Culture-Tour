@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Hints_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 079be5bf1f9e35f489e7cc62a03a4ab3, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 37665370112
+    m_Localized: Sie suchen eine Waffe.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43919077376
+    m_Localized: "M\xF6glicherweise steckt es irgendwo fest."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47056416768
+    m_Localized: Das scheint der Umhang des Heiligen Martin zu sein.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48448925696
+    m_Localized: Versuchen Sie vielleicht, einen Akt des Heiligen Martin nachzustellen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49203900416
+    m_Localized: "Der Sch\xE4del scheint zu fehlen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50059538432
+    m_Localized: Versuchen Sie, die Teile davon zu finden.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50764181504
+    m_Localized: "Die Flamme sieht klein aus, vielleicht k\xF6nntest du sie anz\xFCnden."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51498184704
+    m_Localized: "Sobald die Flamme gro\xDF genug ist, versuchen Sie, sie abzufeuern."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52173467648
+    m_Localized: Die Basis scheint leicht zu bewegen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52869722112
+    m_Localized: "Es sieht so aus, als k\xF6nnte es leicht hin und her gehen."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53683417088
+    m_Localized: "Sieht aus, als w\xE4re es \xFCber etwas. Ein Ei?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54706827264
+    m_Localized: Das Ei sieht schwach aus.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

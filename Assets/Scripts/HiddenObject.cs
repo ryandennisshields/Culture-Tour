@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
 
 namespace GCU.CultureTour.VPS
 {
@@ -15,13 +17,21 @@ namespace GCU.CultureTour.VPS
         [SerializeField]
         float discoveryDelay = 5.0f;
 
-        [SerializeField]
-        string message = "Discovered";
+        private string message;
 
         public bool IsDiscovered { get; private set; } = false;
 
+        [SerializeField]
+        LocalizedStringTable localizedStringTable;
+        private StringTable stringTable;
+
         public void Tapped ( GameObject go )
         {
+            var tableLoading = localizedStringTable.GetTable();
+            stringTable = tableLoading;
+
+            message = stringTable.GetEntry("object_found").Value;
+
             IsDiscovered = true;
 
             var scene = SceneManager.GetActiveScene();

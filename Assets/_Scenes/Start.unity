@@ -710,11 +710,6 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 85
       objectReference: {fileID: 0}
-    - target: {fileID: 8826156549309894687, guid: f1308f773fe36dc4885e446e1bb850b3,
-        type: 3}
-      propertyPath: m_text
-      value: Language
-      objectReference: {fileID: 0}
     - target: {fileID: 8969224582534611360, guid: f1308f773fe36dc4885e446e1bb850b3,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -738,6 +733,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5376250777569320534, guid: 9c4197238be28a84d800cb0fa745511b,
+        type: 3}
+      propertyPath: localisationTable
+      value: 
+      objectReference: {fileID: 11400000, guid: d52b63776ede7c046a970e95f5257db4,
+        type: 2}
+    - target: {fileID: -5376250777569320534, guid: 9c4197238be28a84d800cb0fa745511b,
+        type: 3}
+      propertyPath: _localizedStringTable.m_TableReference.m_TableCollectionName
+      value: GUID:568087a7d61880c44827df6a6a0fcdae
+      objectReference: {fileID: 0}
     - target: {fileID: 3891681336777466528, guid: 9c4197238be28a84d800cb0fa745511b,
         type: 3}
       propertyPath: m_Name

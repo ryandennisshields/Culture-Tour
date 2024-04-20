@@ -105,9 +105,48 @@ MonoBehaviour:
       m_Calls: []
   OnObjectDiscovered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Niantic.Lightship.AR.LocationAR.ARLocationManager,
+          Niantic.Lightship.AR
+        m_MethodName: StopTracking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GCU.CultureTour.VPS.HiddenObject, Assembly-CSharp
+        m_MethodName: SelectAnimationToPlay
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GCU.CultureTour.SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   discoveryDelay: 5
-  message: 
+  localizedStringTable:
+    m_TableReference:
+      m_TableCollectionName: GUID:1fea39e4caa53524080be641f0520478
 --- !u!114 &8637738502692993650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5066,6 +5105,6 @@ MonoBehaviour:
   hiddenObject: {fileID: 0}
   desiredPosition: {x: 0, y: -1, z: 0}
   egg: {fileID: 0}
-  eggRegular: {fileID: 2100000, guid: e55e5d637ff7c894f9264b4caf8f067b, type: 2}
   eggCracked: {fileID: 2100000, guid: 7d4ffe32ca96d6e41b1b7fc7089d3094, type: 2}
   eggMoreCracked: {fileID: 2100000, guid: e4ea93d2c5aaf5d469ad931788773832, type: 2}
+  eggBroken: {fileID: 0}

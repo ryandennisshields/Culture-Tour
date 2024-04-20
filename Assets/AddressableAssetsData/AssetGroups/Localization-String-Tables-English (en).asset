@@ -18,7 +18,37 @@ MonoBehaviour:
   m_GUID: ab4a6b5c56cbffe4b8845e20b1a97616
   m_SerializeEntries:
   - m_GUID: 7400fac12d5f8ee4ebf5ce74c9c2147d
-    m_Address: UI_en
+    m_Address: Start UI_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9410755cd8f8b3d409a671897691355a
+    m_Address: Map UI_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 435e3964e7068f74e855000621008575
+    m_Address: Logbook UI_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 92e906d99a766614f89a5752d1e3073c
+    m_Address: VPS UI_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 25b90f49d8e92f64591dd2e030388e16
+    m_Address: Status Messages_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f2892805d955e9b4098ecf758929a04b
+    m_Address: Hints_en
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en

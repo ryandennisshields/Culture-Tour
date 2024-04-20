@@ -2,6 +2,8 @@
 using GCU.CultureTour.Map;
 using System;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
 
 namespace GCU.CultureTour
 {
@@ -20,7 +22,7 @@ namespace GCU.CultureTour
         public string[ ] Hints = new string[ 0 ];
 
         public bool Collected => CollectedOrder >= 0;
-        public int CollectedOrder { get; private set; } = -1; 
+        public int CollectedOrder { get; private set; } = -1;
 
         /// <summary>
         /// Mark the collectible as collected (or not). 
@@ -57,7 +59,7 @@ namespace GCU.CultureTour
             string key = KEY_PREFIX + name;
             PlayerPrefs.SetInt(key, CollectedOrder);
             DateTime dt = DateTime.Now;
-            PlayerPrefs.SetString(ObjectName + "dateCollected", "This object was collected on " + dt.ToString("dd/MM/yyyy"));
+            PlayerPrefs.SetString(ObjectName + "dateCollected", dt.ToString("dd/MM/yyyy"));
             PlayerPrefs.Save();
         }
     }

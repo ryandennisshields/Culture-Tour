@@ -1,5 +1,7 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
 
 namespace GCU.CultureTour.Logbook
 {
@@ -19,6 +21,10 @@ namespace GCU.CultureTour.Logbook
 
         CollectibleSO _collectible;
 
+        [SerializeField]
+        LocalizedStringTable localizedStringTable;
+        private StringTable stringTable;
+
         public void Initialise( CollectibleSO collectible )
         {
             _collectible = collectible;
@@ -27,6 +33,8 @@ namespace GCU.CultureTour.Logbook
 
         public void UpdateDisplay()
         {
+            var tableLoading = localizedStringTable.GetTable();
+            stringTable = tableLoading;
 
             if ( _collectible == null ) 
             {
@@ -35,7 +43,7 @@ namespace GCU.CultureTour.Logbook
 
             if ( _objectName != null )
             {
-                _objectName.text = _collectible.ObjectName;
+                _objectName.text = stringTable.GetEntry(_collectible.ObjectName + "_name").Value;
             }
 
             if (_logbookModelHolder != null)
@@ -56,19 +64,19 @@ namespace GCU.CultureTour.Logbook
 
             if ( _objectText != null)
             {
-                _objectText.text = _collectible.ObjectText;
+                _objectText.text = stringTable.GetEntry(_collectible.ObjectName + "_text").Value;
             }
 
             if (_dateCollectedText != null)
             {
-                _dateCollectedText.text = "";
+                _dateCollectedText.text = string.Empty;
             }
 
             if (_collectible.Collected)
             {
                 if (PlayerPrefs.GetString(_collectible.ObjectName + "dateCollected") != null)
                 {
-                    _dateCollectedText.text = PlayerPrefs.GetString(_collectible.ObjectName + "dateCollected", "No Date Found");
+                    _dateCollectedText.text = stringTable.GetEntry("date_collected_text").Value + PlayerPrefs.GetString(_collectible.ObjectName + "dateCollected", "No Date Found");
                 }
             }
         }

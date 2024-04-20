@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
 
 namespace GCU.CultureTour
 {
@@ -11,19 +13,19 @@ namespace GCU.CultureTour
 
         int _hintIndex = 0;
 
+        [SerializeField]
+        LocalizedStringTable localizedStringTable;
+        private StringTable stringTable;
+
         public void DisplayHint()
         {
             if ( _hintIndex >= Hints.Length )
             {
                 _hintIndex = 0;
             }
-
-            ShowHintInStatusMessage(Hints[_hintIndex++]);
-        }
-
-        public void DisplayObjectCollected() 
-        {
-            ShowHintInStatusMessage("Object Found!\nAdded to Logbook");
+            var tableLoading = localizedStringTable.GetTable();
+            stringTable = tableLoading;
+            ShowHintInStatusMessage(stringTable.GetEntry(_collectible.ObjectName + "_hint_" + _hintIndex++).Value);
         }
 
         private void Awake()

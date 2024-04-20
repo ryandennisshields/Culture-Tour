@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
 
 namespace GCU.CultureTour
 {
@@ -14,6 +16,10 @@ namespace GCU.CultureTour
         private GameObject[] movedSkullPieces;
 
         private int piecesCollected = 0;
+
+        [SerializeField]
+        LocalizedStringTable localizedStringTable;
+        private StringTable stringTable;
 
         void Start()
         {
@@ -35,7 +41,9 @@ namespace GCU.CultureTour
             var statusDisplay = FindObjectOfType<StatusMessageDisplay>();
             if (statusDisplay != null)
             {
-                statusDisplay.DisplayMessage($"{piecesCollected} / {movedSkullPieces.Length} Collected", true);
+                var tableLoading = localizedStringTable.GetTable();
+                stringTable = tableLoading;
+                statusDisplay.DisplayMessage($"{piecesCollected} / {movedSkullPieces.Length} " + stringTable.GetEntry("Skull_collect_piece").Value, true);
             }
             if (piecesCollected == movedSkullPieces.Length)
             {
@@ -57,7 +65,9 @@ namespace GCU.CultureTour
                 var statusDisplay = FindObjectOfType<StatusMessageDisplay>();
                 if (statusDisplay != null)
                 {
-                    statusDisplay.DisplayMessage("It's missing pieces...", true);
+                    var tableLoading = localizedStringTable.GetTable();
+                    stringTable = tableLoading;
+                    statusDisplay.DisplayMessage(stringTable.GetEntry("Skull_missing_pieces").Value, true);
                 }
             }
         }
