@@ -71,7 +71,7 @@ namespace GCU.CultureTour
             var collectibles = _gameSettings.Collectibles;
             if (animationToPlay == 0)
             {
-                if (collectibles.Any(c => c.name == "Sword" && c.Collected) && collectibles.Any(c => c.name == "Skull" && c.Collected))
+                if (collectibles.Any(c => c.name == "Sword" && c.Collected) && collectibles.Any(c => c.name == "Cloak" && c.Collected))
                     ClipToPlay = _gameSettings.Animations[0];
             }
             if (animationToPlay == 1)

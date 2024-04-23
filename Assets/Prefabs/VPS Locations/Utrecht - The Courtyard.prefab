@@ -727,6 +727,11 @@ PrefabInstance:
       objectReference: {fileID: 4136133190229506969}
     - target: {fileID: 5758857257159871182, guid: ea525b05792d6ee45b22784999dac28f,
         type: 3}
+      propertyPath: _collectedObject
+      value: 
+      objectReference: {fileID: 4136133190229506969}
+    - target: {fileID: 5758857257159871182, guid: ea525b05792d6ee45b22784999dac28f,
+        type: 3}
       propertyPath: _objectParticles
       value: 
       objectReference: {fileID: 3450994498076160037}
@@ -972,6 +977,11 @@ PrefabInstance:
         type: 3}
       propertyPath: OnObjectDiscovered.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
       value: GCU.CultureTour.SceneLoader, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
+        type: 3}
+      propertyPath: OnObjectDiscovered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5968992375460565788, guid: 77fd431d97eb1cd44ae062b997e74ba6,
         type: 3}

@@ -82,6 +82,9 @@ namespace GCU.CultureTour.Animations
                 yield return null;
             }
 
+            // Reset the clip to play
+            GameManager.Instance.ClipToPlay = null;
+
             _sceneLoader.LoadScene();
         }
     }

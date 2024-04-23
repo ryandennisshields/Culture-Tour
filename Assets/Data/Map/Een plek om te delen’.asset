@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 433fb3d1fbacd3547ba86e8ccccbe796, type: 3}
-  m_Name: The Courtyard
+  m_Name: "Een plek om te delen\u2019"
   m_EditorClassIdentifier: 
-  MarkerPrefab: {fileID: 7015981498598601239, guid: bb0c76de03904e94ca8f32d5619387e3,
+  MarkerPrefab: {fileID: 2418258510311381701, guid: 7faf7641bdca01c479da8a460bd333ab,
     type: 3}
-  Lat: 52.09058
-  Lng: 5.122553
-  Rotation: {x: 0, y: 161.5, z: 0}
+  Lat: 52.090975
+  Lng: 5.120725
+  Rotation: {x: 0, y: -256, z: 0}
   InteractionRadius: 15
-  SceneToLoadOnInteraction: Utrecht The Courtyard
+  SceneToLoadOnInteraction: "Utrecht Een plek om te delen\u2019"

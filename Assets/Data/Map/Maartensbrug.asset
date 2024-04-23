@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MarkerPrefab: {fileID: 6489403115171240516, guid: 9407a68c8ccf183449e7a4065951b2b7,
     type: 3}
-  Lat: 52.09039
+  Lat: 52.090405
   Lng: 5.120383
-  Rotation: {x: 0, y: 0, z: 0}
+  Rotation: {x: 0, y: 66, z: 0}
   InteractionRadius: 15
-  SceneToLoadOnInteraction: Utrecht Maartensburg
+  SceneToLoadOnInteraction: Utrecht Maartensbrug
