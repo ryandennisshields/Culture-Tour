@@ -25,7 +25,7 @@ MonoBehaviour:
     to the freezing man and wrapped the remainder on his own shoulders.
   LogbookModel: {fileID: 2011665084440722327, guid: 9d47f6fa6042eda4ca7c11158191e630,
     type: 3}
-  VpsSceneName: Utrecht Maartensbrug
+  VPSSceneName: Utrecht Maartensbrug
   Hints:
   - You are looking for a weapon.
   - It may be stuck in something.

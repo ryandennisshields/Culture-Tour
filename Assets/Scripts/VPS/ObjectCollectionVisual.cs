@@ -11,9 +11,6 @@ namespace GCU.CultureTour
         [SerializeField]
         private ParticleSystem _objectParticles;
 
-        [SerializeField]
-        private float _dwellTime = 2f;
-
         bool _interacted = false;
 
         public void Animate()
@@ -26,14 +23,10 @@ namespace GCU.CultureTour
 
             _interacted = true;
 
-            _objectParticles.Play();
-
-            StartCoroutine(Wait());
-        }
-
-        private IEnumerator Wait()
-        {
-            yield return new WaitForSeconds(_dwellTime);
+            if (_objectParticles != null)
+            {
+                _objectParticles.Play();
+            }
         }
     }
 }

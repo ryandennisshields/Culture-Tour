@@ -8228,7 +8228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7715207294532056018}
   m_Layer: 0
-  m_Name: Marker Mesh 2
+  m_Name: Marker mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -17,8 +17,8 @@ namespace GCU.CultureTour
         private string DateCollectedText;
         public LogbookCollectibleModel LogbookModel;
 
-        [Header ("VPS Scene information")]
-        public string VpsSceneName;
+        [Header ("VPS Scene")]
+        public string VPSSceneName;
         public string[ ] Hints = new string[ 0 ];
 
         public bool Collected => CollectedOrder >= 0;

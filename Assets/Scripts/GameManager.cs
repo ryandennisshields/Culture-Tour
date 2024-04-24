@@ -62,7 +62,7 @@ namespace GCU.CultureTour
         public CollectibleSO GetCollectibleSO ( string sceneName )
         {
             return _gameSettings.Collectibles
-                .Where(c => c.VpsSceneName == sceneName)
+                .Where(c => c.VPSSceneName == sceneName)
                 .FirstOrDefault();
         }
 
