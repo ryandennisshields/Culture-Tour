@@ -26,6 +26,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/VPS/Utrecht The Courtyard.unity
     guid: 7a581740e541df74d9509e74e02a9cb8
+  - enabled: 1
+    path: Assets/_Scenes/VPS/Utrecht Entrance Kerktuinen Sint Martinus Domkerk.unity
+    guid: 4553a188af0a4434687a8c9d8546d971
+  - enabled: 1
+    path: Assets/_Scenes/VPS/Utrecht Huis Loenersloot.unity
+    guid: d55b0a73a01f39c4e977fb853b0240b3
+  - enabled: 1
+    path: Assets/_Scenes/VPS/Utrecht Saint Martin Frieze.unity
+    guid: b67af16a7de25fa4f9badd7b3670a8e5
   - enabled: 0
     path: Assets/_Scenes/VPS/GCU/GCU Curved Bench.unity
     guid: 83d9527751ed39e4f8e93122723a21fc

@@ -5118,4 +5118,4 @@ MonoBehaviour:
   hiddenObjectScript: {fileID: 0}
   hiddenObject: {fileID: 0}
   cloakAnimation: {fileID: 2160837381455821841}
-  desiredPosition: {x: 0.75, y: 0.75, z: 0}
+  desiredPosition: {x: 0.75, y: 0.75, z: 0.75}

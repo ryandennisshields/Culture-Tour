@@ -727,6 +727,11 @@ PrefabInstance:
       objectReference: {fileID: 4136133190229506969}
     - target: {fileID: 5758857257159871182, guid: ea525b05792d6ee45b22784999dac28f,
         type: 3}
+      propertyPath: _collectedObject
+      value: 
+      objectReference: {fileID: 4136133190229506969}
+    - target: {fileID: 5758857257159871182, guid: ea525b05792d6ee45b22784999dac28f,
+        type: 3}
       propertyPath: _objectParticles
       value: 
       objectReference: {fileID: 3450994498076160037}

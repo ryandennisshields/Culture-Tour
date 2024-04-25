@@ -94,7 +94,6 @@ namespace GCU.CultureTour.Map
             {
                 _inRange = true;
                 Handheld.Vibrate();
-                Debug.Log("Player is in range.", gameObject);
                 SetColour();
             }
         }
@@ -104,7 +103,6 @@ namespace GCU.CultureTour.Map
             if (other.name == "Player")
             {
                 _inRange = false;
-                Debug.Log("Player is out of range.", gameObject);
                 SetColour();
             }
         }

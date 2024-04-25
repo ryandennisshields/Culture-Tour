@@ -76,7 +76,7 @@ namespace GCU.CultureTour
             }
             if (animationToPlay == 1)
             {
-                if (collectibles.Any(c => c.name == "Hammer" && c.Collected) && collectibles.Any(c => c.name == "Toy Wooden Horse" && c.Collected))
+                if (collectibles.Any(c => c.name == "Skull" && c.Collected) && collectibles.Any(c => c.name == "Lantern" && c.Collected))
                     ClipToPlay = _gameSettings.Animations[1];
             }
         }
@@ -126,7 +126,7 @@ namespace GCU.CultureTour
             }
         }
 
-#if DEBUG
+#if DEVELOPMENT_BUILD || UNITY_EDITOR
 
         [ProButton]
         public void DiscoverAllObjects()

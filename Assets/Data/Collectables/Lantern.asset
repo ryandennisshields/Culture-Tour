@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87ae3f4a9e75a3a46a1aff4daa19c225, type: 3}
   m_Name: Lantern
   m_EditorClassIdentifier: 
-  MapMarker: {fileID: 11400000, guid: 975269d8c11f859468f21f68ed9a82c0, type: 2}
+  MapMarker: {fileID: 11400000, guid: 24e535b949c0ac044b7096f768758b62, type: 2}
   ObjectName: Lantern
   ObjectText: "As dusk settles on 11th November, children aged 5 to 12 ventures out,
     often accompanied by their parents. They carry lanterns made from either hollowed
@@ -22,10 +22,7 @@ MonoBehaviour:
     as he shared his cloak with the beggar on the cold winter\u2019s night."
   LogbookModel: {fileID: 2011665084440722327, guid: ed0a0b118ba1dda42bfd17912c423238,
     type: 3}
-  VpsSceneName: GCU The Quoting Stones 2
+  VPSSceneName: Utrecht Entrance Kerktuinen Sint Martinus Domkerk
   Hints:
   - The flame looks small, maybe you could light it.
   - Once the flame is big enough, try sending it off.
-  localizedStringTable:
-    m_TableReference:
-      m_TableCollectionName: GUID:568087a7d61880c44827df6a6a0fcdae

@@ -14,7 +14,7 @@ namespace GCU.CultureTour.Logbook
              var collectibles = GameManager.Instance.GameSettings.Collectibles;
             if (collectibles.Any(c => c.name == "Sword" && c.Collected) && collectibles.Any(c => c.name == "Cloak" && c.Collected))
                 buttons[0].interactable = true;
-            if (collectibles.Any(c => c.name == "Hammer" && c.Collected) && collectibles.Any(c => c.name == "Toy Wooden Horse" && c.Collected))
+            if (collectibles.Any(c => c.name == "Skull" && c.Collected) && collectibles.Any(c => c.name == "Lantern" && c.Collected))
                 buttons[1].interactable = true;
             
             // More added for future objects

@@ -2,8 +2,6 @@
 using GCU.CultureTour.Map;
 using System;
 using UnityEngine;
-using UnityEngine.Localization;
-using UnityEngine.Localization.Tables;
 
 namespace GCU.CultureTour
 {

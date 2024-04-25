@@ -32,12 +32,12 @@ namespace GCU.CultureTour
             if (isHolding)
             {
                 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition - holdPosition);
-                newPosition.x = Mathf.Clamp(newPosition.x, startPosition.x, startPosition.x + desiredPosition.x);
-                newPosition.y = Mathf.Clamp(newPosition.y, startPosition.y, startPosition.y + desiredPosition.y);
-                newPosition.z = Mathf.Clamp(newPosition.z, startPosition.z, startPosition.z + desiredPosition.z);
+                newPosition.x = Mathf.Clamp(newPosition.x, startPosition.x - desiredPosition.x, startPosition.x + desiredPosition.x);
+                newPosition.y = Mathf.Clamp(newPosition.y, startPosition.y - desiredPosition.y, startPosition.y + desiredPosition.y);
+                newPosition.z = Mathf.Clamp(newPosition.z, startPosition.z - desiredPosition.z, startPosition.z + desiredPosition.z);
             }
 
-            if (newPosition.x == desiredPosition.x + startPosition.x || newPosition.y == desiredPosition.y + startPosition.y || newPosition.z == desiredPosition.z + startPosition.z || newPosition.x == desiredPosition.x - startPosition.x || newPosition.y == desiredPosition.y - startPosition.y || newPosition.z == desiredPosition.z - startPosition.z)
+            if (newPosition.x == desiredPosition.x + startPosition.x || newPosition.y == desiredPosition.y + startPosition.y || newPosition.z == desiredPosition.z + startPosition.z || newPosition.x == startPosition.x - desiredPosition.x || newPosition.y == startPosition.y - desiredPosition.y || newPosition.z == startPosition.z - desiredPosition.z)
             {
                 cloakAnimation.Play();
                 hiddenObjectScript.Tapped(gameObject);
