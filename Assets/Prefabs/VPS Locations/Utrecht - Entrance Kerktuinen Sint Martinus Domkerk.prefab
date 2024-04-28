@@ -128,49 +128,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5968992375460565788, guid: 1093580ec61556d40b92bca08d28bb61,
         type: 3}
-      propertyPath: localizedStringTable.m_TableReference.m_TableCollectionName
-      value: GUID:1fea39e4caa53524080be641f0520478
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968992375460565788, guid: 1093580ec61556d40b92bca08d28bb61,
-        type: 3}
-      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968992375460565788, guid: 1093580ec61556d40b92bca08d28bb61,
-        type: 3}
-      propertyPath: OnObjectDiscovered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968992375460565788, guid: 1093580ec61556d40b92bca08d28bb61,
-        type: 3}
       propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1242240048503070409}
-    - target: {fileID: 5968992375460565788, guid: 1093580ec61556d40b92bca08d28bb61,
-        type: 3}
-      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: StartFadeToEndColour
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968992375460565788, guid: 1093580ec61556d40b92bca08d28bb61,
-        type: 3}
-      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: StartFadeToEnd
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968992375460565788, guid: 1093580ec61556d40b92bca08d28bb61,
-        type: 3}
-      propertyPath: OnObjectDiscovered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_IntArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968992375460565788, guid: 1093580ec61556d40b92bca08d28bb61,
-        type: 3}
-      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: GCU.CultureTour.ImageColourFade, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 5968992375460565788, guid: 1093580ec61556d40b92bca08d28bb61,
-        type: 3}
-      propertyPath: OnObjectDiscoveredImmediate.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: GCU.CultureTour.CanvasGroupFade, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 8641529630725500375, guid: 1093580ec61556d40b92bca08d28bb61,
         type: 3}
       propertyPath: m_LocalScale.x

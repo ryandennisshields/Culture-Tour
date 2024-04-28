@@ -174,6 +174,18 @@ MonoBehaviour:
       Breda"
     m_Metadata:
       m_Items: []
+  - m_Id: 21141599547392
+    m_Localized: "La resurrecci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21253742653440
+    m_Localized: 'Objetos requeridos
+
+      Caballo de madera de juguete
+
+      Martillo'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

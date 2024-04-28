@@ -51,7 +51,7 @@ namespace GCU.CultureTour
                 newPosition.x = (desiredDistance.x > 0) ? Mathf.Clamp(newPosition.x, startPosition.x, startPosition.x + desiredDistance.x) : Mathf.Clamp(newPosition.x, startPosition.x + desiredDistance.x, startPosition.x);
                 newPosition.y = (desiredDistance.y > 0) ? Mathf.Clamp(newPosition.y, startPosition.y, startPosition.y + desiredDistance.y) : Mathf.Clamp(newPosition.y, startPosition.y + desiredDistance.y, startPosition.y);
                 newPosition.z = (desiredDistance.z > 0) ? Mathf.Clamp(newPosition.z, startPosition.z, startPosition.z + desiredDistance.z) : Mathf.Clamp(newPosition.z, startPosition.z + desiredDistance.z, startPosition.z);
-                float mouseMovementX = (Input.mousePosition.x - holdPosition.x) * 0.05f;
+                float mouseMovementX = (Input.mousePosition.x - holdPosition.x) * 0.03f;
                 Quaternion newRotation = Quaternion.Euler(-mouseMovementX - 90, originalYRotation, originalZRotation);
                 hiddenObject.transform.localRotation = newRotation;
             }

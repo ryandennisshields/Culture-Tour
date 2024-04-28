@@ -24,10 +24,7 @@ MonoBehaviour:
     snowflakes. '
   LogbookModel: {fileID: 2011665084440722327, guid: 0d08c3d1532c5d7418dd8b1645e16025,
     type: 3}
-  VpsSceneName: GCU Curved Bench 2
+  VPSSceneName: GCU Curved Bench 2
   Hints:
   - The base of it looks easy to move.
   - Looks like it could easily go backward and forward.
-  localizedStringTable:
-    m_TableReference:
-      m_TableCollectionName: GUID:568087a7d61880c44827df6a6a0fcdae

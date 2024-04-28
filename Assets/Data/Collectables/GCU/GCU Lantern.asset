@@ -22,10 +22,7 @@ MonoBehaviour:
     as he shared his cloak with the beggar on the cold winter\u2019s night."
   LogbookModel: {fileID: 2011665084440722327, guid: ed0a0b118ba1dda42bfd17912c423238,
     type: 3}
-  VpsSceneName: GCU The Quoting Stones 2
+  VPSSceneName: GCU The Quoting Stones 2
   Hints:
   - The flame looks small, maybe you could light it.
   - Once the flame is big enough, try sending it off.
-  localizedStringTable:
-    m_TableReference:
-      m_TableCollectionName: GUID:568087a7d61880c44827df6a6a0fcdae

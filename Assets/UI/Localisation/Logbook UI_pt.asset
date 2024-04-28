@@ -167,6 +167,14 @@ MonoBehaviour:
       de Breda"
     m_Metadata:
       m_Items: []
+  - m_Id: 21141599547392
+    m_Localized: "A ressurrei\xE7\xE3o"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21253742653440
+    m_Localized: "Objetos necess\xE1rios\nCavalo de madeira de brinquedo\nMartelo"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

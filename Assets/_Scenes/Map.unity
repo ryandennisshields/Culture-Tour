@@ -980,12 +980,12 @@ PrefabInstance:
     - target: {fileID: 5870770053535954945, guid: 834b36827f8042c46bfebe506a96c133,
         type: 3}
       propertyPath: _defaultLocation._latitude
-      value: 52.09039
+      value: 52.090975
       objectReference: {fileID: 0}
     - target: {fileID: 5870770053535954945, guid: 834b36827f8042c46bfebe506a96c133,
         type: 3}
       propertyPath: _defaultLocation._longitude
-      value: 5.120383
+      value: 5.120725
       objectReference: {fileID: 0}
     - target: {fileID: 5870770053535954947, guid: 834b36827f8042c46bfebe506a96c133,
         type: 3}

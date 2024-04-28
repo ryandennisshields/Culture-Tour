@@ -26,10 +26,7 @@ MonoBehaviour:
     the modern word \u2018chapel\u2019 is derived."
   LogbookModel: {fileID: 2011665084440722327, guid: 245ea3ec7061ab445aa46e1334fc4ac9,
     type: 3}
-  VpsSceneName: GCU The Quoting Stones 1
+  VPSSceneName: GCU The Quoting Stones 1
   Hints:
   - This looks to be Saint Martin's Cloak.
   - Maybe try re-creating an act of Saint Martin.
-  localizedStringTable:
-    m_TableReference:
-      m_TableCollectionName: GUID:568087a7d61880c44827df6a6a0fcdae

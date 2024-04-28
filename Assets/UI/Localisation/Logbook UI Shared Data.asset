@@ -88,7 +88,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 21141599547392
-    m_Key: MISSING0
+    m_Key: the_resurrection_text
     m_Metadata:
       m_Items: []
   - m_Id: 21166291415040
@@ -100,7 +100,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 21253742653440
-    m_Key: MISSING1
+    m_Key: objects_required_2
     m_Metadata:
       m_Items: []
   - m_Id: 21291847905280

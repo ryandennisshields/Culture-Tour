@@ -403,7 +403,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Cutting the Cloak
+  m_text: The Resurrection
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7fe943c1a8a6734469bda56eac5b96c1, type: 2}
   m_sharedMaterial: {fileID: 1278582421760091035, guid: 7fe943c1a8a6734469bda56eac5b96c1,
@@ -489,7 +489,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:568087a7d61880c44827df6a6a0fcdae
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 21141599547392
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -849,7 +849,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:568087a7d61880c44827df6a6a0fcdae
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 21253742653440
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -1402,7 +1402,7 @@ GameObject:
   - component: {fileID: 5790025322065311610}
   - component: {fileID: 2061633922617672102}
   m_Layer: 5
-  m_Name: Cutting the Cloak (2)
+  m_Name: The Resurrection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1519,7 +1519,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1896,3 +1896,4 @@ MonoBehaviour:
   buttons:
   - {fileID: 5820891610568719892}
   - {fileID: 8665843880373398730}
+  - {fileID: 5790025322065311610}
