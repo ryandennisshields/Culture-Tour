@@ -17,40 +17,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Animations/VideoPlayer.unity
     guid: f0ba9574621fa8847a37afcfab7f6efd
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/VPS/Utrecht Maartensbrug.unity
     guid: df6f2997bb3dac748954aaae521f3b58
-  - enabled: 1
+  - enabled: 0
     path: "Assets/_Scenes/VPS/Utrecht Een plek om te delen\u2019.unity"
     guid: 9a1230cb806279448b87484988e287c4
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/VPS/Utrecht The Courtyard.unity
     guid: 7a581740e541df74d9509e74e02a9cb8
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/VPS/Utrecht Entrance Kerktuinen Sint Martinus Domkerk.unity
     guid: 4553a188af0a4434687a8c9d8546d971
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/VPS/Utrecht Huis Loenersloot.unity
     guid: d55b0a73a01f39c4e977fb853b0240b3
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/VPS/Utrecht Saint Martin Frieze.unity
     guid: b67af16a7de25fa4f9badd7b3670a8e5
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/VPS/GCU/GCU Curved Bench.unity
     guid: 83d9527751ed39e4f8e93122723a21fc
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/VPS/GCU/GCU Curved Bench 1.unity
     guid: c5d423f509613ee498cd35c0dcf74ae6
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/VPS/GCU/GCU Curved Bench 2.unity
     guid: ed8fff4451b4c6e4b8616d01f5bd236c
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/VPS/GCU/GCU The Quoting Stones.unity
     guid: eeda30696854127479414422cae72b60
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/VPS/GCU/GCU The Quoting Stones 1.unity
     guid: 8984a898a89d3894ead8c6ed9f819c43
-  - enabled: 0
+  - enabled: 1
     path: Assets/_Scenes/VPS/GCU/GCU The Quoting Stones 2.unity
     guid: 27f0658f94b350b45903bd16b9076c0c
   - enabled: 0

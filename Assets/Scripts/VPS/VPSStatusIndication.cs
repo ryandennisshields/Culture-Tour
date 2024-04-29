@@ -33,25 +33,31 @@ namespace GCU.CultureTour.VPS
 
         private void OnEnable()
         {
-            locationManger.arPersistentAnchorStateChanged += ARPersistentAnchorStateChanged;
-
-            // Get the current state of tracking. If an AR location is enabled then tracking was happening.
-            // This is a bit of a bodge as these objects aren't automatically disabled when tracking stops.
-            foreach (ARLocation location in locationManger.ARLocations)
+            if (locationManger != null)
             {
-                if (location.gameObject.activeInHierarchy)
-                {
-                    SetStatus(Status.GOOD);
-                    return;
-                }
-            }
+                locationManger.arPersistentAnchorStateChanged += ARPersistentAnchorStateChanged;
 
-            SetStatus(Status.BAD);
+                // Get the current state of tracking. If an AR location is enabled then tracking was happening.
+                // This is a bit of a bodge as these objects aren't automatically disabled when tracking stops.
+                foreach (ARLocation location in locationManger.ARLocations)
+                {
+                    if (location.gameObject.activeInHierarchy)
+                    {
+                        SetStatus(Status.GOOD);
+                        return;
+                    }
+                }
+
+                SetStatus(Status.BAD);
+            }
         }
 
         private void OnDisable()
         {
-            locationManger.arPersistentAnchorStateChanged -= ARPersistentAnchorStateChanged;
+            if (locationManger.ARLocations != null)
+            {
+                locationManger.arPersistentAnchorStateChanged -= ARPersistentAnchorStateChanged;
+            }
         }
 
         public void TrackingStopped()
