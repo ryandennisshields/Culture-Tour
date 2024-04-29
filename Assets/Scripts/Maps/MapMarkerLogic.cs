@@ -1,7 +1,7 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Timeline;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
 
 namespace GCU.CultureTour.Map
 {
@@ -18,6 +18,10 @@ namespace GCU.CultureTour.Map
         private MapMarkerSO _mapMarker = null;
         private SphereCollider _sphereCollider;
         private GameObject _markerObject;
+
+        [SerializeField]
+        LocalizedStringTable localizedStringTable;
+        private StringTable stringTable;
 
         public void Initalise( CollectibleSO marker )
         {
@@ -90,7 +94,6 @@ namespace GCU.CultureTour.Map
             {
                 _inRange = true;
                 Handheld.Vibrate();
-                Debug.Log("Player is in range.", gameObject);
                 SetColour();
             }
         }
@@ -100,7 +103,6 @@ namespace GCU.CultureTour.Map
             if (other.name == "Player")
             {
                 _inRange = false;
-                Debug.Log("Player is out of range.", gameObject);
                 SetColour();
             }
         }
@@ -120,6 +122,12 @@ namespace GCU.CultureTour.Map
                 }
 
                 SceneManager.LoadScene( _mapMarker.SceneToLoadOnInteraction );
+            }
+            else if ( ! _inRange ) 
+            {
+                var tableLoading = localizedStringTable.GetTable();
+                stringTable = tableLoading;
+                FindObjectOfType<StatusMessageDisplay>().DisplayMessage(stringTable.GetEntry("map_get_closer").Value, true);
             }
         }
     } 

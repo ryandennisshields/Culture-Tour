@@ -8,10 +8,6 @@ namespace GCU.CultureTour
     [CreateAssetMenu(fileName = "Collectible", menuName = "GCU/Create Collectible")]
     public class CollectibleSO : ScriptableObject
     {
-        // This should be in a localization dictionary
-        // FC 2023-11-10
-        public const string NO_MORE_HINTS = "No more Hints!";
-
         public MapMarkerSO MapMarker;
         [Header("Logbook")]
         public string ObjectName;
@@ -19,12 +15,12 @@ namespace GCU.CultureTour
         private string DateCollectedText;
         public LogbookCollectibleModel LogbookModel;
 
-        [Header ("VPS Scene information")]
-        public string VpsSceneName;
+        [Header ("VPS Scene")]
+        public string VPSSceneName;
         public string[ ] Hints = new string[ 0 ];
 
         public bool Collected => CollectedOrder >= 0;
-        public int CollectedOrder { get; private set; } = -1; 
+        public int CollectedOrder { get; private set; } = -1;
 
         /// <summary>
         /// Mark the collectible as collected (or not). 
@@ -59,10 +55,9 @@ namespace GCU.CultureTour
         private void Save()
         {
             string key = KEY_PREFIX + name;
-
             PlayerPrefs.SetInt(key, CollectedOrder);
             DateTime dt = DateTime.Now;
-            PlayerPrefs.SetString(ObjectName + "dateCollected", "This object was collected on " + dt.ToString("yyyy-MM--dd"));
+            PlayerPrefs.SetString(ObjectName + "dateCollected", dt.ToString("dd/MM/yyyy"));
             PlayerPrefs.Save();
         }
     }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Niantic.Lightship.AR.LocationAR;
 using UnityEngine;
 using UnityEngine.UI;
@@ -35,25 +33,31 @@ namespace GCU.CultureTour.VPS
 
         private void OnEnable()
         {
-            locationManger.arPersistentAnchorStateChanged += ARPersistentAnchorStateChanged;
-
-            // get the current state of tracking. If an AR location is enabled then tracking was happening.
-            // this is a bit of a bodge as these objects aren't automatically disabled when tracking stops.
-            foreach (ARLocation location in locationManger.ARLocations)
+            if (locationManger != null)
             {
-                if (location.gameObject.activeInHierarchy)
-                {
-                    SetStatus(Status.GOOD);
-                    return;
-                }
-            }
+                locationManger.arPersistentAnchorStateChanged += ARPersistentAnchorStateChanged;
 
-            SetStatus(Status.BAD);
+                // Get the current state of tracking. If an AR location is enabled then tracking was happening.
+                // This is a bit of a bodge as these objects aren't automatically disabled when tracking stops.
+                foreach (ARLocation location in locationManger.ARLocations)
+                {
+                    if (location.gameObject.activeInHierarchy)
+                    {
+                        SetStatus(Status.GOOD);
+                        return;
+                    }
+                }
+
+                SetStatus(Status.BAD);
+            }
         }
 
         private void OnDisable()
         {
-            locationManger.arPersistentAnchorStateChanged -= ARPersistentAnchorStateChanged;
+            if (locationManger.ARLocations != null)
+            {
+                locationManger.arPersistentAnchorStateChanged -= ARPersistentAnchorStateChanged;
+            }
         }
 
         public void TrackingStopped()
@@ -75,7 +79,7 @@ namespace GCU.CultureTour.VPS
 
             if (currentStatus == status)
             {
-                // status hasn't changed just updated.
+                // Status hasn't changed just updated
                 return;
             }
 
@@ -87,7 +91,7 @@ namespace GCU.CultureTour.VPS
             if (currentStatus == Status.STOPPED && status != Status.IDLE)
             {
                 // After being stopped status must be set back to IDLE before 
-                // GOOD or BAD can be set.
+                // GOOD or BAD can be set
                 return;
             }
 
@@ -95,7 +99,7 @@ namespace GCU.CultureTour.VPS
 
             if (currentStatus == Status.IDLE)
             {
-                // nothing to do whilst idling.
+                // Nothing to do whilst idling
                 return;
             }
 

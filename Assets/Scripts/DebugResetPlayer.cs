@@ -6,8 +6,10 @@ namespace GCU.CultureTour
     {
         public void ResetPlayer()
         {
-#if DEBUG
-            GameManager.Instance.UndiscoverAllObjects();
+
+#if DEVELOPMENT_BUILD || UNITY_EDITOR
+
+            GameManager.Instance.ClearPlayerPrefs();
 
             var message = GameObject.FindObjectOfType<StatusMessageDisplay>();
 
@@ -15,7 +17,9 @@ namespace GCU.CultureTour
             {
                 message.DisplayMessage("Player has been reset.");
             }
+
 #endif
+
         }
     }
 }

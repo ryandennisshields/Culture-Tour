@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Hints_da
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: da
+  m_SharedData: {fileID: 11400000, guid: 079be5bf1f9e35f489e7cc62a03a4ab3, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 37665370112
+    m_Localized: "Du leder efter et v\xE5ben."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43919077376
+    m_Localized: Det kan sidde fast i noget.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47056416768
+    m_Localized: "Dette ser ud til at v\xE6re Saint Martin's Cloak."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48448925696
+    m_Localized: "Pr\xF8v m\xE5ske at genskabe en handling af Saint Martin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49203900416
+    m_Localized: Kraniet ser ud som om det mangler.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50059538432
+    m_Localized: "Pr\xF8v at finde delene af det."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50764181504
+    m_Localized: "Flammen ser lille ud, m\xE5ske du kunne t\xE6nde den."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51498184704
+    m_Localized: "N\xE5r flammen er stor nok, pr\xF8v at sende den af \u200B\u200Bsted."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52173467648
+    m_Localized: "Basen af \u200B\u200Bden ser nem at flytte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52869722112
+    m_Localized: "Det ser ud til, at det nemt kan g\xE5 frem og tilbage."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53683417088
+    m_Localized: "Det ser ud til, at det er over noget. Et \xE6g?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54706827264
+    m_Localized: "\xC6gget ser svagt ud."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

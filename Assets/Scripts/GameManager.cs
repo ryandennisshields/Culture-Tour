@@ -1,9 +1,9 @@
 ﻿using com.cyborgAssets.inspectorButtonPro;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace GCU.CultureTour
 {
@@ -34,11 +34,9 @@ namespace GCU.CultureTour
 
                 if (_gameSettings == null)
                 {
-#if DEBUG
-                    _gameSettings = Resources.Load<GameSettingsSO>("Default Game Settings");
-#else
-                    Debug.LogError("Game settings must be set in the inspector.", gameObject);
-#endif
+
+                    _gameSettings = Resources.Load<GameSettingsSO>("Default Game Settings");   
+                    
                 }
                 
                 Reload();
@@ -54,7 +52,7 @@ namespace GCU.CultureTour
 
         public GameSettingsSO GameSettings => _gameSettings;
 
-        public AnimationSO ClipToPlay => _gameSettings.Animations[0];
+        public AnimationSO ClipToPlay = null;
 
         /// <summary>
         /// Gets the collectible for a specific VPS Scene
@@ -64,15 +62,28 @@ namespace GCU.CultureTour
         public CollectibleSO GetCollectibleSO ( string sceneName )
         {
             return _gameSettings.Collectibles
-                .Where(c => c.VpsSceneName == sceneName)
+                .Where(c => c.VPSSceneName == sceneName)
                 .FirstOrDefault();
         }
 
         public void PrepareToPlayAnimation(int animationToPlay)
         {
-            //ClipToPlay = _gameSettings.Animations[0];
-            // to do - this is temporary 
-            // do nothing as we only have one clip to play.
+            var collectibles = _gameSettings.Collectibles;
+            if (animationToPlay == 0)
+            {
+                if (collectibles.Any(c => c.ObjectName == "Sword" && c.Collected) && collectibles.Any(c => c.ObjectName == "Cloak" && c.Collected))
+                    ClipToPlay = _gameSettings.Animations[0];
+            }
+            if (animationToPlay == 1)
+            {
+                if (collectibles.Any(c => c.ObjectName == "Skull" && c.Collected) && collectibles.Any(c => c.ObjectName == "Lantern" && c.Collected))
+                    ClipToPlay = _gameSettings.Animations[1];
+            }
+            if (animationToPlay == 2)
+            {
+                if (collectibles.Any(c => c.ObjectName == "Toy Wooden Horse" && c.Collected) && collectibles.Any(c => c.ObjectName == "Hammer" && c.Collected))
+                    ClipToPlay = _gameSettings.Animations[2];
+            }
         }
 
         private int _nextCollectable = 0;
@@ -107,12 +118,12 @@ namespace GCU.CultureTour
         {
             _nextCollectable = 0;
 
-            // load the status of all collectibles
+            // Load the status of all collectibles
             foreach (var collectable in _gameSettings.Collectibles)
             {
                 collectable.Load();
 
-                // get the largest collected order
+                // Get the largest collected order
                 if (collectable.CollectedOrder > _nextCollectable)
                 {
                     _nextCollectable = collectable.CollectedOrder;
@@ -120,7 +131,7 @@ namespace GCU.CultureTour
             }
         }
 
-#if DEBUG
+#if DEVELOPMENT_BUILD || UNITY_EDITOR
 
         [ProButton]
         public void DiscoverAllObjects()
@@ -152,6 +163,37 @@ namespace GCU.CultureTour
         internal IEnumerable<object> GetUncollectedCollectibles()
         {
             throw new NotImplementedException();
+        }
+
+        public bool ShowLog;
+
+        uint queueSize = 15;
+        Queue myLogQueue = new Queue();
+
+        void OnEnable()
+        {
+            Application.logMessageReceived += HandleLog;
+        }
+
+        void OnDisable()
+        {
+            Application.logMessageReceived -= HandleLog;
+        }
+
+        void HandleLog(string logString, string stackTrace, LogType type)
+        {
+            myLogQueue.Enqueue("[" + type + "] : " + logString);
+            if (type == LogType.Exception)
+                myLogQueue.Enqueue(stackTrace);
+            while (myLogQueue.Count > queueSize)
+                myLogQueue.Dequeue();
+        }
+
+        void OnGUI()
+        {
+            GUILayout.BeginArea(new Rect(Screen.width - 400, 0, 400, Screen.height));
+            GUILayout.Label("\n" + string.Join("\n", myLogQueue.ToArray()));
+            GUILayout.EndArea();
         }
 
 #endif

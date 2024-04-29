@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Status Messages_nl
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: nl
+  m_SharedData: {fileID: 11400000, guid: 1fea39e4caa53524080be641f0520478, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 14672195584
+    m_Localized: Schakel internet en locatie in!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17650151424
+    m_Localized: Schakel internet in!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20774907904
+    m_Localized: Schakel Locatie in!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24436535296
+    m_Localized: 'Voorwerp gevonden!
+
+      Toegevoegd aan logboek'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100642844672
+    m_Localized: Kom dichterbij!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113473220608
+    m_Localized: Verzameld
+    m_Metadata:
+      m_Items: []
+  - m_Id: 129575153664
+    m_Localized: Er ontbreken stukjes...
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

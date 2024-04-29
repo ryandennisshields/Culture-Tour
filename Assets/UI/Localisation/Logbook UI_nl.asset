@@ -1,0 +1,231 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Logbook UI_nl
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: nl
+  m_SharedData: {fileID: 11400000, guid: 568087a7d61880c44827df6a6a0fcdae, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20456682287104
+    m_Localized: Logboek
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20486646394880
+    m_Localized: 'In dit logboek worden alle verborgen voorwerpen opgeslagen die
+      je onderweg hebt verzameld.
+
+
+      Kijk eens bij de Objecten om meer te weten
+      te komen over Sint Maarten!
+
+
+      Je kunt alle animaties die je hebt ontgrendeld
+      ook vinden onder de objecten!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20510558121984
+    m_Localized: 'Dit object is verzameld op '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20542816514048
+    m_Localized: Zwaard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20567822954496
+    m_Localized: "Sint Maarten werd op 15-jarige leeftijd opgeroepen voor het Romeinse
+      leger. Later werd hij lid van de koninklijke cavaleriewacht. Terwijl hij als
+      18-jarige tribuun campagne voerde in Galli\xEB, gestationeerd in Amiens, vond
+      de beroemde legende van Sint-Maarten en de bedelaar plaats. Toen hij de poort
+      naderde die in garnizoensdienst was in Amiens, zag hij de bedelaar, met zo
+      rafelige kleren dat hij vrijwel naakt was. De bedelaar moet bibberend en blauw
+      zijn geweest van de kou, maar niemand stak zijn hand uit om hem te helpen.
+      Martin, overmand door medelijden, nam zijn mantel af. Met \xE9\xE9n snelle
+      slag sneed hij de mooie mantel in twee\xEBn met zijn zwaard, overhandigde de
+      helft aan de ijskoude man en wikkelde de rest op zijn eigen schouders."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20595710881792
+    m_Localized: Mantel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20644578717696
+    m_Localized: "Martin was een Romeinse soldaat die zich tot het christendom bekeerde
+      na een ontmoeting met een halfnaakte bedelaar bij de poort van de stad Amiens
+      in Noord-Frankrijk. Martinus sneed zijn mantel doormidden om die te delen met
+      de bedelaar die die nacht in een droom aan hem verscheen en zich openbaarde
+      als Christus. Centraal in de Sint-Maartenscultus stond het relikwie van de
+      resterende helft van zijn mantel. Het werd zo belangrijk geacht dat het soort
+      Frankrijk het als koninklijke vlag in oorlog gebruikte, en ze zwoeren er heilige
+      eden op. De structuur waarin de halve mantel werd bewaard, werd Capella (\"kleine
+      mantel\") genoemd. , een term die op grote schaal werd gebruikt voor gebouwen
+      waarin relikwie\xEBn werden bewaard en waarvan het moderne woord 'kapel' is
+      afgeleid."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20678217035776
+    m_Localized: Schedel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20698995617792
+    m_Localized: Sint-Maarten overleed op 8 november 397 na Christus. Na zijn dood
+      maakten lokale burgers van de regio Poitou en inwoners van Tours ruzie over
+      waar Martin begraven zou worden. Op een avond, in het donker, droegen verschillende
+      inwoners van Tours het lichaam van Martins naar een wachtende boot op de rivier
+      de Loire, waar teams van roeiers zijn lichaam over de rivier van Tours brachten,
+      waar massa's mensen op de rivieroevers wachtten om elkaar te ontmoeten en respect
+      te betuigen. Ter ere van hem werden heiligdommen opgericht; de heiligdomkapel
+      van Tours ontwikkelde zich tot een van de meest prominente en invloedrijke
+      instellingen in het middeleeuwse Frankrijk. In latere tijden werd de abdij
+      verschillende keren door brand verwoest en in 853 en 903 door Normandische
+      Vikingen geplunderd. In 994 brandde de abdij opnieuw af en werd in een twintig
+      jaar durende inspanning herbouwd. In 1453 werden de stoffelijke resten van
+      Sint-Maarten overgebracht naar een nieuw reliekschrijn.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20721737134080
+    m_Localized: Lantaarn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20748492599296
+    m_Localized: Als de schemering op 11 november valt, gaan kinderen van 5 tot 12
+      jaar op pad, vaak vergezeld van hun ouders. Ze dragen lantaarns gemaakt van
+      uitgeholde suikerbieten of papier. De kinderen gaan van huis tot huis en zingen
+      liedjes over Sint Maarten. In ruil daarvoor ontvangen ze taarten, snoep of
+      fruit van hun gulle buren. Deze lantaarns symboliseren het licht dat Sint-Maarten
+      leidde toen hij op de koude winternacht zijn mantel deelde met de bedelaar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20774929297408
+    m_Localized: Speelgoed houten paard
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20810866094080
+    m_Localized: "Sint Maarten is de patroonheilige van paarden en ruiters. Na zijn
+      tijd als cavaleriesoldaat bracht hij het grootste deel van zijn tijd te paard
+      door in het Romeinse leger. Dat het paard een houten schommelspeelgoed is,
+      is ook een knipoog naar het werk dat hij met kinderen deed en het medeleven
+      dat hij aan anderen toonde. De legende van het witte paard waarop Martin arriveert
+      en zijn eerste sneeuw draagt, ontstond vrij proza\xEFsch. Door de jaren heen
+      hebben mensen eenvoudigweg gemerkt dat de eerste sneeuw altijd op tijd rond
+      Sint-Maartensdag valt. Ze koppelden zijn naam aan een wit paard, dat de eerste
+      sneeuwvlokken symboliseerde."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20842533089280
+    m_Localized: Hamer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21043083735040
+    m_Localized: "Sint Maarten diende vanaf 371 als bisschop in de basiliek van Tours,
+      zij het met tegenzin. Er wordt gezegd dat hij zich probeerde te verbergen voor
+      degenen die hem als bisschop wilden installeren, maar zijn schuilplaats werd
+      verraden door het gekakel van ganzen, die sindsdien met de heilige in verband
+      worden gebracht. Andere verhalen vertellen hoe de heilige met zijn hamer heidense
+      tempels verwoestte en heilige bomen omhakte. in \xE9\xE9n geval stemden de
+      heidenen ermee in hun heilige dennenboom te vellen, alleen als Martin hem direct
+      in de weg zou staan. Hij deed dat en de boom miste hem op wonderbaarlijke wijze."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21060569788416
+    m_Localized: Animaties
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21082711519232
+    m_Localized: Het doorsnijden van de mantel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21115716497408
+    m_Localized: Stierramp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21166291415040
+    m_Localized: 'Objecten vereist
+
+      Zwaard
+
+      Mantel'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21210235138048
+    m_Localized: 'Objecten vereist
+
+      Schedel
+
+      Lantaarn'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21291847905280
+    m_Localized: Kredieten
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21331505049600
+    m_Localized: Met steun van
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21358696722432
+    m_Localized: 'Lewis MacDonald
+
+      Alistair Zagers
+
+      Andreas Holt
+
+      Juan
+      Lorenzo Burgos
+
+      David Milligan
+
+      Fraser Connolly
+
+      Ryan Schilden
+
+      Paulina
+      Wykurz
+
+      Morgan McKay
+
+      Andreas Trotsvoet
+
+      Robyn Hoskin
+
+      Matilda
+      Pratt
+
+
+
+      Hamid Homatash
+
+      Alan Jack
+
+      Glasgow Caledonische
+      Universiteit
+
+      Hogeschool Breda'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21141599547392
+    m_Localized: De opstanding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21253742653440
+    m_Localized: 'Objecten vereist
+
+      Speelgoed houten paard
+
+      Hamer'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

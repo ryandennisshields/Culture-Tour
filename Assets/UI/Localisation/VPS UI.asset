@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: VPS UI
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: c050224afcbe61d42b99ecaa30a90cfd, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 7558380ff016f5a4aa4d93d4311fe843, type: 2}
+  - {fileID: 11400000, guid: a3848dcbe90cbb241a62cd1274e15d87, type: 2}
+  - {fileID: 11400000, guid: 92e906d99a766614f89a5752d1e3073c, type: 2}
+  - {fileID: 11400000, guid: 0c43214ca27ee0d47a9ac9c6670a6529, type: 2}
+  - {fileID: 11400000, guid: a8d154b0974547649a7380214038827d, type: 2}
+  - {fileID: 11400000, guid: 92bc6fa36c588a043b967545c65daa69, type: 2}
+  - {fileID: 11400000, guid: 20d03a8078bfc1846a4fd164e05cdc2d, type: 2}
+  - {fileID: 11400000, guid: 7dd542286349e1e4791ae782cde1f7a6, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds: []

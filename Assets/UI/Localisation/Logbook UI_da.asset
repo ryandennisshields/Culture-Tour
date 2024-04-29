@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Logbook UI_da
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: da
+  m_SharedData: {fileID: 11400000, guid: 568087a7d61880c44827df6a6a0fcdae, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20456682287104
+    m_Localized: Logbog
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20486646394880
+    m_Localized: "Denne logbog gemmer alle de skjulte objekter, du har samlet undervejs.\n\nTag
+      et kig p\xE5 objekterne for at l\xE6re mere om Saint Martin!\n\nDu kan ogs\xE5
+      finde enhver animation, du har l\xE5st op under objekterne!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20510558121984
+    m_Localized: "Denne genstand blev samlet p\xE5 "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20542816514048
+    m_Localized: "Sv\xE6rd"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20567822954496
+    m_Localized: "Saint Martin blev indkaldt til den romerske h\xE6r i en alder af
+      15, han blev senere medlem af den kongelige kavalerivagt. Det var mens han
+      f\xF8rte kampagne i Gallien, som en 18-\xE5rig tribune, stationeret i Amiens,
+      at den ber\xF8mte legende om Saint Martin og tiggeren fandt sted. Da han n\xE6rmede
+      sig portene p\xE5 garnisontjeneste i Amiens, s\xE5 han tiggeren med t\xF8j
+      s\xE5 pjaltet, at han praktisk talt var n\xF8gen. Tiggeren m\xE5 have rystet
+      og bl\xE5 af kulde, men ingen rakte ud for at hj\xE6lpe ham. Martin, overv\xE6ldet
+      af medf\xF8lelse, tog sin kappe af. I et hurtigt slag huggede han den dejlige
+      kappe i to med sit sv\xE6rd, rakte halvdelen til den frysende mand og pakkede
+      resten p\xE5 sine egne skuldre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20595710881792
+    m_Localized: Kappe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20644578717696
+    m_Localized: "Martin var en romersk soldat, der konverterede til kristendommen
+      efter et m\xF8de med en halvn\xF8gen tigger ved porten til byen Amiens i det
+      nordlige Frankrig. Martin skar sin kappe i to for at dele den med tiggeren,
+      som den nat viste sig for ham i en dr\xF8m og \xE5benbarede sig som Kristus.
+      Centralt for St Martins kult var levn fra den resterende halvdel af hans kappe.
+      Det blev anset for at v\xE6re s\xE5 vigtigt, at den slags Frankrig brugte det
+      som et kongeligt banner i krig, og de svor hellige eder. Strukturen, hvori
+      halvkappen blev bevaret, blev omtalt som Capella (\"lille kappe\"). , et udtryk,
+      der kom til at blive brugt meget om bygninger, der tjente til at opbevare relikvier,
+      og hvorfra det moderne ord 'kapel' er afledt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20678217035776
+    m_Localized: Kranium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20698995617792
+    m_Localized: "Sankt Martin d\xF8de den 8. november 397 e.Kr. Efter at han d\xF8de,
+      sk\xE6ndtes lokale borgere i Poitou-regionen og beboere i Tours om, hvor Martin
+      ville blive begravet. En aften, efter m\xF8rkets frembrud, bar flere beboere
+      i Tours Martins' lig til en ventende b\xE5d p\xE5 floden Loire, hvor hold af
+      roere fragtede hans lig p\xE5 floden Tours, hvor masser af mennesker ventede
+      p\xE5 flodbredderne for at m\xF8des og vise respekt. Helligdomme blev skabt
+      til hans \xE6re; helligdomskapellet i Tours udviklede sig til et af de mest
+      fremtr\xE6dende og indflydelsesrige etablissementer i middelalderens Frankrig.
+      I senere tider blev klosteret \xF8delagt af brand ved flere lejligheder og
+      ransaget af normanniske vikinger i 853 og 903. Det br\xE6ndte igen i 994 og
+      blev genopbygget i en 20 \xE5r lang indsats. I 1453 blev resterne af St. Martin
+      overf\xF8rt til et nyt relikvieskrin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20721737134080
+    m_Localized: Lanterne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20748492599296
+    m_Localized: "N\xE5r skumringen s\xE6nker sig den 11. november, vover b\xF8rn
+      i alderen 5 til 12 \xE5r ud, ofte ledsaget af deres for\xE6ldre. De b\xE6rer
+      lanterner lavet af enten udhulede sukkerroer eller papir. B\xF8rnene g\xE5r
+      fra hus til hus og synger sange om Sint Maarten. Til geng\xE6ld modtager de
+      kager, slik eller frugter fra deres gener\xF8se naboer. Disse lanterner symboliserer
+      det lys, der ledede Sankt Martin, da han delte sin kappe med tiggeren p\xE5
+      den kolde vinternat."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20774929297408
+    m_Localized: "Leget\xF8j tr\xE6 hest"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20810866094080
+    m_Localized: "Saint Martin er skytshelgen for heste og ryttere efter sin tid
+      som kavalerisoldat, han tilbragte det meste af sin tid i den romerske h\xE6r
+      p\xE5 hesteryg. At hesten er et gyngeleget\xF8j af tr\xE6 er ogs\xE5 et nik
+      til det arbejde, han udf\xF8rte med b\xF8rn, og den medf\xF8lelse, han viste
+      andre. Legenden om den hvide hest, hvorp\xE5 Martin ankommer og b\xE6rer sin
+      f\xF8rste sne, opstod ret prosaisk. I \xE5renes l\xF8b har folk simpelthen
+      bem\xE6rket, at den f\xF8rste sne altid kommer i tide omkring St. Martins dag
+      - de k\xE6dede hans navn sammen med en hvid hest, der symboliserer de f\xF8rste
+      snefnug."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20842533089280
+    m_Localized: Hammer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21043083735040
+    m_Localized: "St. Martin tjente som biskop ved basilikaen i Tours fra 371 - dog
+      modvilligt. Det siges, at han fors\xF8gte at gemme sig for dem, der \xF8nskede
+      at inds\xE6tte ham som biskop, men hans skjulested blev for\xE6ret af g\xE6sens
+      kakelren, som siden har v\xE6ret forbundet med helgenen. Andre historier fort\xE6ller,
+      hvordan helgenen \xF8delagde hedenske templer og f\xE6ldede hellige tr\xE6er
+      ved hj\xE6lp af sin hammer. i et tilf\xE6lde gik hedningene med til at f\xE6lde
+      deres hellige gran, kun hvis Martin ville st\xE5 direkte i dens vej. Det gjorde
+      han, og tr\xE6et savnede ham mirakul\xF8st."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21060569788416
+    m_Localized: Animationer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21082711519232
+    m_Localized: "Sk\xE6ring af kappen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21115716497408
+    m_Localized: Tyr Rampage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21166291415040
+    m_Localized: "Objekter p\xE5kr\xE6vet\nSv\xE6rd\nKappe"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21210235138048
+    m_Localized: "Objekter p\xE5kr\xE6vet\nKranium\nLanterne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21291847905280
+    m_Localized: Kreditter
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21331505049600
+    m_Localized: "Med st\xF8tte fra"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21358696722432
+    m_Localized: "Lewis MacDonald\nAlistair Sawers\nAndrew Holt\nJuan Lorenzo Burgos\nDavid
+      Milligan\nFraser Connolly\nRyan Shields\nPaulina Wykurz\nMorgan McKay\nAndrew
+      Proudfoot\nRobyn Hoskin\nMatilda Pratt\n\n\nHamid Homatash\nAlan Jack\nGlasgow
+      Caledonian University\nBreda H\xF8jskole"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21141599547392
+    m_Localized: Opstandelsen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21253742653440
+    m_Localized: "Objekter p\xE5kr\xE6vet\nLeget\xF8j tr\xE6 hest\nHammer"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

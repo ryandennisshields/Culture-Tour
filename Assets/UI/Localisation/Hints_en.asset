@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Hints_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 079be5bf1f9e35f489e7cc62a03a4ab3, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 37665370112
+    m_Localized: You are looking for a weapon.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43919077376
+    m_Localized: It may be stuck in something.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47056416768
+    m_Localized: This looks to be Saint Martin's Cloak.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48448925696
+    m_Localized: Maybe try re-creating an act of Saint Martin.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49203900416
+    m_Localized: The skull looks like it's missing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50059538432
+    m_Localized: Try to find the parts of it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50764181504
+    m_Localized: The flame looks small, maybe you could light it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51498184704
+    m_Localized: Once the flame is big enough, try sending it off.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52173467648
+    m_Localized: The base of it looks easy to move.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52869722112
+    m_Localized: Looks like it could easily go backward and forward.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53683417088
+    m_Localized: Looks like it's above something. An egg?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54706827264
+    m_Localized: The egg looks weak.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

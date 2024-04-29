@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace GCU.CultureTour
 {
@@ -21,6 +20,10 @@ namespace GCU.CultureTour
         [SerializeField]
         [Range(0f, 30f)]
         float _fadeTime = 1f;
+
+        [SerializeField]
+        [Range(0f, 10f)]
+        float _delay = 0f;
 
         public void StartFadeToEnd()
         {
@@ -48,6 +51,8 @@ namespace GCU.CultureTour
 
             float t;
             float runningTime;
+
+            yield return new WaitForSeconds(_delay);
 
             if (_fadeTime > 0f)
             {

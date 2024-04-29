@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Logbook UI Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Logbook UI
+  m_TableCollectionNameGuidString: 568087a7d61880c44827df6a6a0fcdae
+  m_Entries:
+  - m_Id: 20456682287104
+    m_Key: logbook_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20486646394880
+    m_Key: logbook_intro_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20510558121984
+    m_Key: date_collected_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20542816514048
+    m_Key: Sword_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20567822954496
+    m_Key: Sword_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20595710881792
+    m_Key: Cloak_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20644578717696
+    m_Key: Cloak_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20678217035776
+    m_Key: Skull_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20698995617792
+    m_Key: Skull_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20721737134080
+    m_Key: Lantern_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20748492599296
+    m_Key: Lantern_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20774929297408
+    m_Key: Toy Wooden Horse_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20810866094080
+    m_Key: Toy Wooden Horse_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20842533089280
+    m_Key: Hammer_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21043083735040
+    m_Key: Hammer_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21060569788416
+    m_Key: animations_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21082711519232
+    m_Key: cutting_the_cloak_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21115716497408
+    m_Key: bull_rampage_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21141599547392
+    m_Key: the_resurrection_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21166291415040
+    m_Key: objects_required_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21210235138048
+    m_Key: objects_required_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21253742653440
+    m_Key: objects_required_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21291847905280
+    m_Key: credits_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21331505049600
+    m_Key: credits_support_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21358696722432
+    m_Key: credits_names
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4860323448185159714
+  references:
+    version: 2
+    RefIds:
+    - rid: 4860323448185159714
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables,
+        asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1713635636484

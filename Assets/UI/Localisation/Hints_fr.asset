@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Hints_fr
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: 079be5bf1f9e35f489e7cc62a03a4ab3, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 37665370112
+    m_Localized: Vous cherchez une arme.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43919077376
+    m_Localized: "Il est peut-\xEAtre coinc\xE9 dans quelque chose."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 47056416768
+    m_Localized: "Cela ressemble \xE0 la cape de Saint-Martin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 48448925696
+    m_Localized: "Essayez peut-\xEAtre de recr\xE9er un acte de Saint-Martin."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49203900416
+    m_Localized: "Le cr\xE2ne semble avoir disparu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50059538432
+    m_Localized: Essayez d'en trouver les parties.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 50764181504
+    m_Localized: "La flamme semble petite, vous pourriez peut-\xEAtre l'allumer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 51498184704
+    m_Localized: "Une fois que la flamme est suffisamment grande, essayez de l'\xE9teindre."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52173467648
+    m_Localized: "La base semble facile \xE0 d\xE9placer."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52869722112
+    m_Localized: "On dirait que cela pourrait facilement aller en arri\xE8re et en
+      avant."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 53683417088
+    m_Localized: "On dirait que c'est au-dessus de quelque chose. Un \u0153uf?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 54706827264
+    m_Localized: "L'\u0153uf semble faible."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

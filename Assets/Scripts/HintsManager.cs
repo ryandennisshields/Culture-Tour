@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
 
 namespace GCU.CultureTour
 {
@@ -10,41 +12,20 @@ namespace GCU.CultureTour
         private CollectibleSO _collectible = null;
 
         int _hintIndex = 0;
-        bool _allHintsUsed = false;
 
-        public int HowManyHintsHaveBeenUsed
-        {
-            get
-            {
-                if (_allHintsUsed)
-                {
-                    return Hints.Length;
-                }
-
-                return _hintIndex;
-            }
-        }
+        [SerializeField]
+        LocalizedStringTable localizedStringTable;
+        private StringTable stringTable;
 
         public void DisplayHint()
         {
             if ( _hintIndex >= Hints.Length )
             {
                 _hintIndex = 0;
-
-                if ( ! _allHintsUsed )
-                {
-                    ShowHintInStatusMessage(CollectibleSO.NO_MORE_HINTS);
-                    _allHintsUsed = true;
-                    return;
-                }
             }
-
-            ShowHintInStatusMessage(Hints[_hintIndex++]);
-        }
-
-        public void DisplayObjectCollected() 
-        {
-            ShowHintInStatusMessage("Object Found!\nAdded to Logbook");
+            var tableLoading = localizedStringTable.GetTable();
+            stringTable = tableLoading;
+            ShowHintInStatusMessage(stringTable.GetEntry(_collectible.ObjectName + "_hint_" + _hintIndex++).Value);
         }
 
         private void Awake()
@@ -53,10 +34,6 @@ namespace GCU.CultureTour
             _collectible = GameManager.Instance.GetCollectibleSO(scene.name);
         }
 
-        /// <summary>
-        /// This is just a temporary solution.
-        /// 2023-11-10
-        /// </summary>
         private void ShowHintInStatusMessage( string hint )
         {
             var statusDisplay = FindObjectOfType<StatusMessageDisplay>();

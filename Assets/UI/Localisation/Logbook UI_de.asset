@@ -1,0 +1,225 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Logbook UI_de
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: de
+  m_SharedData: {fileID: 11400000, guid: 568087a7d61880c44827df6a6a0fcdae, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20456682287104
+    m_Localized: Logbuch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20486646394880
+    m_Localized: "In diesem Logbuch werden alle versteckten Objekte gespeichert,
+      die Sie unterwegs gesammelt haben.\n\nWerfen Sie einen Blick auf die Objekte,
+      um mehr \xFCber Saint Martin zu erfahren!\n\nUnter den Objekten finden Sie
+      auch alle Animationen, die Sie freigeschaltet haben!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20510558121984
+    m_Localized: 'Dieses Objekt wurde am abgeholt '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20542816514048
+    m_Localized: Schwert
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20567822954496
+    m_Localized: "Der heilige Martin wurde im Alter von 15 Jahren in die r\xF6mische
+      Armee eingezogen, sp\xE4ter wurde er Mitglied der k\xF6niglichen Kavalleriegarde.
+      W\xE4hrend seines Wahlkampfs in Gallien, als 18-j\xE4hriger Volkstribun, der
+      in Amiens stationiert war, ereignete sich die ber\xFChmte Legende vom Heiligen
+      Martin und dem Bettler. Als er sich im Garnisonsdienst von Amiens den Toren
+      n\xE4herte, sah er den Bettler, dessen Kleidung so zerlumpt war, dass er praktisch
+      nackt war. Der Bettler musste vor K\xE4lte zittern und blau sein, aber niemand
+      streckte die Hand aus, um ihm zu helfen. Martin war von Mitgef\xFChl \xFCberw\xE4ltigt
+      und nahm seinen Mantel ab. Mit einem schnellen Schlag schnitt er den sch\xF6nen
+      Mantel mit seinem Schwert in zwei Teile, reichte die H\xE4lfte dem frierenden
+      Mann und wickelte den Rest auf seine eigenen Schultern."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20595710881792
+    m_Localized: Mantel
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20644578717696
+    m_Localized: "Martin war ein r\xF6mischer Soldat, der nach einer Begegnung mit
+      einem halbnackten Bettler am Tor der Stadt Amiens in Nordfrankreich zum Christentum
+      konvertierte. Martin schnitt seinen Umhang in zwei H\xE4lften, um ihn mit dem
+      Bettler zu teilen, der ihm in dieser Nacht im Traum erschien und sich als Christus
+      offenbarte. Von zentraler Bedeutung f\xFCr den Martinskult war die Reliquie
+      der restlichen H\xE4lfte seines Umhangs. Es galt als so wichtig, dass die Franzosen
+      es im Krieg als k\xF6nigliches Banner verwendeten und darauf heilige Eide schworen.
+      Die Struktur, in der der Halbumhang aufbewahrt wurde, wurde als Capella (\u201Ekleiner
+      Umhang\u201C) bezeichnet. , ein Begriff, der weithin f\xFCr Geb\xE4ude verwendet
+      wurde, die zur Aufbewahrung von Reliquien dienten und von dem sich das moderne
+      Wort \u201EKapelle\u201C ableitet."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20678217035776
+    m_Localized: "Sch\xE4del"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20698995617792
+    m_Localized: "St. Martin starb am 8. November 397 n. Chr. Nach seinem Tod stritten
+      sich die B\xFCrger der Region Poitou und die Einwohner von Tours dar\xFCber,
+      wo Martin begraben werden sollte. Eines Abends, nach Einbruch der Dunkelheit,
+      trugen mehrere Einwohner von Tours Martins\u2018 Leiche zu einem wartenden
+      Boot auf der Loire, wo Ruderteams seine Leiche auf den Fluss von Tours \xFCberf\xFChrten,
+      wo Massen von Menschen am Flussufer darauf warteten, sich zu treffen und Respekt
+      zu erweisen. Ihm zu Ehren wurden Schreine errichtet; Die Schreinskapelle von
+      Tours entwickelte sich zu einer der bedeutendsten und einflussreichsten Einrichtungen
+      im mittelalterlichen Frankreich. Sp\xE4ter wurde die Abtei mehrmals durch Br\xE4nde
+      zerst\xF6rt und 853 und 903 von normannischen Wikingern gepl\xFCndert. Im Jahr
+      994 brannte sie erneut und wurde in einem 20-j\xE4hrigen Bem\xFChen wieder
+      aufgebaut. Im Jahr 1453 wurden die sterblichen \xDCberreste des Heiligen Martin
+      in ein neues Reliquiar \xFCberf\xFChrt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20721737134080
+    m_Localized: Laterne
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20748492599296
+    m_Localized: "Wenn am 11. November die D\xE4mmerung hereinbricht, machen sich
+      Kinder im Alter von 5 bis 12 Jahren auf den Weg, oft in Begleitung ihrer Eltern.
+      Sie tragen Laternen aus ausgeh\xF6hlten Zuckerr\xFCben oder Papier. Die Kinder
+      gehen von Haus zu Haus und singen Lieder \xFCber Sint Maarten. Im Gegenzug
+      erhalten sie von ihren gro\xDFz\xFCgigen Nachbarn Kuchen, S\xFC\xDFigkeiten
+      oder Obst. Diese Laternen symbolisieren das Licht, das den heiligen Martin
+      leitete, als er in der kalten Winternacht seinen Umhang mit dem Bettler teilte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20774929297408
+    m_Localized: Spielzeug-Holzpferd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20810866094080
+    m_Localized: "Der heilige Martin ist der Schutzpatron der Pferde und Reiter.
+      Nach seiner Zeit als Soldat der Kavallerie verbrachte er die meiste Zeit in
+      der r\xF6mischen Armee zu Pferd. Dass das Pferd ein h\xF6lzernes Schaukelspielzeug
+      ist, ist auch eine Anspielung auf die Arbeit, die er mit Kindern geleistet
+      hat, und auf das Mitgef\xFChl, das er anderen entgegengebracht hat. Die Legende
+      vom wei\xDFen Pferd, auf dem Martin ankommt und seinen ersten Schnee tr\xE4gt,
+      entstand ganz prosaisch. Im Laufe der Jahre ist den Menschen einfach aufgefallen,
+      dass der erste Schnee immer rechtzeitig um den Martinstag f\xE4llt \u2013 sie
+      verbanden seinen Namen mit einem wei\xDFen Pferd, das die ersten Schneeflocken
+      symbolisierte."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20842533089280
+    m_Localized: Hammer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21043083735040
+    m_Localized: "St. Martin diente ab 371 als Bischof in der Basilika von Tours
+      \u2013 allerdings widerwillig. Es hei\xDFt, er habe versucht, sich vor denen
+      zu verstecken, die ihn zum Bischof einsetzen wollten, aber sein Versteck wurde
+      durch das Gackern der G\xE4nse verraten, die seitdem mit dem Heiligen in Verbindung
+      gebracht werden. Andere Geschichten erz\xE4hlen, wie der Heilige mit seinem
+      Hammer heidnische Tempel zerst\xF6rte und heilige B\xE4ume f\xE4llte. In einem
+      Fall stimmten die Heiden dem F\xE4llen ihres heiligen Tannenbaums nur zu, wenn
+      Martin ihm direkt im Weg stehen w\xFCrde. Er tat es und der Baum verfehlte
+      ihn auf wundersame Weise."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21060569788416
+    m_Localized: Animationen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21082711519232
+    m_Localized: Den Umhang zerschneiden
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21115716497408
+    m_Localized: Bullen-Rampage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21166291415040
+    m_Localized: 'Erforderliche Objekte
+
+      Schwert
+
+      Mantel'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21210235138048
+    m_Localized: "Erforderliche Objekte\nSch\xE4del\nLaterne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21291847905280
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21331505049600
+    m_Localized: "Mit Unterst\xFCtzung von"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21358696722432
+    m_Localized: 'Lewis MacDonald
+
+      Alistair Sawers
+
+      Andrew Holt
+
+      Juan
+      Lorenzo Burgos
+
+      David Milligan
+
+      Fraser Connolly
+
+      Ryan Shields
+
+      Paulina
+      Wykurz
+
+      Morgan McKay
+
+      Andrew Proudfoot
+
+      Robyn Hoskin
+
+      Matilda
+      Pratt
+
+
+
+      Hamid Homatash
+
+      Alan Jack
+
+      Glasgow Caledonian University
+
+      Fachhochschule
+      Breda'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21141599547392
+    m_Localized: Die Auferstehung
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21253742653440
+    m_Localized: 'Erforderliche Objekte
+
+      Spielzeug-Holzpferd
+
+      Hammer'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -44,4 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c62ba62093b33c34da871e0def0674c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameSettings: {fileID: 11400000, guid: bbf2706c62e750c46ba3d6ad77f2a136, type: 2}
+  _gameSettings: {fileID: 11400000, guid: b08041a310076024aa88ca0464542439, type: 2}
+  ClipToPlay: {fileID: 0}
+  ShowLog: 1

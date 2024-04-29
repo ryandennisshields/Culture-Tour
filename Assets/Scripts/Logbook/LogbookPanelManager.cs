@@ -1,5 +1,6 @@
 using Niantic.Platform.Debugging;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -11,6 +12,9 @@ namespace GCU.CultureTour.Logbook
     {
         [SerializeField]
         private ScrollRect _scrollRect;
+
+        [SerializeField]
+        private float creationDelay = 0f;
 
         [Header("Panels")]
         [SerializeField]
@@ -28,6 +32,17 @@ namespace GCU.CultureTour.Logbook
         private Dictionary<CollectibleSO, GameObject> _objectPanels = new Dictionary<CollectibleSO, GameObject>();
 
         private void Start()
+        {
+            StartCoroutine(DelayCreation());
+        }
+
+        private IEnumerator DelayCreation()
+        {
+            yield return new WaitForSeconds(creationDelay);
+            CreatePanels();
+        }
+
+        private void CreatePanels()
         {
             float height = 0f;
 
@@ -64,17 +79,12 @@ namespace GCU.CultureTour.Logbook
 
             if (_logbookAnimationPlayer != null)
             {
-                var collectables = GameManager.Instance.GameSettings.OrderedCollectiblesList;
                 var panel = Instantiate(_logbookAnimationPlayer.gameObject, transform);
-                foreach (var collectable in collectables)
-                {
-                    var logbookAnimationPlayer = panel.GetComponent<LogbookAnimationPlayer>();
-                    logbookAnimationPlayer.Store(collectable);
 
-                    var rect = panel.transform as RectTransform;
-                    rect.anchoredPosition = new Vector2(0, -height);
-                    height += rect?.rect.height ?? 0f;
-                }
+                var rect = panel.transform as RectTransform;
+                rect.anchoredPosition = new Vector2(0, -height);
+                height += rect?.rect.height ?? 0f;
+
             }
             else
             {
@@ -110,7 +120,7 @@ namespace GCU.CultureTour.Logbook
             }
         }
 
-        // from https://stackoverflow.com/questions/30766020/how-to-scroll-to-a-specific-element-in-scrollrect-with-unity-ui
+        // From https://stackoverflow.com/questions/30766020/how-to-scroll-to-a-specific-element-in-scrollrect-with-unity-ui
         public void SnapTo(RectTransform target)
         {
             if ( target == null)

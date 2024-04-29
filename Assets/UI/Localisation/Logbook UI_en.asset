@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Logbook UI_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 568087a7d61880c44827df6a6a0fcdae, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 20456682287104
+    m_Localized: Logbook
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20486646394880
+    m_Localized: 'This Logbook stores all of the Hidden Objects you have collected
+      along the way.
+
+
+      Have a look at the Objects to learn more about Saint
+      Martin!
+
+
+      You can also find any Animation you''ve unlocked below the
+      Objects!'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20510558121984
+    m_Localized: 'This object was collected on '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20542816514048
+    m_Localized: Sword
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20567822954496
+    m_Localized: Saint Martin was drafted into the Roman Army at age 15, he later
+      became a member of the royal cavalry guard. It was while he was campaigning
+      in Gaul, as an 18-year-old tribune, stationed in Amiens, that the famous legend
+      of Saint Martin and the beggar took place. As he approached the gates on garrison
+      duty at Amiens that he saw the beggar, with clothes so ragged that he was practically
+      naked. The beggar must have been shaking and blue from the cold, but no one
+      reached out to help him. Martin, overcome with compassion, took of his mantle.
+      In one quick stroke he slashed the lovely mantle in two with his sword, handed
+      half to the freezing man and wrapped the remainder on his own shoulders.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20595710881792
+    m_Localized: Cloak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20644578717696
+    m_Localized: "Martin was a roman solider who converted to Christianity after
+      an encounter with a half-naked beggar at the gate of the city of Amiens in
+      northern France. Martin cut his cloak in half in order to share it with the
+      beggar who that night appeared to him in a dream and revealed himself to be
+      Christ. Central to St Martins cult was the relic of the remaining half of his
+      cloak. It was deemed to be so important that the kind of France used it as
+      a royal banner in war, and they swore sacred oaths upon in. The structure in
+      which the half-cloak was preserved was referred to as Capella (\u201Clittle
+      cloak\u201D), a term that came to be used widely for buildings that served
+      to keep relics and from which the modern word \u2018chapel\u2019 is derived."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20678217035776
+    m_Localized: Skull
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20698995617792
+    m_Localized: "St Martin passed on November 8th 397 AD.  After he died, local
+      citizens of the Poitou region and residents of Tours quarreled over where Martin
+      would be buried. One evening, after dark, several residents of Tours carried
+      Martins\u2019 body to a waiting boat on the river Loire, where teams of rowers
+      ferried his body on the river of Tours where masses of people waited on the
+      riverbanks to meet and pay respects.  Shrines were created in his honor; the
+      shrine chapel at Tours developed into one of the most prominent and influential
+      establishments in medieval France. In later times the abbey was destroyed by
+      fire on several occasions and ransacked by Norman Vikings in 853 and 903. It
+      burned again in 994 and was rebuilt in a 20 yearlong effort. In 1453 the remains
+      of St Martin were transferred to a new reliquary."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20721737134080
+    m_Localized: Lantern
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20748492599296
+    m_Localized: "As dusk settles on 11th November, children aged 5 to 12 ventures
+      out, often accompanied by their parents. They carry lanterns made from either
+      hollowed out sugar beets or paper. The children go from house to house, singing
+      songs about Sint Maarten. In, return they receive cakes, candy or fruits from
+      their generous neighbors.  These lanterns symbolize the light that guided Saint
+      Martin as he shared his cloak with the beggar on the cold winter\u2019s night."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20774929297408
+    m_Localized: Toy Wooden Horse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20810866094080
+    m_Localized: 'Saint Martin is the patron saint of horses and equestrians after
+      his time as a cavalry solider, he spent most of his time in the roman army
+      on horseback.  The horse being a wooden rocking toy is also a nod to the work
+      he did with children and the compassion he showed to others. The legend of
+      the white horse on which Martin arrives and carries his first snow, arose quite
+      prosaically. Over the years, people have simply noticed that the first snow
+      always comes in time around St Martins Day- they linked his name with a white
+      horse, symbolizing the first snowflakes. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20842533089280
+    m_Localized: Hammer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21043083735040
+    m_Localized: St Martin served as a bishop at the Basilica at Tours from 371-
+      however reluctantly. It is said that he tried to hide from those who wanted
+      to install him as Bishop, but his hiding place was given away by the cackling
+      of geese, which have been associated with the saint ever since. Other stories
+      tell how the saint destroyed pagan temples and cut down sacred trees using
+      his hammer. in one instance, the pagans agreed to fell their sacred fir tree,
+      only if Martin would stand directly in its path. He did so and the tree miraculously
+      missed him.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21060569788416
+    m_Localized: Animations
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21082711519232
+    m_Localized: Cutting the Cloak
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21115716497408
+    m_Localized: Bull Rampage
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21166291415040
+    m_Localized: 'Objects Required
+
+      Sword
+
+      Cloak'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21210235138048
+    m_Localized: 'Objects Required
+
+      Skull
+
+      Lantern'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21291847905280
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21331505049600
+    m_Localized: With Support From
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21358696722432
+    m_Localized: 'Lewis MacDonald
+
+      Alistair Sawers
+
+      Andrew Holt
+
+      Juan
+      Lorenzo Burgos
+
+      David Milligan
+
+      Fraser Connolly
+
+      Ryan Shields
+
+      Paulina
+      Wykurz
+
+      Morgan McKay
+
+      Andrew Proudfoot
+
+      Robyn Hoskin
+
+      Matilda
+      Pratt
+
+
+
+      Hamid Homatash
+
+      Alan Jack
+
+      Glasgow Caledonian University
+
+      Breda
+      University of Applied Sciences'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21141599547392
+    m_Localized: The Resurrection
+    m_Metadata:
+      m_Items: []
+  - m_Id: 21253742653440
+    m_Localized: 'Objects Required
+
+      Toy Wooden Horse
+
+      Hammer'
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

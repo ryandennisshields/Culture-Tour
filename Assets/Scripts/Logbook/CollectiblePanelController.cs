@@ -1,5 +1,7 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
 
 namespace GCU.CultureTour.Logbook
 {
@@ -11,9 +13,6 @@ namespace GCU.CultureTour.Logbook
         [SerializeField]
         private TMPro.TextMeshProUGUI _objectText;
 
-        //[SerializeField]
-        //private TMPro.TextMeshProUGUI _modelDescription;
-
         [SerializeField]
         private TMPro.TextMeshProUGUI _dateCollectedText;
         
@@ -21,6 +20,10 @@ namespace GCU.CultureTour.Logbook
         private Transform _logbookModelHolder;
 
         CollectibleSO _collectible;
+
+        [SerializeField]
+        LocalizedStringTable localizedStringTable;
+        private StringTable stringTable;
 
         public void Initialise( CollectibleSO collectible )
         {
@@ -30,6 +33,8 @@ namespace GCU.CultureTour.Logbook
 
         public void UpdateDisplay()
         {
+            var tableLoading = localizedStringTable.GetTable();
+            stringTable = tableLoading;
 
             if ( _collectible == null ) 
             {
@@ -38,12 +43,12 @@ namespace GCU.CultureTour.Logbook
 
             if ( _objectName != null )
             {
-                _objectName.text = _collectible.ObjectName;
+                _objectName.text = stringTable.GetEntry(_collectible.ObjectName + "_name").Value;
             }
 
             if (_logbookModelHolder != null)
             {
-                // remove any existing children
+                // Remove any existing children
                 for (int i = 0; i < _logbookModelHolder.childCount; i++)
                 {
                     Destroy(_logbookModelHolder.GetChild(i));
@@ -59,20 +64,19 @@ namespace GCU.CultureTour.Logbook
 
             if ( _objectText != null)
             {
-                _objectText.text = _collectible.ObjectText;
+                _objectText.text = stringTable.GetEntry(_collectible.ObjectName + "_text").Value;
             }
 
             if (_dateCollectedText != null)
             {
-                _dateCollectedText.text = "";
+                _dateCollectedText.text = string.Empty;
             }
 
             if (_collectible.Collected)
             {
                 if (PlayerPrefs.GetString(_collectible.ObjectName + "dateCollected") != null)
                 {
-                    _dateCollectedText.text = PlayerPrefs.GetString(_collectible.ObjectName + "dateCollected", "No Date Found");
-                    //Debug.Log(PlayerPrefs.GetString(_areaName + "dateCollected"));
+                    _dateCollectedText.text = stringTable.GetEntry("date_collected_text").Value + PlayerPrefs.GetString(_collectible.ObjectName + "dateCollected", "No Date Found");
                 }
             }
         }

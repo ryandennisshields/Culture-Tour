@@ -28,8 +28,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 6.53, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2972352808999076886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -107,7 +107,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2972352808999076886}
   - component: {fileID: 7193772216030586701}
-  - component: {fileID: 5217726749936648034}
   m_Layer: 0
   m_Name: Map Marker Base
   m_TagString: Untagged
@@ -149,25 +148,6 @@ MonoBehaviour:
   _outOfRangeSprite: {fileID: 21300000, guid: 73b7eb407956e57429c79af5f4e887ec, type: 3}
   _outOfRangeDiscoveredSprite: {fileID: 21300000, guid: 30f5c730c919b5342b2b3ee2d75ba933,
     type: 3}
---- !u!114 &5217726749936648034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4536042232755838524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726b9cf2885502348ace4b69e3ef2f76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _mRenderer: {fileID: 0}
-  _inRangeMaterial:
-  - {fileID: 2100000, guid: d3947ded50eba2e4380d2574693cdcfe, type: 2}
-  _outOfRangeMaterial:
-  - {fileID: 2100000, guid: 6e98e8274cba5ef489dc1ed588a6b115, type: 2}
-  _outOfRangeDiscoveredMaterial:
-  - {fileID: 2100000, guid: 51f0a9e036c42094a8c6ff347b30db76, type: 2}
 --- !u!1 &8614303377803290371
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,7 +177,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 2972352808999076886}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

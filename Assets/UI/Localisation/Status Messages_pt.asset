@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Status Messages_pt
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: pt
+  m_SharedData: {fileID: 11400000, guid: 1fea39e4caa53524080be641f0520478, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 14672195584
+    m_Localized: "Ative a Internet e a Localiza\xE7\xE3o!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17650151424
+    m_Localized: Por favor, ative a Internet!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20774907904
+    m_Localized: "Ative a localiza\xE7\xE3o!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 24436535296
+    m_Localized: "Objeto encontrado!\nAdicionado ao di\xE1rio de bordo"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100642844672
+    m_Localized: Chegar mais perto!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 113473220608
+    m_Localized: Coletado
+    m_Metadata:
+      m_Items: []
+  - m_Id: 129575153664
+    m_Localized: "Est\xE1 faltando pe\xE7as..."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

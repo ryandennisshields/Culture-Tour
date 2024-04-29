@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d927dc4178eeb8439a965299f9b351f, type: 3}
-  m_Name: Cutting the cloak
+  m_Name: Cutting the Cloak
   m_EditorClassIdentifier: 
   Clip: {fileID: 32900000, guid: 3d6d25544ad243749bbe70e1cf24f998, type: 3}
   LoopCount: -1

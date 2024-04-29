@@ -1,10 +1,11 @@
 using com.cyborgAssets.inspectorButtonPro;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Tables;
 
 namespace GCU.CultureTour
 {
@@ -52,6 +53,10 @@ namespace GCU.CultureTour
         private Queue<string> _messageQueue = new ();
         private float _currentMessageDisplayTime = 0f;
 
+        [SerializeField]
+        LocalizedStringTable localizedStringTable;
+        private StringTable stringTable;
+
         [ProButton]
         public void DisplayMessage ( string message, bool clearQueue = false )
         {
@@ -79,25 +84,27 @@ namespace GCU.CultureTour
 
         private void CheckConnection()
         {
-                if (Application.internetReachability == NetworkReachability.NotReachable && !Input.location.isEnabledByUser)
-                {
-                    // No internet connection and location - display an error message
-                    DisplayMessage("Please enable Internet and Location!", true);
-                }
-                else if (Application.internetReachability == NetworkReachability.NotReachable)
-                {
-                    // No internet connection - display an error message
-                    DisplayMessage("Please enable Internet!", true);
-                }
-                else if (!Input.location.isEnabledByUser)
-                {
-                    // No location access - display an error message
-                    DisplayMessage("Please enable Location!", true);
-                }
-                else 
-                {
-                    ClearMessageQueue();
-                }
+            var tableLoading = localizedStringTable.GetTable();
+            stringTable = tableLoading;
+            if (Application.internetReachability == NetworkReachability.NotReachable && !Input.location.isEnabledByUser)
+            {
+                // No internet connection and location - display an error message
+                DisplayMessage(stringTable.GetEntry("enable_internet_and_location").Value, true);
+            }
+            else if (Application.internetReachability == NetworkReachability.NotReachable)
+            {
+                // No internet connection - display an error message
+                DisplayMessage(stringTable.GetEntry("enable_internet").Value, true);
+            }
+            else if (!Input.location.isEnabledByUser)
+            {
+                // No location access - display an error message
+                DisplayMessage(stringTable.GetEntry("enable_location").Value, true);
+            }
+            else
+            {
+                ClearMessageQueue();
+            }
         }
 
         /// <summary>
@@ -136,13 +143,13 @@ namespace GCU.CultureTour
             {
                 if (_messageQueue.Count > 0)
                 {
-                    // display next message
+                    // Display next message
                     var newMessage = _messageQueue.Dequeue();
                     SetMessage(newMessage);
                 }
                 else
                 {
-                    // fade out
+                    // Fade out
                     StartCoroutine(FadeOut());
                 }
             }
