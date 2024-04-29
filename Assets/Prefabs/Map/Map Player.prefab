@@ -337,7 +337,7 @@ MonoBehaviour:
   _lightshipMapView: {fileID: 0}
   _editorMovementSpeed: 60
   _camera: {fileID: 0}
-  _model: {fileID: 0}
+  _model: {fileID: 3596852645288726051}
 --- !u!135 &2067775443722595290
 SphereCollider:
   m_ObjectHideFlags: 0
