@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Default Game Settings
   m_EditorClassIdentifier: 
   Collectibles:
-  - {fileID: 11400000, guid: 05c8b8c3ff3588b43908447e75fa3da4, type: 2}
-  - {fileID: 11400000, guid: c48de5e3f12341a47972d31e1331fa22, type: 2}
-  - {fileID: 11400000, guid: 29573e7906a21ec49aa3af4c1f7e7dc3, type: 2}
-  - {fileID: 11400000, guid: 1f0a28ace0f75b74d82932815f4781ad, type: 2}
-  - {fileID: 11400000, guid: 73c1b700709271b48bfbfdcd14a33a12, type: 2}
-  - {fileID: 11400000, guid: aa36aa7758e78f049a8e9aafe1c9b4e0, type: 2}
+  - {fileID: 11400000, guid: fe0e0261fa26d6941bc6d20ea7be7c50, type: 2}
+  - {fileID: 11400000, guid: 32eb53fb4c54f6340b2e8690b05dd9c4, type: 2}
+  - {fileID: 11400000, guid: df2ef00a0e484ed4aacd34d34748390d, type: 2}
+  - {fileID: 11400000, guid: bc6302e2fe9cd8c4aa672a0fc9d5bfc2, type: 2}
+  - {fileID: 11400000, guid: 3efa6516cb8e82848a49eb4c72858559, type: 2}
+  - {fileID: 11400000, guid: b5e63c075992a26479817c5eb1b90aa0, type: 2}
   AreaTextWhenObEjectNotDiscovered: 
   Animations:
   - {fileID: 11400000, guid: 6199069317e85fe48aa4dcb6bfe5c9cb, type: 2}
